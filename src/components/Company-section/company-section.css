@@ -1,0 +1,19 @@
+.icon-section {
+    display: flex; /* Make the section a flex container */
+    justify-content: space-between; /* Distribute child elements horizontally */
+    align-items: center; /* Center child elements vertically */
+    background-color: #f0f0f0; /* Set a background color for the section */
+    padding: 20px; /* Add padding for spacing */
+  }
+  
+  .icon-section h3 {
+    margin: 0; /* Remove default margin for h3 elements */
+    display: flex; /* Make the h3 elements flex containers */
+    align-items: center; /* Center the content vertically within h3 elements */
+  }
+  
+  .icon-section i {
+    font-size: 24px; /* Adjust the size of the icon */
+    margin-right: 8px; /* Add some spacing between the icon and text */
+  }
+  

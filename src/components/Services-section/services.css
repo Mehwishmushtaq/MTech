@@ -1,0 +1,94 @@
+.single__course__item {
+  padding: 15px;
+}
+
+.course__img img {
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.enroll a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #17bf9e;
+}
+
+.projects,
+.projects,
+.rating {
+  font-size: 0.9rem;
+  color: #0a2b1e;
+  font-weight: 500;
+}
+
+.projects i,
+.projects i,
+.rating i {
+  font-weight: 400;
+}
+
+.course__title {
+  line-height: 2rem;
+}
+
+/* services.css */
+
+.course__top__left {
+  padding-right: 20px; /* Add some space on the right for separation */
+}
+
+.p-container {
+  margin-top: 20px; /* Add spacing between the heading and the paragraph */
+}
+
+.p-container p {
+  font-size: 0.9rem; /* Adjust the font size as needed */
+  color: #333; /* Set the text color */
+}
+
+.image-container {
+  max-width: 100%; /* Ensure the image fits within the container */
+  height: auto; /* Maintain image aspect ratio */
+  border-radius: 10px; /* Apply a rounded border to the image */
+}
+
+/* Responsive styles for mobile screens (up to 767px width) */
+@media (max-width: 767px) {
+  .course__top__left {
+    padding-right: 0; /* Remove right padding for mobile layout */
+  }
+
+  .p-container {
+    text-align: center; /* Center the text for mobile layout */
+  }
+
+  .p-container p {
+    margin-top: 10px; /* Add spacing between the heading and the paragraph for mobile layout */
+  }
+
+  .image-container {
+    margin-top: 20px; /* Add space between the paragraph and the image for mobile layout */
+  }
+}
+
+/* Responsive styles for tablet and larger screens (768px width and above) */
+@media (min-width: 768px) {
+  .course__top__left {
+    padding-right: 20px; /* Restore right padding for tablets and larger screens */
+  }
+
+  .p-container {
+    text-align: left; /* Restore the text alignment for tablets and larger screens */
+  }
+
+  .p-container p {
+    margin-top: 20px; /* Adjust the margin between the heading and the paragraph for tablets and larger screens */
+  }
+
+  .image-container {
+    margin-top: 0; /* Remove margin between the paragraph and the image for tablets and larger screens */
+  }
+}
+
+

@@ -1,0 +1,38 @@
+.footer {
+  /* background: rgba(226, 248, 248, 0.664); */
+  background-color: #c23616;
+}
+
+.follows span a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.follows span {
+  margin-right: 15px;
+  color: #fff;
+}
+
+.link__list .link__item {
+  background: transparent;
+}
+
+.link__list a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+.navigation .logo{
+  white-space: nowrap;
+  font-size: large;
+  color: #fff;
+}
+
+/* Style the element with class "ri-pantone-line" */
+.navigation .logo .ri-pantone-line {
+  color: #fff;
+}
+.white-text {
+  color: white;
+}

@@ -1,0 +1,69 @@
+/* ContactUs.css */
+
+.banner img {
+	width: 208vh;
+	
+  }
+
+.contact-us-container {
+	display: flex;
+	flex-direction: column;
+	background-color: #dfe6e9;
+	background-image: url('../../assets/images/contact-bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat; 
+	align-items: center;
+	justify-content: center;
+	height: 90vh;
+	position: relative;
+  }
+  
+  .label {
+	font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+  }
+  
+  .submit-button {
+	background-color: #4caf50;
+	color: #ffffff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+	margin-top: 20px;
+  }
+  
+  .phone-button,
+  .whatsapp-button {
+	position: absolute;
+	top: 10px; /* Adjust the top value for vertical positioning */
+	right: 10px; /* Adjust the right value for horizontal positioning */
+	padding: 10px 20px;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+  }
+  
+  .phone-button {
+	background-color: #007bff;
+  }
+  
+  .whatsapp-button {
+	background-color: #25d366;
+  }
+  
+  /* Add spacing between the buttons */
+  .phone-button + .whatsapp-button {
+	margin-left: 10px;
+  }
+  

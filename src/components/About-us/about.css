@@ -1,0 +1,58 @@
+/* Base styles for all screen sizes */
+
+.about-us {
+  background-color: #d1d8e0;
+}
+
+.counter {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #0a2b1e;
+}
+
+.counter__title {
+  font-size: 1rem;
+  color: #0a2b1e;
+  font-weight: 500;
+}
+
+.about__content {
+  padding-left: 50px;
+}
+
+.about__img img {
+  border-radius: 5px;
+  /* height: 30em; */
+}
+
+.about__content h2 {
+  font-weight: 600;
+}
+
+.about__content p::before {
+  font-weight: 500;
+}
+
+/* Responsive styles for mobile screens (up to 767px width) */
+@media (max-width: 767px) {
+  .about__content {
+    padding-left: 20px; /* Adjust as needed for mobile layout */
+  }
+
+  .about__img img {
+    max-width: 100%; /* Ensure the image fits within the screen */
+    height: auto;
+  }
+}
+
+/* Responsive styles for laptop screens (768px width and above) */
+@media (min-width: 768px) {
+  .about__content {
+    padding-left: 50px; /* Restore the original padding for laptops */
+  }
+
+  .about__img img {
+    max-width: 100%; /* Ensure the image fits within the screen */
+    height: auto;
+  }
+}
