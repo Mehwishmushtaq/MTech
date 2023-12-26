@@ -1,3 +1,36 @@
 .testimonial__content h2 {
   font-weight: 600;
 }
+
+
+.testimonial-section {
+  padding: 60px 0; 
+}
+
+.testimonial__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+}
+
+.testimonial__content,
+.testimonial__img {
+  width: 100%;
+}
+
+.testimonial__img img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; 
+}
+
+@media screen and (min-width: 768px) {
+  .testimonial__wrapper {
+    flex-direction: row;
+  }
+
+  .testimonial__content,
+  .testimonial__img {
+    width: 50%;
+  }
+}

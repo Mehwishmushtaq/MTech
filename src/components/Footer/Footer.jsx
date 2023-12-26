@@ -14,11 +14,6 @@ const footerQuickLinks = [
   },
 
   {
-    display: "Courses",
-    url: "#",
-  },
-
-  {
     display: "Blog",
     url: "#",
   },
@@ -52,7 +47,7 @@ const Footer = () => {
         <Row>
           <Col lg="3" md="6" className=" navigation mb-4">
             <h2 className="logo d-flex align-items-center gap-1">
-              <i class="ri-edge-new-fill"></i> A & M Technology
+              <i class="ri-edge-new-fill"></i>M Technologies
             </h2>
 
             <div className="follows">

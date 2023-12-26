@@ -1,75 +1,61 @@
-import React, { useRef } from "react";
-import { Container } from "reactstrap";
-import "./header.css";
+import React from 'react';
+import { Container, Nav, Navbar, Row, Col, NavDropdown } from 'react-bootstrap';
+import { DropDownMenu } from '../DropDownMenu'
+import { DropDownSubMenu } from '../DropdownSubMenu'
+import '../../../src/App.css'
+import './header.css'
 
-const navLinks = [
-  {
-    display: "Home",
-    url: "/",
-  },
-  {
-    display: "About Us",
-    url: "/about",
-  },
-
-  {
-    display: "Services",
-    url: "/services",
-  },
-  {
-    display: "Design",
-    url: "/design",
-  },
-  {
-    display: "Contact Us",
-    url: "/contact",
-  },
-];
-
-const Header = () => {
-
-  const menuRef = useRef();
-
-  const menuToggle = () => menuRef.current.classList.toggle("active__menu");
-
-  return (
-    <header className="header">
-      <Container>
-        <div className="navigation d-flex align-items-center justify-content-between">
-          <div className="logo">
-            <h2 className=" d-flex align-items-center gap-1">
-              <i className="ri-edge-new-fill"></i> A & M Technology
-            </h2>
-          </div>
-
-
-          <div className="nav d-flex align-items-center gap-5">
-            <div className="nav__menu" ref={menuRef} onClick={menuToggle}>
-              <ul className="nav__list">
-                {navLinks.map((item, index) => (
-                  <li key={index} className="nav__item">
-                    <a href={item.url}>{item.display}</a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div className="nav__right">
-              <p className="mb-0 d-flex align-items-center gap-2">
-                <i class="ri-phone-line"></i> +44 7916 312844
-              </p>
-            </div>
-          </div>
-
-          <div className="mobile__menu">
-            <span>
-              <i class="ri-menu-line" onClick={menuToggle}></i>
-            </span>
-          </div>
-        </div>
+const Header = () => (
+  <>
+    <Navbar className='custom-nav' expand="lg" variant="dark">
+      <Container className='navbar-menu'>
+      <Navbar.Brand href=""><i class="ri-edge-new-fill"></i> M Technologies</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="/">Home</Nav.Link>
+            <DropDownMenu title="Services" id="collapsible-nav-dropdown">
+              <NavDropdown.Item href="/web-development">Web Development</NavDropdown.Item>
+              <DropDownSubMenu href="#action/3.7" title="Design">
+                <NavDropdown.Item href="#action/8.1">Html</NavDropdown.Item>
+                <NavDropdown.Item href="#action/8.2">CSS</NavDropdown.Item>
+                <DropDownSubMenu href="#action/3.7" title="Development">
+                  <NavDropdown.Item href="#action/9.1">Javascript</NavDropdown.Item>
+                  <NavDropdown.Item href="#action/9.2">Jquery</NavDropdown.Item>
+                </DropDownSubMenu>
+              </DropDownSubMenu>
+            </DropDownMenu>
+            <Nav.Link href="/about">About us</Nav.Link>
+            <Nav.Link href="/whyChooseUs">Why Choose us</Nav.Link>
+            <Nav.Link href="#home">Portfolio</Nav.Link>
+            <Nav.Link href="/contact">Contact Us</Nav.Link>
+          </Nav>
+          <Nav>
+            {/* <DropDownMenu title="Product" id="collasible-nav-dropdown" alignRight>
+              <DropDownSubMenu href="#action/3.7" title="Language">
+                <NavDropdown.Item href="#action/8.1">React</NavDropdown.Item>
+                <NavDropdown.Item href="#action/8.2">Anguler</NavDropdown.Item>
+                <NavDropdown.Item href="#action/8.3">Ionic</NavDropdown.Item>
+                <DropDownSubMenu href="#action/3.7" title="backend">
+                  <NavDropdown.Item href="#action/9.1">Nodejs</NavDropdown.Item>
+                  <NavDropdown.Item href="#action/9.1">PHP</NavDropdown.Item>
+                  <NavDropdown.Item href="#action/9.1">JAVA</NavDropdown.Item>
+                </DropDownSubMenu>
+              </DropDownSubMenu>
+            </DropDownMenu> */}
+          </Nav>
+        </Navbar.Collapse>
       </Container>
-    </header>
-  );
-};
+    </Navbar>
+
+    <Container>
+      <Row>
+        <Col>
+
+        </Col>
+      </Row>
+    </Container>
+  </>
+);
 
 export default Header;

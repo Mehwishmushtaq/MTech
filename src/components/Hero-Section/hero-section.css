@@ -1,11 +1,9 @@
-/* Apply background color to the hero section */
 .hero-section {
-  background-color: #e74c3c; /* Change the color as needed */
-  color: #fff; /* Text color inside the hero section */
-  padding: 80px 0; /* Adjust the padding as needed */
+  background-color: #e74c3c; 
+  color: #fff; 
+  padding: 80px 0; 
 }
 
-/* Style the hero content */
 .hero-content {
   display: flex;
   flex-direction: column;
@@ -14,28 +12,27 @@
 }
 
 .hero {
-  padding: 20px; /* Add padding to the hero content as needed */
+  padding: 20px; 
 }
 
 .hero__title {
-  font-size: 40px; /* Adjust the font size */
+  font-size: 40px; 
   font-weight: 400;
   margin: 0;
 }
 
 .hero__content p {
-  font-size: 20px; /* Adjust the font size */
+  font-size: 20px; 
   margin: 15px 0;
   color: #fff;
   font-weight: 1000;
 }
 
 
-/* Style the "Get a Quote" button */
 .search .btn {
-  background-color:#fff; /* Button background color */
-  color:#e74c3c; /* Button text color */
-  padding: 10px 20px; /* Button padding */
+  background-color:#fff; 
+  color:#e74c3c; 
+  padding: 10px 20px; 
   border: none;
   border-radius: 50px;
   cursor: pointer;
@@ -43,17 +40,51 @@
   text-transform: uppercase;
 }
 
-/* Style the hero image */
 .hero-img-col img {
   max-width: 70%;
-  height: auto; /* Maintain the aspect ratio of the image */
+  height: auto; 
+  margin-left: 50px;
+  transition: transform 0.5s ease-in-out;
+  animation: spin 20s linear infinite; 
+
 }
 
-/* Adjust the dimensions of the hero section as needed */
-@media (max-width: 768px) {
-  .hero-section {
-    padding: 40px 0; /* Decrease the padding for mobile screens */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 
-/* Additional responsive styles can be added as needed */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 40px 0; 
+  }
+}
+
+.nav__item--with-submenu:hover .submenu {
+  display: block;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff; 
+  color: #333;
+  border: 1px solid #ccc; 
+  padding: 10px;
+  z-index: 1000;
+}
+
+.submenu li {
+  margin-bottom: 5px;
+}
+
+.submenu a {
+  text-decoration: none;
+  color: #333; 
+}

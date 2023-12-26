@@ -58,8 +58,8 @@ const Services = () => {
     <section>
       <Container>
         <Row>
-          <Col lg="12" className="mb-5">
-            <div className="course__top d-flex justify-content-between align-items-center">
+          {/* <Col lg="12" className="mb-5">
+            <div className="course__top d-lg-flex  justify-content-between align-items-center">
               <div className="course__top__left w-50">
                 <h2>Our Popular Services</h2>
                 <p>
@@ -71,16 +71,34 @@ const Services = () => {
                   experience in order to present you with the most current and innovative solutions. When
                   you choose us, you are selecting a partner who is committed to your long-term success
                   in the digital age.
+
                 </p>
               </div>
 
-              <div className="w-50 text-end">
+              <div className="text-center text-lg-end">
                 <img src="https://img.freepik.com/free-vector/people-work-office-together_107791-14052.jpg?size=626&ext=jpg&ga=GA1.1.843820476.1686048661&semt=sph"
                   alt="See All"
                   className="image-container" />
               </div>
             </div>
-          </Col>
+          </Col> */}
+          {/* <!--Start :: Paragraph & Title--> */}
+          <div class="container">
+            <div class="row mt-2 text-center justify-content-center">
+              <h1>Our Popular Services</h1>
+              <div class="col-md-6 text-center">
+                {/* <!-- Column for the First Paragraph --> */}
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa sunt pariatur quasi excepturi laboriosam aliquid beatae neque nobis sed, blanditiis mollitia ipsam eius praesentium repellendus sapiente. Amet a odit provident.Fugit eius ea repellat aperiam atque neque quod accusamus. Amet dolores hic iste recusandae, et repellat culpa est voluptate aliquam nihil vero sed mollitia, minima laudantium, distinctio nam maxime molestias.</p>
+              </div>
+              <div class="col-md-6 text-center">
+                {/* <!-- Column for the Second Paragraph --> */}
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur commodi officiis hic incidunt doloribus facilis assumenda optio quaerat, adipisci placeat ut corrupti non corporis deserunt distinctio mollitia impedit. Voluptates, odio. Sapiente esse, error tempore totam iste illo laudantium autem dolor cum corporis eum dignissimos eligendi quisquam et beatae iure doloremque itaque, architecto deleniti? Quibusdam asperiores.
+
+                </p>
+              </div>
+            </div>
+          </div>
+          {/* <!--End :: Paragraph & Title--> */}
           {servicesData.map((item) => (
             <Col key={item.id} lg="4" md="6" sm="6">
               <ServiceCard item={item} />
