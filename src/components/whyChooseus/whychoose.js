@@ -34,7 +34,7 @@ const features = [
 const WhyChooseUs = () => {
 
     const headerStyle = {
-        backgroundImage: `url('https://cdn.pixabay.com/photo/2015/11/19/08/52/banner-1050629_640.jpg')`, // Replace with your image URL
+        backgroundImage: `url('https://static.vecteezy.com/system/resources/previews/005/081/900/non_2x/banner-abstract-geometric-white-and-gray-color-background-illustration-free-vector.jpg')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',

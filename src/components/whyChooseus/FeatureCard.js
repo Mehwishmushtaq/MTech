@@ -29,7 +29,7 @@ const FeatureCard = ({ title, description }) => {
 
   return (
     <div className="feature-card">
-      <div className="icon mb-3">
+      <div className="icon mb-3" style={{color: '#30336b'}}>
         <FontAwesomeIcon icon={icon} size="3x" />
       </div>
       <div className="content">

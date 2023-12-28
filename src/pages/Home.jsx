@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import HeroSection from "../components/Hero-Section/HeroSection";
-import AboutUs from "../components/About-us/AboutUs";
+// import AboutUs from "../components/About-us/AboutUs";
 import Services from "../components/Services-section/Services";
 // import FastService from "../components/Fast-service-section/FastService";
 import ChooseUs from "../components/Choose-us/ChooseUs";
@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <Fragment>
       <HeroSection />
-      <AboutUs />
+      {/* <AboutUs /> */}
       <Services />
       {/* <FastService /> */}
       <ChooseUs />
