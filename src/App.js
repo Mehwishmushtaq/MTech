@@ -6,10 +6,12 @@ import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home";
 import AboutUs from "./components/About-us/AboutUs";
 import Services from "./components/Services-section/Services";
+import HtmlServices from "./components/Html-Service";
 import WhyChooseUs from './components/whyChooseus/whychoose'
 import Design from "./components/Design/Design";
 import ContactUs from "./components/ContactUs/ContactUs"
 import WebsiteDevelopment from "./components/WebDevelopment/web-development"
+import Portfolio from "./components/Portfolio"
 
 
 
@@ -23,11 +25,12 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/html-services" element={<HtmlServices />} />
           <Route path="/whyChooseUs" element={<WhyChooseUs />} />
           <Route path="/design" element={<Design />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/web-development" element={<WebsiteDevelopment />} />
-
+          <Route path="/portfolio" element={<Portfolio />} />
 
         </Routes>
         <Footer />

@@ -18,8 +18,9 @@ const Header = () => (
               <NavDropdown.Item href="/web-development">Web Development</NavDropdown.Item>
         
               <DropDownSubMenu href="/design" title="Design">
-                <NavDropdown.Item href="#action/8.1">Html</NavDropdown.Item>
-                <NavDropdown.Item href="#action/8.2">CSS</NavDropdown.Item>
+                <NavDropdown.Item href="/html-services">Html</NavDropdown.Item>
+                <NavDropdown.Item href="#action/8.2">WordPress</NavDropdown.Item>
+                <NavDropdown.Item href="#action/8.3">Laravel</NavDropdown.Item>
                 <DropDownSubMenu href="#action/3.7" title="Development">
                   <NavDropdown.Item href="#action/9.1">Javascript</NavDropdown.Item>
                   <NavDropdown.Item href="#action/9.2">Jquery</NavDropdown.Item>
@@ -28,7 +29,7 @@ const Header = () => (
             </DropDownMenu>
             <Nav.Link href="/about">About us</Nav.Link>
             <Nav.Link href="/whyChooseUs">Why Choose us</Nav.Link>
-            <Nav.Link href="#home">Portfolio</Nav.Link>
+            <Nav.Link href="/portfolio">Portfolio</Nav.Link>
             <Nav.Link href="/contact">Contact Us</Nav.Link>
           </Nav>
           <Nav>
