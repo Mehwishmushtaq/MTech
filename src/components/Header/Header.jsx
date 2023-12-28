@@ -9,14 +9,15 @@ const Header = () => (
   <>
     <Navbar className='custom-nav' expand="lg" variant="dark">
       <Container className='navbar-menu'>
-      <Navbar.Brand href=""><i class="ri-edge-new-fill"></i> M Technologies</Navbar.Brand>
+        <Navbar.Brand href=""><i class="ri-edge-new-fill"></i> M Technologies</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="/">Home</Nav.Link>
             <DropDownMenu title="Services" id="collapsible-nav-dropdown">
               <NavDropdown.Item href="/web-development">Web Development</NavDropdown.Item>
-              <DropDownSubMenu href="#action/3.7" title="Design">
+        
+              <DropDownSubMenu href="/design" title="Design">
                 <NavDropdown.Item href="#action/8.1">Html</NavDropdown.Item>
                 <NavDropdown.Item href="#action/8.2">CSS</NavDropdown.Item>
                 <DropDownSubMenu href="#action/3.7" title="Development">
