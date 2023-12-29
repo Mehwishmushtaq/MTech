@@ -1,8 +1,8 @@
 import React from 'react';
-import { Container, Row, Col, Accordion } from 'react-bootstrap';
+import { Container, Row, Col, Accordion, Button } from 'react-bootstrap';
 import { FaHtml5, FaCode, FaDesktop, FaCubes } from 'react-icons/fa';
-import Html1 from '../assets/images/html1.jpg'
-import Faq from '../assets/images/faq.jpg'
+import Html1 from '../../assets/images/html1.jpg'
+import Faq from '../../assets/images/faq.jpg'
 
 
 
@@ -17,7 +17,6 @@ const HtmlServices = () => {
         paddingTop: '5rem',
         paddingBottom: '5rem',
     };
-
     return (
         <div>
             <header style={headerStyle}>
@@ -73,11 +72,12 @@ const HtmlServices = () => {
 
             {/* FAQ Section */}
             <Container>
+                <Row>
                 <h2>
                     <span>Frequently Asked Questions</span>
+                    <br/>
                     <span style={{ color: '#ff6b6b' }}> For HTML</span>
                 </h2>
-                <Row>
                     <Col md={6}>
                         <Accordion defaultActiveKey="0">
                             <Accordion.Item eventKey="0">
@@ -107,11 +107,22 @@ const HtmlServices = () => {
 
                         </Accordion>
                     </Col>
-                    <Col md={6}>
+                    <Col md={6} className='mb-1'>
                         <img src={Faq} alt="Your Alt Text" className="img-fluid" />
                     </Col>
                 </Row>
             </Container>
+
+            {/* Banner Section */}
+            <div style={{marginBottom: '30px' , background: '#e17055', padding: '20px', color: '#fff', textAlign: 'center' }}>
+                <h1>Bringing Out The Best With Our Expertise</h1>
+                <p className='text-white'>Say goodbye to project hassles and hello to groundbreaking ideas to unlock innovation with M Technologies.</p>
+                <a href="/contact">
+                    <Button variant='info'>
+                        Start a Project
+                    </Button>
+                </a>
+            </div>
         </div>
     );
 };

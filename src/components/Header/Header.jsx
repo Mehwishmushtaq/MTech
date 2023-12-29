@@ -19,7 +19,7 @@ const Header = () => (
         
               <DropDownSubMenu href="/design" title="Design">
                 <NavDropdown.Item href="/html-services">Html</NavDropdown.Item>
-                <NavDropdown.Item href="#action/8.2">WordPress</NavDropdown.Item>
+                <NavDropdown.Item href="/wordpress-service">WordPress</NavDropdown.Item>
                 <NavDropdown.Item href="#action/8.3">Laravel</NavDropdown.Item>
                 <DropDownSubMenu href="#action/3.7" title="Development">
                   <NavDropdown.Item href="#action/9.1">Javascript</NavDropdown.Item>

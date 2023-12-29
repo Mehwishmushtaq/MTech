@@ -1,5 +1,4 @@
 .footer {
-  /* background: rgba(226, 248, 248, 0.664); */
   background-color: #c23616;
 }
 
@@ -23,16 +22,38 @@
   font-weight: 500;
 }
 
-.navigation .logo{
+.navigation .logo {
   white-space: nowrap;
   font-size: large;
   color: #fff;
 }
 
-/* Style the element with class "ri-pantone-line" */
 .navigation .logo .ri-pantone-line {
   color: #fff;
 }
+
 .white-text {
   color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .follows span {
+    margin-right: 10px; 
+  }
+
+  .link__list a {
+    font-size: 14px; 
+  }
+
+  .navigation .logo {
+    font-size: medium; 
+  }
+
+  .navigation .logo .ri-pantone-line {
+    font-size: 18px; 
+  }
+
+  .white-text {
+    color: white; 
+  }
 }

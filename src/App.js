@@ -6,7 +6,8 @@ import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home";
 import AboutUs from "./components/About-us/AboutUs";
 import Services from "./components/Services-section/Services";
-import HtmlServices from "./components/Html-Service";
+import HtmlServices from "./components/WebDevelopment/Html-Service";
+import WordPressService from "./components/WebDevelopment/Wordpress";
 import WhyChooseUs from './components/whyChooseus/whychoose'
 import Design from "./components/Design/Design";
 import ContactUs from "./components/ContactUs/ContactUs"
@@ -26,6 +27,7 @@ function App() {
           <Route path="/about" element={<AboutUs />} />
           <Route path="/services" element={<Services />} />
           <Route path="/html-services" element={<HtmlServices />} />
+          <Route path="/wordpress-service" element={<WordPressService />} />
           <Route path="/whyChooseUs" element={<WhyChooseUs />} />
           <Route path="/design" element={<Design />} />
           <Route path="/contact" element={<ContactUs />} />
