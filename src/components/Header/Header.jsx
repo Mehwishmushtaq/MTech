@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Nav, Navbar, Row, Col, NavDropdown } from 'react-bootstrap';
+import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { DropDownMenu } from '../DropDownMenu'
 import { DropDownSubMenu } from '../DropdownSubMenu'
 import '../../../src/App.css'
@@ -9,14 +9,14 @@ const Header = () => (
   <>
     <Navbar className='custom-nav' expand="lg" variant="dark">
       <Container className='navbar-menu'>
-        <Navbar.Brand href=""><i class="ri-edge-new-fill"></i> M Technologies</Navbar.Brand>
+        <Navbar.Brand href="/web-development"><i class="ri-edge-new-fill"></i> M Technologies</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="/">Home</Nav.Link>
             <DropDownMenu title="Services" id="collapsible-nav-dropdown">
               {/* <NavDropdown.Item href="/web-development">Web Development</NavDropdown.Item> */}
-            <DropDownSubMenu href="/web-development" title="Website Development">
+            <DropDownSubMenu href="/web-development" title="Web Development">
                 <NavDropdown.Item href="/html-services">Html</NavDropdown.Item>
                 <NavDropdown.Item href="/wordpress-service">WordPress</NavDropdown.Item>
                 <NavDropdown.Item href="/laravel-service">Laravel</NavDropdown.Item>
@@ -53,13 +53,13 @@ const Header = () => (
       </Container>
     </Navbar>
 
-    <Container>
+    {/* <Container>
       <Row>
         <Col>
 
         </Col>
       </Row>
-    </Container>
+    </Container> */}
   </>
 );
 

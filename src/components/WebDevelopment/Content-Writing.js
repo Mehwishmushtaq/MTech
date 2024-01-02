@@ -4,8 +4,8 @@ import { FaFileAlt, FaDesktop } from 'react-icons/fa';
 
 import Web1 from '../../assets/images/web1.svg'
 import Web2 from '../../assets/images/web2.svg'
-import Web3 from '../../assets/images/web3.png'
-import Web4 from '../../assets/images/web4.png'
+// import Web3 from '../../assets/images/web3.png'
+// import Web4 from '../../assets/images/web4.png'
 import Web5 from '../../assets/images/web5.svg'
 import Content1 from '../../assets/images/content.jpg'
 import Content2 from '../../assets/images/content2.avif'
@@ -131,7 +131,7 @@ const ContentWriting = () => {
                                 Pellentesque in ipsum id orci porta dapibus.
                             </p>
                         </Col>
-                        <Col md={6}>
+                        {/* <Col md={6}>
                             <img
                                 src={Web3}
                                 alt="Banner 1"
@@ -144,7 +144,7 @@ const ContentWriting = () => {
                                 alt="Banner 2"
                                 className="img-fluid mb-3"
                             />
-                        </Col>
+                        </Col> */}
                     </Row>
                 </Container>
             </section>
@@ -202,7 +202,7 @@ const ContentWriting = () => {
                 </Container>
             </section>
 
-            {/* Section 5 */}
+            {/* Section 4 */}
             <section>
 
                 <div className="container mt-4">
@@ -296,8 +296,20 @@ const ContentWriting = () => {
                 </div>
             </section>
 
+            {/* Section 5 */}
+            <section>
+                    <Container style={{ background: '#e17055', padding: '20px', color: '#fff', textAlign: 'left' }}>
+                        <h1>Bringing Out The Best With Our Expertise</h1>
+                        <p className='text-white'>Say goodbye to project hassles and hello to groundbreaking ideas to unlock innovation with M Technologies.</p>
+                        <a href="/contact">
+                            <Button variant='info'>
+                                Start a Project
+                            </Button>
+                        </a>
+                    </Container>
+            </section>
 
-            {/* Section 4 */}
+            {/* Section 6 */}
             <section className="py-5">
                 <Container>
                     {/* Title Section */}
