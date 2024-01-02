@@ -1,15 +1,12 @@
 import React from 'react';
 import { Container, Row, Col, Accordion, Button } from 'react-bootstrap';
-import { FaWordpress } from 'react-icons/fa';
-import { AiOutlineSearch } from 'react-icons/ai';
-import { DiGoogleCloudPlatform as DiGoogle } from 'react-icons/di';
-import { IoMdGlobe } from 'react-icons/io';
-import WordPress from '../../assets/images/wordpress.png'
+import { FaUserTie, FaClock, FaBriefcase, FaBolt } from 'react-icons/fa';
+import Laravel from '../../assets/images/laravel.png'
 import Faq from '../../assets/images/faq.jpg'
 
 
 
-const WordPressService = () => {
+const LaravelService = () => {
     const headerStyle = {
         backgroundImage: `url('https://static.vecteezy.com/system/resources/previews/005/081/900/non_2x/banner-abstract-geometric-white-and-gray-color-background-illustration-free-vector.jpg')`,
         backgroundSize: 'cover',
@@ -23,7 +20,7 @@ const WordPressService = () => {
     return (
         <div>
             <header style={headerStyle}>
-                <h1>WordPress</h1>
+                <h1>Laravel Web</h1>
             </header>
 
             {/* Content Section with Text and Image */}
@@ -32,37 +29,38 @@ const WordPressService = () => {
                     <Row>
                         <Col md={6}>
                             <h2>
-                                <span>Perfect Technology</span>
-                                <span style={{ color: '#ff6b6b' }}> Development Services</span>
+                                <span style={{ color: '#ff6b6b' }}>Expressive Services</span>
+                                <span> With Laravel Development</span>
                             </h2>
                             <p>
-                                WordPress is counted as the simplest and most popular way to build a domain that fulfills businesses’ requirements by creating its own websites and blogs. Technically, it is an open-source content management system that empowers users to create and distribute site pages, requiring nothing past space and a facilitating administration.                            </p>
+                                The Laravel web development service is a web application system with an expressive, exquisite language structure. We are the best Laravel web development services in the market.
+                                <br />
+                                A web system gives your application a construction and beginning stage, permitting you to zero in on making something astounding while we sweat the subtleties.                            </p>
                             {/* Features Section */}
                             <Container id="features" className="mt-1">
-                                <h4 className='mb-2'>It offers to manage;</h4>
                                 {/* First row of features */}
                                 <Row className="mb-4">
                                     <Col md={6}>
-                                        <h6><FaWordpress color='#22a6b3' size={20} className="mr-2" /> WordPress Module</h6>
+                                        <h6><FaUserTie color='#22a6b3' size={20} className="mr-2" /> Expert Team Member</h6>
                                     </Col>
                                     <Col md={6}>
-                                        <h6><AiOutlineSearch color='#22a6b3' size={20} className="mr-2" /> Content For SEO</h6>
+                                        <h6><FaClock color='#22a6b3' size={20} className="mr-2" /> Time Management</h6>
                                     </Col>
                                     <Col md={6}>
-                                        <h6><DiGoogle color='#22a6b3' size={20} className="mr-2" /> Google Rankings</h6>
+                                        <h6><FaBriefcase color='#22a6b3' size={20} className="mr-2" /> Work Dedication</h6>
                                     </Col>
                                     <Col md={6}>
-                                        <h6><IoMdGlobe color='#22a6b3' size={20} className="mr-2" /> Web-Based Interface</h6>
+                                        <h6><FaBolt color='#22a6b3' size={20} className="mr-2" /> Faster Enrollments</h6>
                                     </Col>
                                 </Row>
-
-                                <p className="text-justify mt-4">Web design word press is the most straightforward, most well-known approach to making your site or blog. Here, M Technologies has a web format framework utilizing a layout processor. Its design is a front regulator, steering all solicitations for non-static URLs to a solitary PHP document that parses the URI and distinguishes the objective page. These permits uphold more intelligible permalink.
-                                </p>
+                                <p className="text-justify mt-4">Laravel web development services endeavor to provide an incredible designer experience while giving notable highlights like careful reliance infusion, an expressive data set reflection layer, lines and planned positions, unit and coordination testing, and the sky is the limit.
+                                 <br/>
+                                Whether you are new to PHP web development with Laravel or have long periods of involvement, here at M Technologies, Laravel web development services is a structure that can develop with you. We’ll help you make your first strides as a web designer or give you a lift as you take your ability to the following level. We can hardly wait to perceive what you assemble.</p>
                             </Container>
                         </Col>
                         <Col md={6}>
                             <img
-                                src={WordPress}
+                                src={Laravel}
                                 alt="Sample"
                                 className="img-fluid"
                             />
@@ -77,26 +75,26 @@ const WordPressService = () => {
                     <h2>
                         <span>Frequently Asked Questions</span>
                         <br />
-                        <span style={{ color: '#ff6b6b' }}> For WordPress</span>
+                        <span style={{ color: '#ff6b6b' }}> For Laravel</span>
                     </h2>
                     <Col md={6}>
                         <Accordion defaultActiveKey="0">
                             <Accordion.Item eventKey="0">
-                                <Accordion.Header>Is There Any Limitation For Using WordPress?</Accordion.Header>
+                                <Accordion.Header>Why should You Use Laravel?</Accordion.Header>
                                 <Accordion.Body>
-                                    No, there is no limitation to using WordPress. WordPress can be used for an innumerable purpose etc. Membership site, E-commerce site,Photo gallery, and many more.
+                                Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects. Laravel aims to make the development process a pleasing one for the developer without sacrificing application functionality.
                                 </Accordion.Body>
                             </Accordion.Item>
                             <Accordion.Item eventKey="1">
-                                <Accordion.Header>Do you Need To Have A Blog In Order To Use WordPress For A Website?</Accordion.Header>
+                                <Accordion.Header>Does Laravel Have A Future?</Accordion.Header>
                                 <Accordion.Body>
-                                    WordPress is popular for website development over the past few years. It is not necessary to have a blog to use WordPress only, Still having a blog is commendable as it will help in search engine optimization.
+                                Laravel has a proven stronghold in the market today. It is in the leading position today amongst all web application frameworks available and it is going to get stronger from here on. The future of Laravel in 2021 and ahead is uninhabited and augmented growth.
                                 </Accordion.Body>
                             </Accordion.Item>
                             <Accordion.Item eventKey="2">
-                                <Accordion.Header>Does WordPress Have Cookies?</Accordion.Header>
+                                <Accordion.Header>How M Technologies Help You For Laravel?</Accordion.Header>
                                 <Accordion.Body>
-                                    Yes, WordPress has cookies, and WordPress uses cookies for verification of users while logged in.
+                                Laravel PHP framework is versatile that helps in programming conveyance quickly and practically. We at M Technologies have a gifted task force, which can transform your thoughts into the real world.
                                 </Accordion.Body>
                             </Accordion.Item>
                             <Accordion.Item eventKey="3">
@@ -132,4 +130,4 @@ const WordPressService = () => {
     );
 };
 
-export default WordPressService;
+export default LaravelService;

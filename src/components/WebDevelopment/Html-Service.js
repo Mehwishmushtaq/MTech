@@ -37,23 +37,20 @@ const HtmlServices = () => {
                             </p>
                             {/* Features Section */}
                             <Container id="features" className="mt-5">
-                                <h5 className='mb-4'>Features that can be useful with HTML;</h5>
+                                <h4 className='mb-4'>Features that can be useful with HTML;</h4>
                                 {/* First row of features */}
                                 <Row className="mb-4">
                                     <Col md={6}>
-                                        <h7><FaHtml5 className="mr-2" /> Markup Language</h7>
+                                        <h6><FaHtml5 color='#22a6b3' size={30} className="mr-2" /> Markup Language</h6>
                                     </Col>
                                     <Col md={6}>
-                                        <h7><FaCode className="mr-2" /> Scripting Language</h7>
-                                    </Col>
-                                </Row>
-                                {/* Second row of features */}
-                                <Row>
-                                    <Col md={6}>
-                                        <h7><FaDesktop className="mr-2" /> Structure Website</h7>
+                                        <h6><FaCode color='#22a6b3' size={30} className="mr-2" /> Scripting Language</h6>
                                     </Col>
                                     <Col md={6}>
-                                        <h7><FaCubes className="mr-2" /> Basic Building Block</h7>
+                                        <h6><FaDesktop color='#22a6b3' size={30} className="mr-2" /> Structure Website</h6>
+                                    </Col>
+                                    <Col md={6}>
+                                        <h6><FaCubes color='#22a6b3' size={30} className="mr-2" /> Basic Building Block</h6>
                                     </Col>
                                 </Row>
                                 <p className="text-justify mt-4">At M Technologies, our HTML developers provide better service and superior HTML coding. We have experience with data object modeling and CMS platforms such as CSS and JavaScript. We work diligently throughout development to accomplish our client’s project within the deadline.</p>
@@ -73,11 +70,11 @@ const HtmlServices = () => {
             {/* FAQ Section */}
             <Container>
                 <Row>
-                <h2>
-                    <span>Frequently Asked Questions</span>
-                    <br/>
-                    <span style={{ color: '#ff6b6b' }}> For HTML</span>
-                </h2>
+                    <h2>
+                        <span>Frequently Asked Questions</span>
+                        <br />
+                        <span style={{ color: '#ff6b6b' }}> For HTML</span>
+                    </h2>
                     <Col md={6}>
                         <Accordion defaultActiveKey="0">
                             <Accordion.Item eventKey="0">
@@ -101,7 +98,7 @@ const HtmlServices = () => {
                             <Accordion.Item eventKey="3">
                                 <Accordion.Header>What Are The Benefits Of choosing M Technologies?</Accordion.Header>
                                 <Accordion.Body>
-                                    Choosing M Technologies is the ultimate decision you will take. We are facilitating our clients over the past few years. We are glad that every client is happy with our services. CentoSquare is the only platform that allows you to track your projects while in development. Feel free to contact us on our given number or website. We will be available 24/7 to assist you.
+                                    Choosing M Technologies is the ultimate decision you will take. We are facilitating our clients over the past few years. We are glad that every client is happy with our services. M Technologies is the only platform that allows you to track your projects while in development. Feel free to contact us on our given number or website. We will be available 24/7 to assist you.
                                 </Accordion.Body>
                             </Accordion.Item>
 
@@ -114,15 +111,19 @@ const HtmlServices = () => {
             </Container>
 
             {/* Banner Section */}
-            <div style={{marginBottom: '30px' , background: '#e17055', padding: '20px', color: '#fff', textAlign: 'center' }}>
-                <h1>Bringing Out The Best With Our Expertise</h1>
-                <p className='text-white'>Say goodbye to project hassles and hello to groundbreaking ideas to unlock innovation with M Technologies.</p>
-                <a href="/contact">
-                    <Button variant='info'>
-                        Start a Project
-                    </Button>
-                </a>
-            </div>
+            <section>
+                <div style={{ background: '#e17055', padding: '20px', color: '#fff', textAlign: 'left' }}>
+                    <Container>
+                        <h1>Bringing Out The Best With Our Expertise</h1>
+                        <p className='text-white'>Say goodbye to project hassles and hello to groundbreaking ideas to unlock innovation with M Technologies.</p>
+                        <a href="/contact">
+                            <Button variant='info'>
+                                Start a Project
+                            </Button>
+                        </a>
+                    </Container>
+                </div>
+            </section>
         </div>
     );
 };

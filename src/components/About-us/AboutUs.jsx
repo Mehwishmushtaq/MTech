@@ -107,7 +107,7 @@ const AboutUs = () => {
           <div className="col-md-6 bg-secondary text-light p-4">
             <h2>Our Mission</h2>
             <p className="text-white">
-              We know the importance of  growth for your business projects. CentoSquare knows how to tackle the hurdles. 
+              We know the importance of  growth for your business projects. M Technologies knows how to tackle the hurdles. 
             </p>
           </div>
           <div className="col-md-6 bg-dark text-light p-4 font-monospace ">

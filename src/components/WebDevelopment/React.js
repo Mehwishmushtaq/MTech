@@ -1,15 +1,12 @@
 import React from 'react';
 import { Container, Row, Col, Accordion, Button } from 'react-bootstrap';
-import { FaWordpress } from 'react-icons/fa';
-import { AiOutlineSearch } from 'react-icons/ai';
-import { DiGoogleCloudPlatform as DiGoogle } from 'react-icons/di';
-import { IoMdGlobe } from 'react-icons/io';
-import WordPress from '../../assets/images/wordpress.png'
+import { FaReact, FaClock, FaCode, FaRocket } from 'react-icons/fa';
+import ReactImg from '../../assets/images/react.png'
 import Faq from '../../assets/images/faq.jpg'
 
 
 
-const WordPressService = () => {
+const ReactService = () => {
     const headerStyle = {
         backgroundImage: `url('https://static.vecteezy.com/system/resources/previews/005/081/900/non_2x/banner-abstract-geometric-white-and-gray-color-background-illustration-free-vector.jpg')`,
         backgroundSize: 'cover',
@@ -23,7 +20,7 @@ const WordPressService = () => {
     return (
         <div>
             <header style={headerStyle}>
-                <h1>WordPress</h1>
+                <h1>React</h1>
             </header>
 
             {/* Content Section with Text and Image */}
@@ -32,37 +29,39 @@ const WordPressService = () => {
                     <Row>
                         <Col md={6}>
                             <h2>
-                                <span>Perfect Technology</span>
-                                <span style={{ color: '#ff6b6b' }}> Development Services</span>
+                                <span style={{ color: '#ff6b6b' }}>Dynamic Services</span>
+                                <span> With React Development</span>
                             </h2>
                             <p>
-                                WordPress is counted as the simplest and most popular way to build a domain that fulfills businesses’ requirements by creating its own websites and blogs. Technically, it is an open-source content management system that empowers users to create and distribute site pages, requiring nothing past space and a facilitating administration.                            </p>
+                                The React web development service is a cutting-edge web application framework with a dynamic and flexible architecture. We take pride in being the leading React web development services in the industry.
+                                <br />
+                                A web system provides a solid foundation for your application, allowing you to focus on creating something extraordinary while we handle the intricacies.                           </p>
                             {/* Features Section */}
                             <Container id="features" className="mt-1">
-                                <h4 className='mb-2'>It offers to manage;</h4>
                                 {/* First row of features */}
                                 <Row className="mb-4">
                                     <Col md={6}>
-                                        <h6><FaWordpress color='#22a6b3' size={20} className="mr-2" /> WordPress Module</h6>
+                                        <h6><FaReact color='#22a6b3' size={20} className="mr-2" /> Expert Team Member</h6>
                                     </Col>
                                     <Col md={6}>
-                                        <h6><AiOutlineSearch color='#22a6b3' size={20} className="mr-2" /> Content For SEO</h6>
+                                        <h6><FaClock color='#22a6b3' size={20} className="mr-2" /> Time Management</h6>
                                     </Col>
                                     <Col md={6}>
-                                        <h6><DiGoogle color='#22a6b3' size={20} className="mr-2" /> Google Rankings</h6>
+                                        <h6><FaCode color='#22a6b3' size={20} className="mr-2" /> Work Dedication</h6>
                                     </Col>
                                     <Col md={6}>
-                                        <h6><IoMdGlobe color='#22a6b3' size={20} className="mr-2" /> Web-Based Interface</h6>
+                                        <h6><FaRocket color='#22a6b3' size={20} className="mr-2" /> Faster Enrollments</h6>
                                     </Col>
                                 </Row>
 
-                                <p className="text-justify mt-4">Web design word press is the most straightforward, most well-known approach to making your site or blog. Here, M Technologies has a web format framework utilizing a layout processor. Its design is a front regulator, steering all solicitations for non-static URLs to a solitary PHP document that parses the URI and distinguishes the objective page. These permits uphold more intelligible permalink.
-                                </p>
+                                <p className="text-justify mt-4">At M Technologies, our React web development services aren't just static tools; they grow with you. The framework is built to scale with your progress and experience. It encourages continuous learning and improvement, ensuring that your skills and projects evolve over time.
+                                    <br />
+                                    Whether you are a newcomer to JavaScript web development with React or have years of experience, at M Technologies, React web development services provide a framework that grows with you. We'll guide you through your initial steps as a web developer or elevate your skills to the next level. We can't wait to see the amazing projects you build.</p>
                             </Container>
                         </Col>
                         <Col md={6}>
                             <img
-                                src={WordPress}
+                                src={ReactImg}
                                 alt="Sample"
                                 className="img-fluid"
                             />
@@ -77,26 +76,26 @@ const WordPressService = () => {
                     <h2>
                         <span>Frequently Asked Questions</span>
                         <br />
-                        <span style={{ color: '#ff6b6b' }}> For WordPress</span>
+                        <span style={{ color: '#ff6b6b' }}> For React</span>
                     </h2>
                     <Col md={6}>
                         <Accordion defaultActiveKey="0">
                             <Accordion.Item eventKey="0">
-                                <Accordion.Header>Is There Any Limitation For Using WordPress?</Accordion.Header>
+                                <Accordion.Header>Why should You Use React?</Accordion.Header>
                                 <Accordion.Body>
-                                    No, there is no limitation to using WordPress. WordPress can be used for an innumerable purpose etc. Membership site, E-commerce site,Photo gallery, and many more.
+                                React strives to streamline the development process by simplifying common tasks encountered in a wide array of web projects. With a focus on providing a delightful experience for developers, React aims to enhance efficiency without compromising the robust functionality of the applications being built.
                                 </Accordion.Body>
                             </Accordion.Item>
                             <Accordion.Item eventKey="1">
-                                <Accordion.Header>Do you Need To Have A Blog In Order To Use WordPress For A Website?</Accordion.Header>
+                                <Accordion.Header>Will React Shape the Future of Web Development?</Accordion.Header>
                                 <Accordion.Body>
-                                    WordPress is popular for website development over the past few years. It is not necessary to have a blog to use WordPress only, Still having a blog is commendable as it will help in search engine optimization.
+                                React currently holds a dominant position in the web development landscape. As the leading web application framework, React is poised to strengthen its standing even further. Looking ahead to 2023 and beyond, React's future is promising, marked by continuous expansion and heightened development opportunities.
                                 </Accordion.Body>
                             </Accordion.Item>
                             <Accordion.Item eventKey="2">
-                                <Accordion.Header>Does WordPress Have Cookies?</Accordion.Header>
+                                <Accordion.Header>How M Technologies Help You For React Development?</Accordion.Header>
                                 <Accordion.Body>
-                                    Yes, WordPress has cookies, and WordPress uses cookies for verification of users while logged in.
+                                The React JavaScript framework is renowned for its versatility, enabling swift and efficient programming delivery. At M Technologies, our adept team excels in translating your concepts into reality, harnessing the power of React Development Services.
                                 </Accordion.Body>
                             </Accordion.Item>
                             <Accordion.Item eventKey="3">
@@ -132,4 +131,4 @@ const WordPressService = () => {
     );
 };
 
-export default WordPressService;
+export default ReactService;

@@ -15,17 +15,20 @@ const Header = () => (
           <Nav className="me-auto">
             <Nav.Link href="/">Home</Nav.Link>
             <DropDownMenu title="Services" id="collapsible-nav-dropdown">
-              <NavDropdown.Item href="/web-development">Web Development</NavDropdown.Item>
-        
-              <DropDownSubMenu href="/design" title="Design">
+              {/* <NavDropdown.Item href="/web-development">Web Development</NavDropdown.Item> */}
+            <DropDownSubMenu href="/web-development" title="Website Development">
                 <NavDropdown.Item href="/html-services">Html</NavDropdown.Item>
                 <NavDropdown.Item href="/wordpress-service">WordPress</NavDropdown.Item>
-                <NavDropdown.Item href="#action/8.3">Laravel</NavDropdown.Item>
+                <NavDropdown.Item href="/laravel-service">Laravel</NavDropdown.Item>
+                <NavDropdown.Item href="/react-service">React</NavDropdown.Item>
                 <DropDownSubMenu href="#action/3.7" title="Development">
                   <NavDropdown.Item href="#action/9.1">Javascript</NavDropdown.Item>
                   <NavDropdown.Item href="#action/9.2">Jquery</NavDropdown.Item>
                 </DropDownSubMenu>
               </DropDownSubMenu>
+              <NavDropdown.Item href="/content-writing">Content Writing</NavDropdown.Item>
+              <NavDropdown.Item href="/graphics-designing">Graphics Designing</NavDropdown.Item>
+
             </DropDownMenu>
             <Nav.Link href="/about">About us</Nav.Link>
             <Nav.Link href="/whyChooseUs">Why Choose us</Nav.Link>
