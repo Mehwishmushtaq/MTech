@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/MTech/static/css/main.cffd97f5.css",
-    "main.js": "/MTech/static/js/main.b9e37f25.js",
+    "main.js": "/MTech/static/js/main.3cd3f045.js",
     "reactPlayerYouTube.js": "/MTech/static/js/reactPlayerYouTube.493b5e7b.chunk.js",
     "reactPlayerSoundCloud.js": "/MTech/static/js/reactPlayerSoundCloud.efe865d1.chunk.js",
     "reactPlayerVimeo.js": "/MTech/static/js/reactPlayerVimeo.079d9a5e.chunk.js",
@@ -51,7 +51,7 @@
     "static/media/slick.woff": "/MTech/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/MTech/index.html",
     "main.cffd97f5.css.map": "/MTech/static/css/main.cffd97f5.css.map",
-    "main.b9e37f25.js.map": "/MTech/static/js/main.b9e37f25.js.map",
+    "main.3cd3f045.js.map": "/MTech/static/js/main.3cd3f045.js.map",
     "reactPlayerYouTube.493b5e7b.chunk.js.map": "/MTech/static/js/reactPlayerYouTube.493b5e7b.chunk.js.map",
     "reactPlayerSoundCloud.efe865d1.chunk.js.map": "/MTech/static/js/reactPlayerSoundCloud.efe865d1.chunk.js.map",
     "reactPlayerVimeo.079d9a5e.chunk.js.map": "/MTech/static/js/reactPlayerVimeo.079d9a5e.chunk.js.map",
@@ -69,6 +69,6 @@
   },
   "entrypoints": [
     "static/css/main.cffd97f5.css",
-    "static/js/main.b9e37f25.js"
+    "static/js/main.3cd3f045.js"
   ]
 }
