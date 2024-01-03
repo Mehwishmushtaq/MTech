@@ -20,7 +20,7 @@ const HtmlServices = () => {
     return (
         <div>
             <header style={headerStyle}>
-                <h1>Html</h1>
+                <h1><strong>Html</strong></h1>
             </header>
 
             {/* Content Section with Text and Image */}

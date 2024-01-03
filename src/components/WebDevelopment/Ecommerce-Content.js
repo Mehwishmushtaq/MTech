@@ -1,12 +1,12 @@
 import React from 'react';
 import { Container, Row, Col, Accordion, Button } from 'react-bootstrap';
-import { FaUserTie, FaClock, FaBriefcase, FaBolt } from 'react-icons/fa';
-import Laravel from '../../assets/images/laravel.png'
+import { IoMdCheckmarkCircle } from "react-icons/io";
+import WebContent from '../../assets/images/website-content.jpg'
 import Faq from '../../assets/images/faq.jpg'
 
 
 
-const LaravelService = () => {
+const ECommerceContent = () => {
     const headerStyle = {
         backgroundImage: `url('https://static.vecteezy.com/system/resources/previews/005/081/900/non_2x/banner-abstract-geometric-white-and-gray-color-background-illustration-free-vector.jpg')`,
         backgroundSize: 'cover',
@@ -20,7 +20,7 @@ const LaravelService = () => {
     return (
         <div>
             <header style={headerStyle}>
-                <h1><strong>Laravel Web</strong></h1>
+                <h1><strong>Ecommerce Content</strong></h1>
             </header>
 
             {/* Content Section with Text and Image */}
@@ -29,38 +29,36 @@ const LaravelService = () => {
                     <Row>
                         <Col md={6}>
                             <h2>
-                                <span style={{ color: '#ff6b6b' }}>Expressive Services</span>
-                                <span> With Laravel Development</span>
+                                <span style={{ color: '#ff6b6b' }}>Combining Quality And</span>
+                                <span> Reliability In One</span>
                             </h2>
                             <p>
-                                The Laravel web development service is a web application system with an expressive, exquisite language structure. We are the best Laravel web development services in the market.
+                                E-commerce writing services involve creating written content for e-commerce websites, such as product descriptions, category pages, and blog posts. The content is typically designed to inform, persuade, and engage visitors to the website to convert them into customers.
                                 <br />
-                                A web system gives your application a construction and beginning stage, permitting you to zero in on making something astounding while we sweat the subtleties.                            </p>
+                                Overall, the pain point to focus on are as follows;
+                            </p>
                             {/* Features Section */}
                             <Container id="features" className="mt-1">
                                 {/* First row of features */}
                                 <Row className="mb-4">
                                     <Col md={6}>
-                                        <h6><FaUserTie color='#22a6b3' size={20} className="mr-2" /> Expert Team Member</h6>
+                                        <h6><IoMdCheckmarkCircle color='#22a6b3' size={20} className="mr-2" /> Establish Businesses</h6>
                                     </Col>
                                     <Col md={6}>
-                                        <h6><FaClock color='#22a6b3' size={20} className="mr-2" /> Time Management</h6>
+                                        <h6><IoMdCheckmarkCircle color='#22a6b3' size={20} className="mr-2" /> Maintain Online Presence</h6>
                                     </Col>
                                     <Col md={6}>
-                                        <h6><FaBriefcase color='#22a6b3' size={20} className="mr-2" /> Work Dedication</h6>
+                                        <h6><IoMdCheckmarkCircle color='#22a6b3' size={20} className="mr-2" /> Attract and Retain</h6>
                                     </Col>
                                     <Col md={6}>
-                                        <h6><FaBolt color='#22a6b3' size={20} className="mr-2" /> Faster Enrollments</h6>
+                                        <h6><IoMdCheckmarkCircle color='#22a6b3' size={20} className="mr-2" /> Drive Sales</h6>
                                     </Col>
                                 </Row>
-                                <p className="text-justify mt-4">Laravel web development services endeavor to provide an incredible designer experience while giving notable highlights like careful reliance infusion, an expressive data set reflection layer, lines and planned positions, unit and coordination testing, and the sky is the limit.
-                                 <br/>
-                                Whether you are new to PHP web development with Laravel or have long periods of involvement, here at M Technologies, Laravel web development services is a structure that can develop with you. We’ll help you make your first strides as a web designer or give you a lift as you take your ability to the following level. We can hardly wait to perceive what you assemble.</p>
                             </Container>
                         </Col>
                         <Col md={6}>
                             <img
-                                src={Laravel}
+                                src={WebContent}
                                 alt="Sample"
                                 className="img-fluid"
                             />
@@ -69,32 +67,55 @@ const LaravelService = () => {
                 </Container>
             </section>
 
+            {/* Content Section 2 */}
+            <section>
+                <div className="container">
+                    <h4 className="text-center mb-4">
+                        <span style={{ color: '#ff6b6b' }}>M Technologies Elevating E-Commerce Success with</span>
+                        <br />
+                        Expert Content Solutions
+                    </h4>
+                    <div className="row">
+                        <div className="col-md-6">
+                            <p>
+                                Effective e-commerce writing content should be clear, concise, and engaging. It should also be SEO-friendly, including keywords and phrases relevant to the products or services offered and likely to be used by people searching for those products or services online.
+                            </p>
+                        </div>
+                        <div className="col-md-6">
+                            <p>
+                                In addition to product descriptions and category pages, e-commerce writing content services CentoSquare offers create blog posts, social media posts, and email marketing campaigns. These types of content can be used to drive traffic to the website, build brand awareness, and engage customers.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             {/* FAQ Section */}
             <Container>
                 <Row>
                     <h2>
                         <span>Frequently Asked Questions</span>
                         <br />
-                        <span style={{ color: '#ff6b6b' }}> For Laravel</span>
+                        <span style={{ color: '#ff6b6b' }}> For Ecommerce Content</span>
                     </h2>
                     <Col md={6}>
                         <Accordion defaultActiveKey="0">
                             <Accordion.Item eventKey="0">
-                                <Accordion.Header>Why should You Use Laravel?</Accordion.Header>
+                                <Accordion.Header>How We Focus On Word Count?</Accordion.Header>
                                 <Accordion.Body>
-                                Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects. Laravel aims to make the development process a pleasing one for the developer without sacrificing application functionality.
+                                    We make sure we consider the word tally.To adequately illuminate readers about the specifics regarding your item. It’s easy to get stuck in the snare of giving just the bare least when it comes to content. Mostly 300 words is a reasonable word mean an item description as it provides enough space to give necessary details and other data that is useful for the reader, for example, customer reviews. However, descriptions over 450 words may lose the reader’s attention, making them move on from your page.
                                 </Accordion.Body>
                             </Accordion.Item>
                             <Accordion.Item eventKey="1">
-                                <Accordion.Header>Does Laravel Have A Future?</Accordion.Header>
+                                <Accordion.Header>How We Stay Away From Duplicate Content?</Accordion.Header>
                                 <Accordion.Body>
-                                Laravel has a proven stronghold in the market today. It is in the leading position today amongst all web application frameworks available and it is going to get stronger from here on. The future of Laravel in 2021 and ahead is uninhabited and augmented growth.
+                                    We always try to stay away from bad quality material, We ought to avert duplicate content also. Duplicate content happens when you duplicate text from another source for your item description. But at CentoSquare we assure our client to have plagiarism free content for their website and applications.
                                 </Accordion.Body>
                             </Accordion.Item>
                             <Accordion.Item eventKey="2">
-                                <Accordion.Header>How M Technologies Help You For Laravel?</Accordion.Header>
+                                <Accordion.Header>How M Technologies Help You For Ecommerce Content?</Accordion.Header>
                                 <Accordion.Body>
-                                Laravel PHP framework is versatile that helps in programming conveyance quickly and practically. We at M Technologies have a gifted task force, which can transform your thoughts into the real world.
+                                    M Technologies transforms E-commerce success by crafting persuasive, conversion-focused content. From impactful product descriptions to visually appealing imagery, we optimize your online store to captivate customers and drive sales.
                                 </Accordion.Body>
                             </Accordion.Item>
                             <Accordion.Item eventKey="3">
@@ -130,4 +151,4 @@ const LaravelService = () => {
     );
 };
 
-export default LaravelService;
+export default ECommerceContent;

@@ -23,7 +23,7 @@ const WordPressService = () => {
     return (
         <div>
             <header style={headerStyle}>
-                <h1>WordPress</h1>
+                <h1><strong>WordPress</strong></h1>
             </header>
 
             {/* Content Section with Text and Image */}

@@ -6,16 +6,24 @@ import "./footer.css";
 const footerQuickLinks = [
   {
     display: "Home",
-    url: "#",
+    url: "/",
   },
   {
-    display: "About US",
-    url: "#",
+    display: "About Us",
+    url: "/about",
   },
 
   {
-    display: "Blog",
-    url: "#",
+    display: "Why Choose Us",
+    url: "/whyChooseUs",
+  },
+  {
+    display: "Portfolio",
+    url: "/portfolio",
+  },
+  {
+    display: "Contact Us",
+    url: "/contact",
   },
 ];
 

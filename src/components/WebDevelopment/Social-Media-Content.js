@@ -1,12 +1,12 @@
 import React from 'react';
 import { Container, Row, Col, Accordion, Button } from 'react-bootstrap';
-import { FaUserTie, FaClock, FaBriefcase, FaBolt } from 'react-icons/fa';
-import Laravel from '../../assets/images/laravel.png'
+import { IoMdCheckmarkCircle } from "react-icons/io";
+import WebContent from '../../assets/images/website-content.jpg'
 import Faq from '../../assets/images/faq.jpg'
 
 
 
-const LaravelService = () => {
+const SocialMediaContent = () => {
     const headerStyle = {
         backgroundImage: `url('https://static.vecteezy.com/system/resources/previews/005/081/900/non_2x/banner-abstract-geometric-white-and-gray-color-background-illustration-free-vector.jpg')`,
         backgroundSize: 'cover',
@@ -20,7 +20,7 @@ const LaravelService = () => {
     return (
         <div>
             <header style={headerStyle}>
-                <h1><strong>Laravel Web</strong></h1>
+                <h1><strong>Social Media Content</strong></h1>
             </header>
 
             {/* Content Section with Text and Image */}
@@ -29,38 +29,35 @@ const LaravelService = () => {
                     <Row>
                         <Col md={6}>
                             <h2>
-                                <span style={{ color: '#ff6b6b' }}>Expressive Services</span>
-                                <span> With Laravel Development</span>
+                                <span>Lets Wow Your Online Presence with Social Media Content</span>
+                                <span style={{ color: '#ff6b6b' }}> Services</span>
+
                             </h2>
                             <p>
-                                The Laravel web development service is a web application system with an expressive, exquisite language structure. We are the best Laravel web development services in the market.
-                                <br />
-                                A web system gives your application a construction and beginning stage, permitting you to zero in on making something astounding while we sweat the subtleties.                            </p>
+                            Social media content writing services involve creating written content for platforms like Facebook, Twitter, Instagram, LinkedIn, and others. It includes creating posts, captions, hashtags, and other written content designed to engage and attract a specific audience.Some significant services we’ve offered in social media content writing include;
+                            </p>
                             {/* Features Section */}
                             <Container id="features" className="mt-1">
                                 {/* First row of features */}
                                 <Row className="mb-4">
                                     <Col md={6}>
-                                        <h6><FaUserTie color='#22a6b3' size={20} className="mr-2" /> Expert Team Member</h6>
+                                        <h6><IoMdCheckmarkCircle color='#22a6b3' size={20} className="mr-2" /> Posts</h6>
                                     </Col>
                                     <Col md={6}>
-                                        <h6><FaClock color='#22a6b3' size={20} className="mr-2" /> Time Management</h6>
+                                        <h6><IoMdCheckmarkCircle color='#22a6b3' size={20} className="mr-2" /> Captions</h6>
                                     </Col>
                                     <Col md={6}>
-                                        <h6><FaBriefcase color='#22a6b3' size={20} className="mr-2" /> Work Dedication</h6>
+                                        <h6><IoMdCheckmarkCircle color='#22a6b3' size={20} className="mr-2" /> Hashtags</h6>
                                     </Col>
                                     <Col md={6}>
-                                        <h6><FaBolt color='#22a6b3' size={20} className="mr-2" /> Faster Enrollments</h6>
+                                        <h6><IoMdCheckmarkCircle color='#22a6b3' size={20} className="mr-2" /> Stories</h6>
                                     </Col>
                                 </Row>
-                                <p className="text-justify mt-4">Laravel web development services endeavor to provide an incredible designer experience while giving notable highlights like careful reliance infusion, an expressive data set reflection layer, lines and planned positions, unit and coordination testing, and the sky is the limit.
-                                 <br/>
-                                Whether you are new to PHP web development with Laravel or have long periods of involvement, here at M Technologies, Laravel web development services is a structure that can develop with you. We’ll help you make your first strides as a web designer or give you a lift as you take your ability to the following level. We can hardly wait to perceive what you assemble.</p>
                             </Container>
                         </Col>
                         <Col md={6}>
                             <img
-                                src={Laravel}
+                                src={WebContent}
                                 alt="Sample"
                                 className="img-fluid"
                             />
@@ -69,32 +66,55 @@ const LaravelService = () => {
                 </Container>
             </section>
 
+            {/* Content Section 2 */}
+            <section>
+                <div className="container">
+                <h4 className="text-center mb-4">
+                <span style={{ color: '#ff6b6b' }}>M Technologies Unleashing </span> Web Success With  Expert 
+                <br/>
+                Social Media Content Services
+                </h4>
+                    <div className="row">
+                        <div className="col-md-6">
+                            <p>
+                            At M Technologies, we help businesses and individuals create engaging, shareable content that helps to build their brand and reach their target audience. With a focus on creativity and strategic storytelling, we empower your content to not only captivate but also resonate across various social media platforms, fostering meaningful connections and driving digital success. 
+                            </p>
+                        </div>
+                        <div className="col-md-6">
+                            <p>
+                            Content on social media channels can have an extensive reach and, in light of its nearness to the client, can regularly demonstrate more compelling than exemplary promotion. Positive social media remarks can even lift Google rankings in specific conditions. Nonetheless, social media also adheres to its own standards, requiring its own committed methodology.                          
+                             </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             {/* FAQ Section */}
             <Container>
                 <Row>
                     <h2>
-                        <span>Frequently Asked Questions</span>
+                        <span>Frequently Asked Questions For</span>
                         <br />
-                        <span style={{ color: '#ff6b6b' }}> For Laravel</span>
+                        <span style={{ color: '#ff6b6b' }}> Social Media Content</span>
                     </h2>
                     <Col md={6}>
                         <Accordion defaultActiveKey="0">
                             <Accordion.Item eventKey="0">
-                                <Accordion.Header>Why should You Use Laravel?</Accordion.Header>
+                                <Accordion.Header>How We Track Down The Right Words?</Accordion.Header>
                                 <Accordion.Body>
-                                Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects. Laravel aims to make the development process a pleasing one for the developer without sacrificing application functionality.
+                                Social media content offers organizations various promoting potential outcomes. However, how might you track down the correct procedure for your online presence on Facebook, Twitter, or Instagram? Lamentably, there is no unmistakable response to this inquiry. Which social media content is proper for any organization will consistently rely upon the advertising reason just as upon the merchandise or administrations each organization has to bring to the table. We have some techniques to help you with the keywords for a good ranking.
                                 </Accordion.Body>
                             </Accordion.Item>
                             <Accordion.Item eventKey="1">
-                                <Accordion.Header>Does Laravel Have A Future?</Accordion.Header>
+                                <Accordion.Header>How We Recruit Our Clients?</Accordion.Header>
                                 <Accordion.Body>
-                                Laravel has a proven stronghold in the market today. It is in the leading position today amongst all web application frameworks available and it is going to get stronger from here on. The future of Laravel in 2021 and ahead is uninhabited and augmented growth.
+                                On a fundamental level, it is feasible to distribute social media content for showcasing purposes with simply a little level of client association. Our guidance and tests can be shared and remarked upon.
                                 </Accordion.Body>
                             </Accordion.Item>
                             <Accordion.Item eventKey="2">
-                                <Accordion.Header>How M Technologies Help You For Laravel?</Accordion.Header>
+                                <Accordion.Header>How M Technologies Help You For Social Media Content?</Accordion.Header>
                                 <Accordion.Body>
-                                Laravel PHP framework is versatile that helps in programming conveyance quickly and practically. We at M Technologies have a gifted task force, which can transform your thoughts into the real world.
+                                M Technologies transforms your social media presence by crafting compelling and shareable content that resonates with your audience. Our expertise lies in building engaging narratives and visuals, helping you establish a powerful brand identity on various social platforms.
                                 </Accordion.Body>
                             </Accordion.Item>
                             <Accordion.Item eventKey="3">
@@ -130,4 +150,4 @@ const LaravelService = () => {
     );
 };
 
-export default LaravelService;
+export default SocialMediaContent;

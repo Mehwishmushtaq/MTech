@@ -20,7 +20,7 @@ const ReactService = () => {
     return (
         <div>
             <header style={headerStyle}>
-                <h1>React</h1>
+                <h1><strong>React</strong></h1>
             </header>
 
             {/* Content Section with Text and Image */}

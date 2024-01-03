@@ -6,6 +6,11 @@
   background-color:  #c23616;
 }
 
+.service-menu .dropdown-menu .dropdown-item.active,
+.service-menu .dropdown-menu .dropdown-item:active {
+  background-color: darkgrey; 
+  color: white; 
+}
 .navbar .nav-link {
   color: #fff;
   font-weight: 500;

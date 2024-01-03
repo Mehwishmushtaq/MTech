@@ -14,9 +14,9 @@ const Header = () => (
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="/">Home</Nav.Link>
-            <DropDownMenu title="Services" id="collapsible-nav-dropdown">
+            <DropDownMenu className='service-menu' title="Services" id="collapsible-nav-dropdown">
               {/* <NavDropdown.Item href="/web-development">Web Development</NavDropdown.Item> */}
-            <DropDownSubMenu href="/web-development" title="Web Development">
+              <DropDownSubMenu href="/web-development" title="Web Development">
                 <NavDropdown.Item href="/html-services">Html</NavDropdown.Item>
                 <NavDropdown.Item href="/wordpress-service">WordPress</NavDropdown.Item>
                 <NavDropdown.Item href="/laravel-service">Laravel</NavDropdown.Item>
@@ -26,7 +26,18 @@ const Header = () => (
                   <NavDropdown.Item href="#action/9.2">Jquery</NavDropdown.Item>
                 </DropDownSubMenu>
               </DropDownSubMenu>
-              <NavDropdown.Item href="/content-writing">Content Writing</NavDropdown.Item>
+              {/* Content Service Submenu */}
+              <DropDownSubMenu href="/content-writing" title="Content Writing">
+                <NavDropdown.Item href="/website-content">Website Content</NavDropdown.Item>
+                <NavDropdown.Item href="/social-media-content">Social Media Content</NavDropdown.Item>
+                <NavDropdown.Item href="/ecommerce-content">Ecommerce Content</NavDropdown.Item>
+              </DropDownSubMenu>
+              {/*  Service Submenu */}
+              <DropDownSubMenu href="/content-writing" title="Digital Marketing">
+                <NavDropdown.Item href="/website-content">Social Media Marketing</NavDropdown.Item>
+                <NavDropdown.Item href="/social-media-content">Search Engine Optimization (SEO)</NavDropdown.Item>
+                <NavDropdown.Item href="/ecommerce-content">Email Marketing</NavDropdown.Item>
+              </DropDownSubMenu>
               <NavDropdown.Item href="/graphics-designing">Graphics Designing</NavDropdown.Item>
 
             </DropDownMenu>

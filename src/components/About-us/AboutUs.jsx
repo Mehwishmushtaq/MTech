@@ -1,5 +1,4 @@
 import React from "react";
-import "./about.css";
 import { Container, Row, Col } from "reactstrap";
 import CountUp from "react-countup";
 import TeamConcept from '../../assets/images/team-concept.jpg'

@@ -11,6 +11,10 @@ import WordPressService from "./components/WebDevelopment/Wordpress";
 import LaravelService from "./components/WebDevelopment/Laravel";
 import ReactService from "./components/WebDevelopment/React";
 import ContentWriting from "./components/WebDevelopment/Content-Writing";
+import WebsiteContent from "./components/WebDevelopment/Website-Content";
+import SocialMediaContent from "./components/WebDevelopment/Social-Media-Content";
+import EcommerceContent from "./components/WebDevelopment/Ecommerce-Content";
+
 import GraphicsDesigning from "./components/WebDevelopment/Graphics-Design";
 import WhyChooseUs from './components/whyChooseus/whychoose'
 import Design from "./components/Design/Design";
@@ -35,6 +39,9 @@ function App() {
           <Route path="/laravel-service" element={<LaravelService />} />
           <Route path="/react-service" element={<ReactService />} />
           <Route path="/content-writing" element={<ContentWriting />} />
+          <Route path="/website-content" element={<WebsiteContent />} />
+          <Route path="/social-media-content" element={<SocialMediaContent />} />
+          <Route path="/ecommerce-content" element={<EcommerceContent />} />
           <Route path="/graphics-designing" element={<GraphicsDesigning />} />
           <Route path="/whyChooseUs" element={<WhyChooseUs />} />
           <Route path="/design" element={<Design />} />
