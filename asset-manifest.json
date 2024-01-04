@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/MTech/static/css/main.cffd97f5.css",
-    "main.js": "/MTech/static/js/main.3cd3f045.js",
+    "main.css": "/MTech/static/css/main.2d196fbf.css",
+    "main.js": "/MTech/static/js/main.04d99722.js",
     "reactPlayerYouTube.js": "/MTech/static/js/reactPlayerYouTube.493b5e7b.chunk.js",
     "reactPlayerSoundCloud.js": "/MTech/static/js/reactPlayerSoundCloud.efe865d1.chunk.js",
     "reactPlayerVimeo.js": "/MTech/static/js/reactPlayerVimeo.079d9a5e.chunk.js",
@@ -18,11 +18,14 @@
     "static/js/787.c445f04e.chunk.js": "/MTech/static/js/787.c445f04e.chunk.js",
     "static/media/choose.gif": "/MTech/static/media/choose.dbf5d0a1077c0e4f472a.gif",
     "static/media/remixicon.svg?t=1702724036775": "/MTech/static/media/remixicon.a377e4c771db384f4bc5.svg",
+    "static/media/social-media-img.jpg": "/MTech/static/media/social-media-img.4380ff443a8fb4ca181c.jpg",
+    "static/media/social-media-marketing.jpg": "/MTech/static/media/social-media-marketing.7fd333fc5d5a3a65c517.jpg",
     "static/media/team-concept.jpg": "/MTech/static/media/team-concept.ceb93455ffc8233e985a.jpg",
     "static/media/faq.jpg": "/MTech/static/media/faq.69db35140216655d9a50.jpg",
     "static/media/remixicon.eot?t=1702724036775": "/MTech/static/media/remixicon.dd310df16a603c6a396d.eot",
     "static/media/remixicon.ttf?t=1702724036775": "/MTech/static/media/remixicon.424fce778c275364c18f.ttf",
     "static/media/react.png": "/MTech/static/media/react.7bf2719b42e8436d7d41.png",
+    "static/media/website-content.jpg": "/MTech/static/media/website-content.a596789a063902c5c863.jpg",
     "static/media/laravel.png": "/MTech/static/media/laravel.d2356281895b7d559eb6.png",
     "static/media/web3.png": "/MTech/static/media/web3.b6e23e7e0874d7f9246c.png",
     "static/media/html1.jpg": "/MTech/static/media/html1.c244e50f37e7048dc0b5.jpg",
@@ -30,6 +33,7 @@
     "static/media/web4.png": "/MTech/static/media/web4.04916cf24763d1e17b93.png",
     "static/media/web6.jpg": "/MTech/static/media/web6.e61fd525e856f112a901.jpg",
     "static/media/wordpress.png": "/MTech/static/media/wordpress.9becd7e4d2881895af89.png",
+    "static/media/ecommerce-content.jpg": "/MTech/static/media/ecommerce-content.fdda1bd51d285aec9bad.jpg",
     "static/media/remixicon.woff?t=1702724036775": "/MTech/static/media/remixicon.5d8cf5b2de0c4f79020c.woff",
     "static/media/remixicon.woff2?t=1702724036775": "/MTech/static/media/remixicon.d690f58194cb889b5487.woff2",
     "static/media/hero-img2.png": "/MTech/static/media/hero-img2.5783fea2132514a24eac.png",
@@ -37,6 +41,8 @@
     "static/media/web-design.png": "/MTech/static/media/web-design.9071c3ef125375e2469a.png",
     "static/media/ui-ux.png": "/MTech/static/media/ui-ux.0366b465b35da2e796bb.png",
     "static/media/service2.png": "/MTech/static/media/service2.e53d87d70b7d78042a5f.png",
+    "static/media/search-engine-optimization.jpg": "/MTech/static/media/search-engine-optimization.5a56c00a0814f585f051.jpg",
+    "static/media/email-marketing.jpg": "/MTech/static/media/email-marketing.b7f25012604a8d7abdf1.jpg",
     "static/media/service1.png": "/MTech/static/media/service1.80939b37389c2764c6f6.png",
     "static/media/graphics-design.png": "/MTech/static/media/graphics-design.08c25c6b6b3ecac266d2.png",
     "static/media/design3.png": "/MTech/static/media/design3.f39a13008e763ab38617.png",
@@ -50,8 +56,8 @@
     "static/media/slick.ttf": "/MTech/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/MTech/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/MTech/index.html",
-    "main.cffd97f5.css.map": "/MTech/static/css/main.cffd97f5.css.map",
-    "main.3cd3f045.js.map": "/MTech/static/js/main.3cd3f045.js.map",
+    "main.2d196fbf.css.map": "/MTech/static/css/main.2d196fbf.css.map",
+    "main.04d99722.js.map": "/MTech/static/js/main.04d99722.js.map",
     "reactPlayerYouTube.493b5e7b.chunk.js.map": "/MTech/static/js/reactPlayerYouTube.493b5e7b.chunk.js.map",
     "reactPlayerSoundCloud.efe865d1.chunk.js.map": "/MTech/static/js/reactPlayerSoundCloud.efe865d1.chunk.js.map",
     "reactPlayerVimeo.079d9a5e.chunk.js.map": "/MTech/static/js/reactPlayerVimeo.079d9a5e.chunk.js.map",
@@ -68,7 +74,7 @@
     "787.c445f04e.chunk.js.map": "/MTech/static/js/787.c445f04e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cffd97f5.css",
-    "static/js/main.3cd3f045.js"
+    "static/css/main.2d196fbf.css",
+    "static/js/main.04d99722.js"
   ]
 }
