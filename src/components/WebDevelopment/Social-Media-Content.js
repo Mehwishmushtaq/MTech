@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Accordion, Button } from 'react-bootstrap';
 import { IoMdCheckmarkCircle } from "react-icons/io";
-import WebContent from '../../assets/images/website-content.jpg'
+import SocialContentImg from '../../assets/images/social-media-img.jpg'
 import Faq from '../../assets/images/faq.jpg'
 
 
@@ -57,7 +57,7 @@ const SocialMediaContent = () => {
                         </Col>
                         <Col md={6}>
                             <img
-                                src={WebContent}
+                                src={SocialContentImg}
                                 alt="Sample"
                                 className="img-fluid"
                             />

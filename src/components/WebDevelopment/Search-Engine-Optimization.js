@@ -1,12 +1,12 @@
 import React from 'react';
 import { Container, Row, Col, Accordion, Button } from 'react-bootstrap';
 import { IoMdCheckmarkCircle } from "react-icons/io";
-import EcommerceContent from '../../assets/images/ecommerce-content.jpg'
+import SearchEngineImg from '../../assets/images/search-engine-optimization.jpg'
 import Faq from '../../assets/images/faq.jpg'
 
 
 
-const ECommerceContent = () => {
+const SearchEngineOptimization = () => {
     const headerStyle = {
         backgroundImage: `url('https://static.vecteezy.com/system/resources/previews/005/081/900/non_2x/banner-abstract-geometric-white-and-gray-color-background-illustration-free-vector.jpg')`,
         backgroundSize: 'cover',
@@ -20,7 +20,7 @@ const ECommerceContent = () => {
     return (
         <div>
             <header style={headerStyle}>
-                <h1><strong>Ecommerce Content</strong></h1>
+                <h1><strong>Search Engine Optimization</strong></h1>
             </header>
 
             {/* Content Section with Text and Image */}
@@ -29,36 +29,37 @@ const ECommerceContent = () => {
                     <Row>
                         <Col md={6}>
                             <h2>
-                                <span style={{ color: '#ff6b6b' }}>Combining Quality And</span>
-                                <span> Reliability In One</span>
+                                <span style={{ color: '#ff6b6b' }}> Taking Your Site at the Top of Google’s  </span>
+                                <span>Ranking Through Search Engine Optimization</span>
+
                             </h2>
                             <p>
-                                E-commerce writing services involve creating written content for e-commerce websites, such as product descriptions, category pages, and blog posts. The content is typically designed to inform, persuade, and engage visitors to the website to convert them into customers.
-                                <br />
-                                Overall, the pain point to focus on are as follows;
+                            Professional Search Engine Optimization (SEO) Services are the craftsmanship and study of getting pages to rank higher in search engines like Google. Since search is one of the principal manners by which individuals find content internet, positioning higher in Professional SEO Services can prompt an increment in rush hour gridlock to a site.
+
+                           Our significant chunk of work is as follows;
                             </p>
                             {/* Features Section */}
                             <Container id="features" className="mt-1">
                                 {/* First row of features */}
                                 <Row className="mb-4">
                                     <Col md={6}>
-                                        <h6><IoMdCheckmarkCircle color='#22a6b3' size={20} className="mr-2" /> Establish Businesses</h6>
+                                        <h6><IoMdCheckmarkCircle color='#22a6b3' size={20} className="mr-2" /> Search Engine Rankings</h6>
                                     </Col>
                                     <Col md={6}>
-                                        <h6><IoMdCheckmarkCircle color='#22a6b3' size={20} className="mr-2" /> Maintain Online Presence</h6>
+                                        <h6><IoMdCheckmarkCircle color='#22a6b3' size={20} className="mr-2" /> Search Engine Streamlining</h6>
                                     </Col>
                                     <Col md={6}>
-                                        <h6><IoMdCheckmarkCircle color='#22a6b3' size={20} className="mr-2" /> Attract and Retain</h6>
+                                        <h6><IoMdCheckmarkCircle color='#22a6b3' size={20} className="mr-2" /> Examine The Content</h6>
                                     </Col>
                                     <Col md={6}>
-                                        <h6><IoMdCheckmarkCircle color='#22a6b3' size={20} className="mr-2" /> Drive Sales</h6>
+                                        <h6><IoMdCheckmarkCircle color='#22a6b3' size={20} className="mr-2" /> Search Engine Calculations</h6>
                                     </Col>
                                 </Row>
                             </Container>
                         </Col>
                         <Col md={6}>
                             <img
-                                src={EcommerceContent}
+                                src={SearchEngineImg}
                                 alt="Sample"
                                 className="img-fluid"
                             />
@@ -70,21 +71,18 @@ const ECommerceContent = () => {
             {/* Content Section 2 */}
             <section>
                 <div className="container">
-                    <h4 className="text-center mb-4">
-                        <span style={{ color: '#ff6b6b' }}>M Technologies Elevating E-Commerce Success with</span>
-                        <br />
-                        Expert Content Solutions
-                    </h4>
                     <div className="row">
                         <div className="col-md-6">
                             <p>
-                                Effective e-commerce writing content should be clear, concise, and engaging. It should also be SEO-friendly, including keywords and phrases relevant to the products or services offered and likely to be used by people searching for those products or services online.
+                            At M Technologies, we do optimization, which allows us to help us to understand about search engines. Moreover, we analyze; what’s on your website, the value your company has to offer, and how you commune with relevant keywords.
                             </p>
                         </div>
                         <div className="col-md-6">
                             <p>
-                                In addition to product descriptions and category pages, e-commerce writing content services CentoSquare offers create blog posts, social media posts, and email marketing campaigns. These types of content can be used to drive traffic to the website, build brand awareness, and engage customers.
-                            </p>
+                            <strong>Here is some additional information for the audience;</strong>
+                            <br/>
+                            Traffic from Professional SEO Services is known as "organic search traffic," distinct from paid search or search engine advertising (SEM) often termed pay-per-click (PPC).
+                             </p>
                         </div>
                     </div>
                 </div>
@@ -94,28 +92,28 @@ const ECommerceContent = () => {
             <Container>
                 <Row>
                     <h2>
-                        <span>Frequently Asked Questions</span>
+                        <span>Frequently Asked Questions For</span>
                         <br />
-                        <span style={{ color: '#ff6b6b' }}> For Ecommerce Content</span>
+                        <span style={{ color: '#ff6b6b' }}> Search Engine Optimization</span>
                     </h2>
                     <Col md={6}>
                         <Accordion defaultActiveKey="0">
                             <Accordion.Item eventKey="0">
-                                <Accordion.Header>How We Focus On Word Count?</Accordion.Header>
+                                <Accordion.Header>How We Work On Search Engine Optimization?</Accordion.Header>
                                 <Accordion.Body>
-                                    We make sure we consider the word tally.To adequately illuminate readers about the specifics regarding your item. It’s easy to get stuck in the snare of giving just the bare least when it comes to content. Mostly 300 words is a reasonable word mean an item description as it provides enough space to give necessary details and other data that is useful for the reader, for example, customer reviews. However, descriptions over 450 words may lose the reader’s attention, making them move on from your page.
+                                Professional SEO Services , for example, Google utilize a calculation or set of rules to figure out what pages to show for some random question. These calculations have developed to be amazingly unpredictable, and consider hundreds or even huge number of various positioning variables to deciding the rankings of their SERPs. Nonetheless, there are three central measurements that search engines assess to decide the nature of a site and how it should rank.
                                 </Accordion.Body>
                             </Accordion.Item>
                             <Accordion.Item eventKey="1">
-                                <Accordion.Header>How We Stay Away From Duplicate Content?</Accordion.Header>
+                                <Accordion.Header>What Is The Page Structure In SEO We Provide?</Accordion.Header>
                                 <Accordion.Body>
-                                    We always try to stay away from bad quality material, We ought to avert duplicate content also. Duplicate content happens when you duplicate text from another source for your item description. But at CentoSquare we assure our client to have plagiarism free content for their website and applications.
+                                The third central part of SEO is page structure. Since website pages are written in HTML, what the HTML code is organized can mean for a search engine’s capacity to assess a page. Remembering pertinent catchphrases for the title, URL, and headers of the page and ensuring that a site is crawlable are activities that site proprietors can take to improve the SEO of their site.
                                 </Accordion.Body>
                             </Accordion.Item>
                             <Accordion.Item eventKey="2">
-                                <Accordion.Header>How M Technologies Help You For Ecommerce Content?</Accordion.Header>
+                                <Accordion.Header>What SEO Connections M Technologies Gives?</Accordion.Header>
                                 <Accordion.Body>
-                                    M Technologies transforms E-commerce success by crafting persuasive, conversion-focused content. From impactful product descriptions to visually appealing imagery, we optimize your online store to captivate customers and drive sales.
+                                Links from different sites assume a critical part in deciding the positioning of a site in Google and other search engines. The explanation being, a connection can be viewed as a vote of value from different sites, since site proprietors are probably not going to connect to different locales which are of low quality. Destinations that secure connections from numerous different locales acquire authority (called “PageRank” in Google) according to search engines, particularly if the locales that are connecting to them are themselves definitive.
                                 </Accordion.Body>
                             </Accordion.Item>
                             <Accordion.Item eventKey="3">
@@ -151,4 +149,4 @@ const ECommerceContent = () => {
     );
 };
 
-export default ECommerceContent;
+export default SearchEngineOptimization;

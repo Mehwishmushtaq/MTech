@@ -34,9 +34,9 @@ const Header = () => (
               </DropDownSubMenu>
               {/*  Service Submenu */}
               <DropDownSubMenu href="/content-writing" title="Digital Marketing">
-                <NavDropdown.Item href="/website-content">Social Media Marketing</NavDropdown.Item>
-                <NavDropdown.Item href="/social-media-content">Search Engine Optimization (SEO)</NavDropdown.Item>
-                <NavDropdown.Item href="/ecommerce-content">Email Marketing</NavDropdown.Item>
+                <NavDropdown.Item href="/social-media-marketing">Social Media Marketing</NavDropdown.Item>
+                <NavDropdown.Item href="/search-engine-optimization">Search Engine Optimization (SEO)</NavDropdown.Item>
+                <NavDropdown.Item href="/email-marketing">Email Marketing</NavDropdown.Item>
               </DropDownSubMenu>
               <NavDropdown.Item href="/graphics-designing">Graphics Designing</NavDropdown.Item>
 

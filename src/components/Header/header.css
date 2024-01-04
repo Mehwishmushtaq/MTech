@@ -5,11 +5,13 @@
 .custom-nav {
   background-color:  #c23616;
 }
-
+.service-menu .dropdown-menu {
+  font-size: small;
+}
 .service-menu .dropdown-menu .dropdown-item.active,
 .service-menu .dropdown-menu .dropdown-item:active {
   background-color: darkgrey; 
-  color: white; 
+  color: white;
 }
 .navbar .nav-link {
   color: #fff;
