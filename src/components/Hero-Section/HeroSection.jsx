@@ -20,14 +20,15 @@ const HeroSection = () => {
                   We offer full service digital media solutions.
                 </p>
                 <div className="search">
-                  <button className="btn">GET A QUOTE</button>
+                  <a href="/contact">
+                    <button className="btn">GET A QUOTE</button>
+                  </a>
                 </div>
               </div>
             </div>
           </Col>
-
           <Col lg="6" md="6" className="hero-img-col">
-            <img src={heroImg} alt="" className="w-100 hero__img" />
+            <img src={heroImg} alt="" className="w-100 hero__img"/>
           </Col>
         </Row>
       </Container>

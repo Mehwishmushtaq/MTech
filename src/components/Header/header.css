@@ -47,6 +47,7 @@
 .dropdown-submenu-container {
   position: relative;
 }
+
 .dropdown-submenu-container a.dropdown-submenu::after {
   transform: rotate(-90deg);
   position: absolute;
@@ -90,5 +91,7 @@
   margin-right: 1px;
 }
 
-
-
+.dropdown:hover > .dropdown-menu {
+  display: block;
+  margin-top: 0.125em;
+}

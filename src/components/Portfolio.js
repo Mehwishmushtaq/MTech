@@ -21,7 +21,7 @@ const Portfolio = () => {
                     <Col md={4} className="mb-4">
                         <Card className="h-100 w-100">
                             <a href="https://mehwishmushtaq.github.io/tyre-service/">
-                                <Card.Img variant="top" src="https://www.webindiamaster.com/assests/images/blog/custom-website-development-services.jpg" />
+                                <Card.Img variant="top" src="https://www.schoolsoftware.com.ng/wp-content/uploads/2022/06/young-people-engaged-web-design-website-page-development-flat-d-character-concept-web-design-young-people-engaged.jpg" />
                             </a>
                             <Card.Body>
                                 <Card.Title className="h5">Tyre Fitting Service</Card.Title>
@@ -34,7 +34,7 @@ const Portfolio = () => {
                     <Col md={4} className="mb-4">
                         <Card className="h-100 w-100">
                             <a href="https://mehwishmushtaq.github.io/tyre-service/">
-                                <Card.Img variant="top" src="https://www.webindiamaster.com/assests/images/blog/custom-website-development-services.jpg" />
+                                <Card.Img variant="top" src="https://www.schoolsoftware.com.ng/wp-content/uploads/2022/06/young-people-engaged-web-design-website-page-development-flat-d-character-concept-web-design-young-people-engaged.jpg" />
                             </a>
                             <Card.Body>
                                 <Card.Title className="h5">Tyre Fitting Service</Card.Title>
@@ -47,7 +47,7 @@ const Portfolio = () => {
                     <Col md={4} className="mb-4">
                         <Card className="h-100 w-100">
                             <a href="https://mehwishmushtaq.github.io/tyre-service/">
-                                <Card.Img variant="top" src="https://www.webindiamaster.com/assests/images/blog/custom-website-development-services.jpg" />
+                                <Card.Img variant="top" src="https://www.schoolsoftware.com.ng/wp-content/uploads/2022/06/young-people-engaged-web-design-website-page-development-flat-d-character-concept-web-design-young-people-engaged.jpg" />
                             </a>
                             <Card.Body>
                                 <Card.Title className="h5">Tyre Fitting Service</Card.Title>
@@ -62,7 +62,7 @@ const Portfolio = () => {
                     <Col md={4} className="mb-4">
                         <Card className="h-100 w-100">
                             <a href="https://mehwishmushtaq.github.io/tyre-service/">
-                                <Card.Img variant="top" src="https://www.webindiamaster.com/assests/images/blog/custom-website-development-services.jpg" />
+                                <Card.Img variant="top" src="https://www.schoolsoftware.com.ng/wp-content/uploads/2022/06/young-people-engaged-web-design-website-page-development-flat-d-character-concept-web-design-young-people-engaged.jpg" />
                             </a>
                             <Card.Body>
                                 <Card.Title className="h5">Tyre Fitting Service</Card.Title>
@@ -75,7 +75,7 @@ const Portfolio = () => {
                     <Col md={4} className="mb-4">
                         <Card className="h-100 w-100">
                             <a href="https://mehwishmushtaq.github.io/tyre-service/">
-                                <Card.Img variant="top" src="https://www.webindiamaster.com/assests/images/blog/custom-website-development-services.jpg" />
+                                <Card.Img variant="top" src="https://www.schoolsoftware.com.ng/wp-content/uploads/2022/06/young-people-engaged-web-design-website-page-development-flat-d-character-concept-web-design-young-people-engaged.jpg" />
                             </a>
                             <Card.Body>
                                 <Card.Title className="h5">Tyre Fitting Service</Card.Title>
@@ -88,7 +88,7 @@ const Portfolio = () => {
                     <Col md={4} className="mb-4">
                         <Card className="h-100 w-100">
                             <a href="https://mehwishmushtaq.github.io/tyre-service/">
-                                <Card.Img variant="top" src="https://www.webindiamaster.com/assests/images/blog/custom-website-development-services.jpg" />
+                                <Card.Img variant="top" src="https://www.schoolsoftware.com.ng/wp-content/uploads/2022/06/young-people-engaged-web-design-website-page-development-flat-d-character-concept-web-design-young-people-engaged.jpg" />
                             </a>
                             <Card.Body>
                                 <Card.Title className="h5">Tyre Fitting Service</Card.Title>

@@ -16,7 +16,7 @@ const Header = () => (
             <Nav.Link href="/">Home</Nav.Link>
             <DropDownMenu className='service-menu' title="Services" id="collapsible-nav-dropdown">
               {/* <NavDropdown.Item href="/web-development">Web Development</NavDropdown.Item> */}
-              <DropDownSubMenu href="/web-development" title="Web Development">
+              <DropDownSubMenu className='sub-menu' href="/web-development" title="Web Development">
                 <NavDropdown.Item href="/html-services">Html</NavDropdown.Item>
                 <NavDropdown.Item href="/wordpress-service">WordPress</NavDropdown.Item>
                 <NavDropdown.Item href="/laravel-service">Laravel</NavDropdown.Item>
@@ -63,14 +63,6 @@ const Header = () => (
         </Navbar.Collapse>
       </Container>
     </Navbar>
-
-    {/* <Container>
-      <Row>
-        <Col>
-
-        </Col>
-      </Row>
-    </Container> */}
   </>
 );
 

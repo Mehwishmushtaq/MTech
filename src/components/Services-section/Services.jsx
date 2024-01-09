@@ -86,15 +86,9 @@ const Services = () => {
           <div class="container">
             <div class="row mt-2 text-center justify-content-center">
               <h1>Our Popular Services</h1>
-              <div class="col-md-6 text-center">
+              <div class="col-md-12 text-center">
                 {/* <!-- Column for the First Paragraph --> */}
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa sunt pariatur quasi excepturi laboriosam aliquid beatae neque nobis sed, blanditiis mollitia ipsam eius praesentium repellendus sapiente. Amet a odit provident.Fugit eius ea repellat aperiam atque neque quod accusamus. Amet dolores hic iste recusandae, et repellat culpa est voluptate aliquam nihil vero sed mollitia, minima laudantium, distinctio nam maxime molestias.</p>
-              </div>
-              <div class="col-md-6 text-center">
-                {/* <!-- Column for the Second Paragraph --> */}
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur commodi officiis hic incidunt doloribus facilis assumenda optio quaerat, adipisci placeat ut corrupti non corporis deserunt distinctio mollitia impedit. Voluptates, odio. Sapiente esse, error tempore totam iste illo laudantium autem dolor cum corporis eum dignissimos eligendi quisquam et beatae iure doloremque itaque, architecto deleniti? Quibusdam asperiores.
-
-                </p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa sunt pariatur quasi excepturi laboriosam aliquid beatae neque nobis sed, blanditiis mollitia ipsam eius praesentium repellendus sapiente. Amet a odit provident.Fugit eius ea repellat aperiam atque neque quod accusamus. Amet dolores hic iste recusandae, et repellat culpa est voluptate aliquam nihil vero sed mollitia, minima laudantium, distinctio nam maxime molestias.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa sunt pariatur quasi excepturi laboriosam aliquid beatae neque nobis sed, blanditiis mollitia ipsam eius praesentium repellendus sapiente. Amet a odit provident.Fugit eius ea repellat aperiam atque neque quod accusamus. Amet dolores hic iste recusandae, et repellat culpa est voluptate aliquam nihil vero sed mollitia, minima laudantium, distinctio nam maxime molestias.</p>
               </div>
             </div>
           </div>

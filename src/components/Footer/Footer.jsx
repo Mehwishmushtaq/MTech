@@ -90,7 +90,7 @@ const Footer = () => {
             </div>
           </Col>
 
-          <Col lg="3" md="6" className="mb-4">
+          <Col lg="3" md="6"className="mb-4">
             <h6 className="fw-bold white-text">Explore</h6>
             <ListGroup className="link__list">
               {footerQuickLinks.map((item, index) => (
@@ -101,7 +101,7 @@ const Footer = () => {
               ))}
             </ListGroup>
           </Col>
-
+        
           <Col lg="3" md="6" className="mb-4">
             <h6 className="fw-bold white-text">Information</h6>
             <ListGroup className="link__list">
