@@ -1,47 +1,41 @@
-import React from "react";
-import { Container, Row, Col } from "reactstrap";
-import "./features.css";
+import React from 'react';
+import { Container, Row, Col } from 'reactstrap';
 
-const FeatureData = [
-  {
-    title: "Software experts with a business mindset",
-    desc: "Technology decisions are an ongoing process. Our engineers take into account the cost effectiveness and business impact when taking care of your project.",
-    icon: "ri-draft-line",
-  },
+import FCard from '../Feature-section/FCard';
 
-  {
-    title: "Scale with the right technology",
-    desc: "Custom software must always be designed for a specific set of business needs. We have years of commercial experience with various technologies and can choose the right tech stack for your project.",
-    icon: "ri-discuss-line",
-  },
-
-  {
-    title: "Quality software product",
-    desc: "You get an efficient and scalable digital product. During our cooperation, we make sure the final solution is a maintainable and working software that brings real value.",
-    icon: "ri-contacts-book-line",
-  },
+const features = [
+    {
+        title: 'Software experts with a business mindset',
+        description: 'Technology decisions are an ongoing process. Our engineers take into account the cost effectiveness and business impact when taking care of your project.',
+    },
+    {
+        title: 'Strategic Tech Advancement Expertise',
+        description: 'Custom software must always be designed for a specific set of business needs. We have years of commercial experience with various technologies and can choose the right tech stack for your project.',
+    },
+    {
+        title: 'Deliver High Quality Expandable Software',
+        description: 'You get an efficient and scalable digital product. During our cooperation, we make sure the final solution is a maintainable and working software that brings real value.',
+    },
 ];
 
 const Features = () => {
-  return (
-    <section>
-      <Container>
-        <Row>
-          {FeatureData.map((item, index) => (
-            <Col lg="4" md="6" key={index}>
-              <div className="single__feature text-center px-4">
-                <h2 className="mb-3">
-                  <i className={item.icon}></i>
-                </h2>
-                <h6>{item.title}</h6>
-                <p>{item.desc}</p>
-              </div>
-            </Col>
-          ))}
-        </Row>
-      </Container>
-    </section>
-  );
+    return (
+        <div>
+            <Container>
+            <section className="why-choose-us-section">
+                <Row>
+                    {features.map((feature, index) => (
+                        <Col key={index} md="6" lg="4" className="mb-4">
+                            <FCard {...feature} />
+                        </Col>
+                    ))}
+                </Row>
+
+            </section>
+        </Container>
+        </div>
+
+    );
 };
 
 export default Features;

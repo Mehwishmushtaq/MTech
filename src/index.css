@@ -38,6 +38,7 @@ p {
   line-height: 35px;
   font-family: "Andada Pro", serif;
   font-weight: 400;
+  text-align: left;
 }
 
 button.btn {

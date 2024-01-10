@@ -1,5 +1,7 @@
 import React from "react";
 import { Container, Row, Col, ListGroup, ListGroupItem } from "reactstrap";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHeart } from '@fortawesome/free-solid-svg-icons';
 
 import "./footer.css";
 
@@ -90,7 +92,7 @@ const Footer = () => {
             </div>
           </Col>
 
-          <Col lg="3" md="6"className="mb-4">
+          <Col lg="3" md="6" className="mb-4">
             <h6 className="fw-bold white-text">Explore</h6>
             <ListGroup className="link__list">
               {footerQuickLinks.map((item, index) => (
@@ -101,7 +103,7 @@ const Footer = () => {
               ))}
             </ListGroup>
           </Col>
-        
+
           <Col lg="3" md="6" className="mb-4">
             <h6 className="fw-bold white-text">Information</h6>
             <ListGroup className="link__list">
@@ -116,13 +118,20 @@ const Footer = () => {
 
           <Col lg="3" md="6">
             <h6 className="fw-bold white-text">Get in Touch</h6>
-
             <p className="mb-0 white-text">Address: Cambridge, UK</p>
             <p className="mb-0 white-text"> Phone: +88 0123456789 </p>
             <p className="mb-0 white-text">Email: example@gmail.com</p>
           </Col>
         </Row>
       </Container>
+      <div class="container text-center mt-4 ">
+        <h6>
+        <span class="text-white">
+          &copy; 2024 All rights reserved.
+          Made with  <FontAwesomeIcon icon={faHeart}/> by MTechnologies
+        </span>
+        </h6>
+      </div>
     </footer>
   );
 };
