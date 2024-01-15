@@ -67,7 +67,7 @@ i {
   perspective: 1000px;
 }
 .flip-card-front{
-  width: 380px;
+  width: 100%;
   min-height: 400px;
   height: auto;
   /* background-color: #01a3a4; */
@@ -186,7 +186,9 @@ i {
   }
 
   .flip-card {
-    margin: 10px;
+    /* margin: 10px; */
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   .flip-card-front,
