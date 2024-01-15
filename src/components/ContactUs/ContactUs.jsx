@@ -22,7 +22,7 @@ const ContactForm = () => {
 						<Col md={12} className="text-center">
 							<h2>
 								<span style={{ color: '#ff6b6b' }}>Develop Your Ideas</span>
-								<p>Grow with Confidence. MTechnologies Powers Your Project’s Journey to Success</p>
+								<p className='text-center'>Grow with Confidence. MTechnologies Powers Your Project’s Journey to Success</p>
                             </h2>
 						</Col>
 					</Row>
@@ -39,7 +39,7 @@ const ContactForm = () => {
 								<FontAwesomeIcon icon={faMapMarkerAlt} size="3x" />
 							</div>
 							<h3>Our Location</h3>
-							<p>123 Main Street, City, State, ZIP Code</p>
+							<p className='text-center'>123 Main Street, City, State, ZIP Code</p>
 						</Col>
 
 						{/* Email Address */}
@@ -48,7 +48,7 @@ const ContactForm = () => {
 								<FontAwesomeIcon icon={faEnvelope} size="3x" />
 							</div>
 							<h3>Email Address</h3>
-							<p>Email: info@example.com</p>
+							<p className='text-center'>Email: info@example.com</p>
 						</Col>
 					</Row>
 				</Container>

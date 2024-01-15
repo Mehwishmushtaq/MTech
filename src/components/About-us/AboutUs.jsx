@@ -71,7 +71,7 @@ const AboutUs = () => {
                       duration={counter.duration}
                     />
                   </h2>
-                  <p>{counter.title}</p>
+                  <p className="text-center">{counter.title}</p>
                 </div>
               </Col>
             ))}

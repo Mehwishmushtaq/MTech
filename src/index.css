@@ -10,7 +10,7 @@
   box-sizing: border-box;
 }
 
-section{
+section {
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -19,6 +19,7 @@ footer {
   padding-top: 70px;
   padding-bottom: 70px;
 }
+
 h1,
 h2,
 h3,
@@ -33,7 +34,7 @@ h6 {
 }
 
 p {
-  color:#2d3436;
+  color: #2d3436;
   font-size: 1rem;
   line-height: 35px;
   font-family: "Andada Pro", serif;
@@ -52,9 +53,11 @@ i {
   color: #17bf9e;
 }
 
-.about-row{
+.about-row {
   margin-bottom: -20px;
 }
+
+
 
 /* Portfolio */
 .flip-card {
@@ -63,8 +66,17 @@ i {
   transform-style: preserve-3d;
   perspective: 1000px;
 }
+.flip-card-front{
+  width: 380px;
+  min-height: 400px;
+  height: auto;
+  /* background-color: #01a3a4; */
+  text-align: center;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
 
-.flip-card-front,
 .flip-card-back {
   width: 380px;
   min-height: 400px;
@@ -75,9 +87,21 @@ i {
   transform-style: preserve-3d;
   transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
 }
-.flip-card-front{
+
+.flip-card-front {
   background-image: url(./assets/images/service2.png);
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.inner h6 {
+  color: #ffffff;
+}
+.flip-card-front .inner h3{
+  margin-top: 10rem;
+}
+.flip-card-back .inner h3{
+  margin-top: 2rem;
 }
 
 .flip-card:nth-of-type(2) .flip-card-front,
@@ -149,4 +173,36 @@ i {
 
 .flip-card:hover .flip-card-back {
   transform: rotateY(0deg);
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  .flip-card,
+  .flip-card-front,
+  .flip-card-back {
+    width: 100%;
+    margin: auto;
+  }
+
+  .flip-card {
+    margin: 10px;
+  }
+
+  .flip-card-front,
+  .flip-card-back {
+    min-height: 300px;
+  }
+
+  .inner {
+    padding: 20px;
+  }
+
+  .inner h3 {
+    font-size: 24px;
+  }
+
+  .inner p {
+    font-size: 14px;
+  }
 }
