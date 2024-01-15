@@ -22,7 +22,7 @@ const Portfolio = () => {
       <header style={headerStyle}>
         <h1>Portfolio</h1>
       </header>
-      <div className='card-container overflow-x-hidden '>
+      <div className='card-container'>
         {/* Row 1 */}
       <Row>
         {/* Card 1 */}

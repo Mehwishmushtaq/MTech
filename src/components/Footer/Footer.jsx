@@ -55,7 +55,7 @@ const Footer = () => {
     <footer className="footer">
       <Container>
         <Row>
-          <Col lg="3" md="6" className=" navigation mb-4">
+          <Col lg="3" md="6" className=" navigation">
             <h2 className="logo d-flex align-items-center gap-1">
               <i class="ri-edge-new-fill"></i>M Technologies
             </h2>

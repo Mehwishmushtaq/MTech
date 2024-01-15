@@ -19,10 +19,10 @@ const Testimonials = () => {
     <section>
       <Container>
         <Row>
-          <Col lg="10" md="12" className="m-auto">
+          <Col lg="12" md="6" className="m-auto">
             <div className="testimonial__wrapper d-flex justify-content-between align-items-center ">
-              <div className="testimonial__img w-50">
-                <img src={img} alt="" className="w-100" />
+              <div className="testimonial__img w-100">
+                <img src={img} alt="" className="w-100" img-fluid />
               </div>
 
               <div className="testimonial__content w-50">
@@ -38,7 +38,7 @@ const Testimonials = () => {
                         Exceptional service is paramount for software products, fostering user trust and satisfaction.
                       </p>
 
-                      <div className="student__info mt-4">
+                      <div className="customer__info mt-4">
                         <h6 className="fw-bold">Jhon Doe</h6>
                         <p>California, United State</p>
                       </div>
@@ -54,7 +54,7 @@ const Testimonials = () => {
                         Prioritizing user feedback and constant improvement builds loyalty and ensures success in the competitive software market.
                       </p>
 
-                      <div className="student__info mt-4">
+                      <div className="customer__info mt-4">
                         <h6 className="fw-bold">Jhon Doe</h6>
                         <p>California, United State</p>
                       </div>
@@ -71,7 +71,7 @@ const Testimonials = () => {
 
                        </p>
 
-                      <div className="student__info mt-4">
+                      <div className="customer__info mt-4">
                         <h6 className="fw-bold">Jhon Doe</h6>
                         <p>California, United State</p>
                       </div>
