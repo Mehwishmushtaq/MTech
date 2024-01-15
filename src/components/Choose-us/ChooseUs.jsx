@@ -15,7 +15,7 @@ const ChooseUs = () => {
           <Col lg="6" md="6" just>
             <div className="choose__content">
               <h2>Why Choose Us</h2>
-              <p className="w-100">
+              <p className="w-100 justify-content-between ">
                 At M Technology, we understand that choosing the right IT partner is crucial for your business's success. With a diverse range of IT services tailored to meet your specific needs, we stand out as your ideal choice. Our team of experienced professionals is committed to delivering excellence in every aspect of IT, from software development and system integration to cybersecurity and cloud solutions. What sets us apart is our unwavering dedication to innovation, staying at the forefront of technological advancements to ensure your business remains competitive and efficient. We take a client-centric approach, offering personalized solutions that align with your goals and objectives.
               </p>
             </div>
