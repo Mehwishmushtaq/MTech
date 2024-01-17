@@ -1,8 +1,15 @@
-import React from "react";
-import { Container, Row, Col } from "reactstrap";
+import React, { useEffect } from "react";
+import '../About-us/AboutUs.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faTwitter, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { Container, Row, Col } from "react-bootstrap";
 import CountUp from "react-countup";
 import TeamConcept from '../../assets/images/team-concept.jpg'
 import Web6 from '../../assets/images/web6.jpg'
+import img from "../../assets/images/testimonial01.png";
+// import context from "react-bootstrap/esm/AccordionContext";
+
+
 
 
 const AboutUs = () => {
@@ -14,12 +21,48 @@ const AboutUs = () => {
     { id: 4, title: "Recognition", start: 0, end: 50, duration: 11 },
   ];
 
+  // Mouseover event handling
+  useEffect(() => {
+    let imgBx = document.querySelectorAll('.imgBx');
+    let contentBx = document.querySelectorAll('.contentBx');
+
+    const handleMouseOver = (event) => {
+      for (let i = 0; i < contentBx.length; i++) {
+        contentBx[i].className = 'contentBx';
+      }
+
+      const targetContent = document.getElementById(event.target.dataset.id);
+      if (targetContent) {
+        targetContent.className = 'contentBx active';
+      }
+
+      for (let i = 0; i < imgBx.length; i++) {
+        imgBx[i].className = 'imgBx';
+      }
+
+      event.target.className = 'imgBx active';
+    };
+    for (let i = 0; i < imgBx.length; i++) {
+      imgBx[i].addEventListener('mouseover', handleMouseOver);
+    }
+
+    // Cleanup event listeners on component unmount
+    return () => {
+      for (let i = 0; i < imgBx.length; i++) {
+        imgBx[i].removeEventListener('mouseover', handleMouseOver);
+      }
+    };
+  }, []);
+
+
+
   const backgroundImageStyle = {
     backgroundImage: 'url("https://static.vecteezy.com/system/resources/previews/005/081/900/non_2x/banner-abstract-geometric-white-and-gray-color-background-illustration-free-vector.jpg")',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     minHeight: '5vh',
   };
+
   return (
     <div>
       {/* Banner Section */}
@@ -38,7 +81,7 @@ const AboutUs = () => {
               <div className="about__content">
                 <h2 className="mt-4">About Us</h2>
                 <p>
-                  <h5 style={{color: '#ff6b6b'}}>High-Quality IT Services Provider Company</h5>
+                  <h5 style={{ color: '#ff6b6b' }}>High-Quality IT Services Provider Company</h5>
                   M Technology's major mission is to provide high-quality IT services. Our aim is to be
                   the industry's leading provider of high-quality IT solutions, setting the bar for
                   excellence and innovation. We seek to be your trusted partner for all of your IT needs
@@ -56,6 +99,174 @@ const AboutUs = () => {
           </Row>
         </Container>
       </section>
+
+      {/* Team Members  */}
+      <div className="container mb-4">
+          <h2 className="text-center">Meet Our Team</h2>
+          <p className="text-left">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi velit ipsa vitae! Atque dicta quasi molestias perspiciatis iste qui quis velit, nemo totam nihil, ducimus natus quod eaque rem similique.
+          Dolorem rerum odit aliquam, fugiat explicabo consectetur, maxime minus incidunt nesciunt hic eius molestias debitis, quod rem. Soluta nihil obcaecati reiciendis illum doloribus quasi, ipsam nemo maxime voluptatum, modi a!</p>
+      </div>
+      <Container className="about-main">
+        <div className="team-container">
+          <div className="icon">
+            <div className="imgBx active" style={{ '--i': 1 }} data-id="content1">
+              <img src={img} alt="" />
+            </div>
+            <div className="imgBx" style={{ '--i': 2 }} data-id="content2">
+              <img src={img} alt="" />
+            </div>
+            <div className="imgBx" style={{ '--i': 3 }} data-id="content3">
+              <img src={img} alt="" />
+            </div>
+            <div className="imgBx" style={{ '--i': 4 }} data-id="content4">
+              <img src={img} alt="" />
+            </div>
+            <div className="imgBx" style={{ '--i': 5 }} data-id="content5">
+              <img src={img} alt="" />
+            </div>
+            <div className="imgBx" style={{ '--i': 6 }} data-id="content6">
+              <img src={img} alt="" />
+            </div>
+            <div className="imgBx" style={{ '--i': 7 }} data-id="content7">
+              <img src={img} alt="" />
+            </div>
+            <div className="imgBx" style={{ '--i': 8 }} data-id="content8">
+              <img src={img} alt="" />
+            </div>
+          </div>
+          {/* Content */}
+          <div className="team-content">
+            <div className="contentBx active" id="content1">
+              <div className="team-card">
+                <div className="imgBx">
+                  <img src={img} alt="" />
+                </div>
+                <div className="textBx">
+                  <h2>Someone Famous<br /><span>Product Designer</span></h2>
+                  <ul className="sci">
+                    <li><a href="https://www.facebook.com/"><FontAwesomeIcon icon={faFacebook} /></a></li>
+                    <li><a href="https://twitter.com/"><FontAwesomeIcon icon={faTwitter} /></a></li>
+                    <li><a href="https://www.linkedin.com/"><FontAwesomeIcon icon={faLinkedin} /></a></li>
+                    <li><a href="https://www.instagram.com/"><FontAwesomeIcon icon={faInstagram} /></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className="contentBx" id="content2">
+              <div className="team-card">
+                <div className="imgBx">
+                  <img src={img} alt="" />
+                </div>
+                <div className="textBx">
+                  <h2>Someone Famous<br /><span>Product Designer</span></h2>
+                  <ul className="sci">
+                    <li><a href="https://www.facebook.com/"><FontAwesomeIcon icon={faFacebook} /></a></li>
+                    <li><a href="https://twitter.com/"><FontAwesomeIcon icon={faTwitter} /></a></li>
+                    <li><a href="https://www.linkedin.com/"><FontAwesomeIcon icon={faLinkedin} /></a></li>
+                    <li><a href="https://www.instagram.com/"><FontAwesomeIcon icon={faInstagram} /></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className="contentBx" id="content3">
+              <div className="team-card">
+                <div className="imgBx">
+                  <img src={img} alt="" />
+                </div>
+                <div className="textBx">
+                  <h2>Someone Famous<br /><span>Product Designer</span></h2>
+                  <ul className="sci">
+                    <li><a href="https://www.facebook.com/"><FontAwesomeIcon icon={faFacebook} /></a></li>
+                    <li><a href="https://twitter.com/"><FontAwesomeIcon icon={faTwitter} /></a></li>
+                    <li><a href="https://www.linkedin.com/"><FontAwesomeIcon icon={faLinkedin} /></a></li>
+                    <li><a href="https://www.instagram.com/"><FontAwesomeIcon icon={faInstagram} /></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className="contentBx" id="content4">
+              <div className="team-card">
+                <div className="imgBx">
+                  <img src={img} alt="" />
+                </div>
+                <div className="textBx">
+                  <h2>Someone Famous<br /><span>Product Designer</span></h2>
+                  <ul className="sci">
+                    <li><a href="https://www.facebook.com/"><FontAwesomeIcon icon={faFacebook} /></a></li>
+                    <li><a href="https://twitter.com/"><FontAwesomeIcon icon={faTwitter} /></a></li>
+                    <li><a href="https://www.linkedin.com/"><FontAwesomeIcon icon={faLinkedin} /></a></li>
+                    <li><a href="https://www.instagram.com/"><FontAwesomeIcon icon={faInstagram} /></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className="contentBx" id="content5">
+              <div className="team-card">
+                <div className="imgBx">
+                  <img src={img} alt="" />
+                </div>
+                <div className="textBx">
+                  <h2>Someone Famous<br /><span>Product Designer</span></h2>
+                  <ul className="sci">
+                    <li><a href="https://www.facebook.com/"><FontAwesomeIcon icon={faFacebook} /></a></li>
+                    <li><a href="https://twitter.com/"><FontAwesomeIcon icon={faTwitter} /></a></li>
+                    <li><a href="https://www.linkedin.com/"><FontAwesomeIcon icon={faLinkedin} /></a></li>
+                    <li><a href="https://www.instagram.com/"><FontAwesomeIcon icon={faInstagram} /></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className="contentBx" id="content6">
+              <div className="team-card">
+                <div className="imgBx">
+                  <img src={img} alt="" />
+                </div>
+                <div className="textBx">
+                  <h2>Someone Famous<br /><span>Product Designer</span></h2>
+                  <ul className="sci">
+                    <li><a href="https://www.facebook.com/"><FontAwesomeIcon icon={faFacebook} /></a></li>
+                    <li><a href="https://twitter.com/"><FontAwesomeIcon icon={faTwitter} /></a></li>
+                    <li><a href="https://www.linkedin.com/"><FontAwesomeIcon icon={faLinkedin} /></a></li>
+                    <li><a href="https://www.instagram.com/"><FontAwesomeIcon icon={faInstagram} /></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className="contentBx" id="content7">
+              <div className="team-card">
+                <div className="imgBx">
+                  <img src={img} alt="" />
+                </div>
+                <div className="textBx">
+                  <h2>Someone Famous<br /><span>Product Designer</span></h2>
+                  <ul className="sci">
+                    <li><a href="https://www.facebook.com/"><FontAwesomeIcon icon={faFacebook} /></a></li>
+                    <li><a href="https://twitter.com/"><FontAwesomeIcon icon={faTwitter} /></a></li>
+                    <li><a href="https://www.linkedin.com/"><FontAwesomeIcon icon={faLinkedin} /></a></li>
+                    <li><a href="https://www.instagram.com/"><FontAwesomeIcon icon={faInstagram} /></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className="contentBx" id="content8">
+              <div className="team-card">
+                <div className="imgBx">
+                  <img src={img} alt="" />
+                </div>
+                <div className="textBx">
+                  <h2>Someone Famous<br /><span>Product Designer</span></h2>
+                  <ul className="sci">
+                    <li><a href="https://www.facebook.com/"><FontAwesomeIcon icon={faFacebook} /></a></li>
+                    <li><a href="https://twitter.com/"><FontAwesomeIcon icon={faTwitter} /></a></li>
+                    <li><a href="https://www.linkedin.com/"><FontAwesomeIcon icon={faLinkedin} /></a></li>
+                    <li><a href="https://www.instagram.com/"><FontAwesomeIcon icon={faInstagram} /></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Container>
 
       {/* Counter Section 3*/}
       <div style={backgroundImageStyle} >
@@ -116,7 +327,9 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
+
     </div>
+
 
 
   );
