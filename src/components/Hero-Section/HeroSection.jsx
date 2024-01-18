@@ -11,14 +11,11 @@ const HeroSection = () => {
           <Col lg="6" md="6" className="hero-content">
             <div className="hero">
               <div className="hero__content">
-                <h2 className="mb-4 hero__title">
-                  Best Software House in Pakistan
-                </h2>
-                <p className="mb-5">
-                  WEBSITE DESIGN & DEVELOPMENT SERVICES
-                  <br />
-                  We offer full service digital media solutions.
-                </p>
+                <h5 className=" mt-2  hero__title">
+                  <span style={{fontSize: '1.2rem'}}>Discover, Prepare, Innovate &</span>
+                </h5>
+                <h2 style={{fontSize: '3rem', fontWeight:'700'}}>Empower your ideas</h2>
+                <p className="">Elevate your business success with outstanding and exemplary services to transform your brilliant ideas into action.</p>
                 <div className="search">
                   <a href="/contact">
                     <button className="btn">GET A QUOTE</button>

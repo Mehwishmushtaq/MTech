@@ -25,7 +25,6 @@
   font-size: 20px; 
   margin: 15px 0;
   color: #fff;
-  font-weight: 1000;
 }
 
 
@@ -38,6 +37,11 @@
   cursor: pointer;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+.search .btn:hover{
+  background-color: #01a3a4;
+  color: white;
 }
 
 .hero-img-col img {

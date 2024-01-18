@@ -28,8 +28,8 @@ const FeatureCard = ({ title, description }) => {
   const icon = getIconByTitle(title);
 
   return (
-    <div className="feature-card">
-      <div className="icon mb-3" style={{color: '#30336b'}}>
+    <div className="feature-card text-center">
+      <div className="icon mb-3" style={{color: '#f36b6b'}}>
         <FontAwesomeIcon icon={icon} size="3x" />
       </div>
       <div className="content">

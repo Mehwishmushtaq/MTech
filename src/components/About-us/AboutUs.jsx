@@ -1,12 +1,12 @@
-import React, { useEffect } from "react";
+import React from "react";
 import '../About-us/AboutUs.css'
+import { Container, Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { Container, Row, Col } from "react-bootstrap";
 import CountUp from "react-countup";
 import TeamConcept from '../../assets/images/team-concept.jpg'
 import Web6 from '../../assets/images/web6.jpg'
-import img from "../../assets/images/testimonial01.png";
+// import img from "../../assets/images/testimonial01.png";
 // import context from "react-bootstrap/esm/AccordionContext";
 
 
@@ -14,47 +14,15 @@ import img from "../../assets/images/testimonial01.png";
 
 const AboutUs = () => {
 
+  let message = `There are many variations of passages of Lorem Ipsum available but the \n majority have suffered alteration in some injected humour.`;
+
+
   const counters = [
     { id: 1, title: "Project Finished", start: 0, end: 100, duration: 5 },
     { id: 2, title: "Years Projects", start: 0, end: 10, duration: 5 },
     { id: 3, title: "Happy Clients", start: 0, end: 1000, duration: 9 },
     { id: 4, title: "Recognition", start: 0, end: 50, duration: 11 },
   ];
-
-  // Mouseover event handling
-  useEffect(() => {
-    let imgBx = document.querySelectorAll('.imgBx');
-    let contentBx = document.querySelectorAll('.contentBx');
-
-    const handleMouseOver = (event) => {
-      for (let i = 0; i < contentBx.length; i++) {
-        contentBx[i].className = 'contentBx';
-      }
-
-      const targetContent = document.getElementById(event.target.dataset.id);
-      if (targetContent) {
-        targetContent.className = 'contentBx active';
-      }
-
-      for (let i = 0; i < imgBx.length; i++) {
-        imgBx[i].className = 'imgBx';
-      }
-
-      event.target.className = 'imgBx active';
-    };
-    for (let i = 0; i < imgBx.length; i++) {
-      imgBx[i].addEventListener('mouseover', handleMouseOver);
-    }
-
-    // Cleanup event listeners on component unmount
-    return () => {
-      for (let i = 0; i < imgBx.length; i++) {
-        imgBx[i].removeEventListener('mouseover', handleMouseOver);
-      }
-    };
-  }, []);
-
-
 
   const backgroundImageStyle = {
     backgroundImage: 'url("https://static.vecteezy.com/system/resources/previews/005/081/900/non_2x/banner-abstract-geometric-white-and-gray-color-background-illustration-free-vector.jpg")',
@@ -100,173 +68,96 @@ const AboutUs = () => {
         </Container>
       </section>
 
-      {/* Team Members  */}
-      <div className="container mb-4">
-          <h2 className="text-center">Meet Our Team</h2>
-          <p className="text-left">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi velit ipsa vitae! Atque dicta quasi molestias perspiciatis iste qui quis velit, nemo totam nihil, ducimus natus quod eaque rem similique.
-          Dolorem rerum odit aliquam, fugiat explicabo consectetur, maxime minus incidunt nesciunt hic eius molestias debitis, quod rem. Soluta nihil obcaecati reiciendis illum doloribus quasi, ipsam nemo maxime voluptatum, modi a!</p>
-      </div>
-      <Container className="about-main">
-        <div className="team-container">
-          <div className="icon">
-            <div className="imgBx active" style={{ '--i': 1 }} data-id="content1">
-              <img src={img} alt="" />
+      {/* Team Section */}
+      <section className="section-white">
+
+        <div className="container">
+
+          <div className="row">
+
+            <div className="col-md-12 text-center">
+
+              <h2 className="section-title"><strong>The Team Behind <span style={{color:'#f36b6b'}}>MTechnologies</span></strong></h2>
+
+              <p className="section-subtitle text-center ">{message}</p>
+
             </div>
-            <div className="imgBx" style={{ '--i': 2 }} data-id="content2">
-              <img src={img} alt="" />
+
+            <div className="col-sm-6 col-md-4">
+
+              <div className="team-item">
+
+                <img src="https://demo.epic-webdesign.com/tf-pacifico/v1/images/team1a.jpg" class="team-img" alt="pic" />
+                <h3>JOHNATHAN HAWKINS</h3>
+                <div className="team-info"><p className="text-center">CEO</p></div>
+                <p>Johnathan is our  co-founder and has developed search strategies for a variety of clients from international brands to medium sized businesses for over five years.</p>
+
+                <ul className="team-icon">
+                <li><a href="https://www.facebook.com/" className="facebook"><FontAwesomeIcon icon={faFacebook} /></a></li>
+                    <li><a href="https://twitter.com/" className="twitter"><FontAwesomeIcon icon={faTwitter} /></a></li>
+                    <li><a href="https://www.linkedin.com/" className="linkedIn"><FontAwesomeIcon icon={faLinkedin} /></a></li>
+                    <li><a href="https://www.instagram.com/" className="instagram"><FontAwesomeIcon icon={faInstagram} /></a></li>
+
+                </ul>
+
+
+              </div>
             </div>
-            <div className="imgBx" style={{ '--i': 3 }} data-id="content3">
-              <img src={img} alt="" />
+
+            <div className="col-sm-6 col-md-4">
+
+              <div className="team-item">
+
+                <img src="https://demo.epic-webdesign.com/tf-pacifico/v1/images/team2a.jpg" class="team-img" alt="pic" />
+
+                <h3>ALEXANDRA SMITHS</h3>
+
+                <div className="team-info"><p className="text-center">SEO Specialist</p></div>
+
+                <p>Graduating with a degree in Spanish and English, Alexandra has always loved writing and now she’s lucky enough to do it as part of her new job inside our agency.</p>
+
+                <ul className="team-icon">
+
+                <li><a href="https://www.facebook.com/" className="facebook"><FontAwesomeIcon icon={faFacebook} /></a></li>
+                    <li><a href="https://twitter.com/" className="twitter"><FontAwesomeIcon icon={faTwitter} /></a></li>
+                    <li><a href="https://www.linkedin.com/" className="linkedIn"><FontAwesomeIcon icon={faLinkedin} /></a></li>
+                    <li><a href="https://www.instagram.com/" className="instagram"><FontAwesomeIcon icon={faInstagram} /></a></li>
+
+                </ul>
+
+              </div>
+
             </div>
-            <div className="imgBx" style={{ '--i': 4 }} data-id="content4">
-              <img src={img} alt="" />
+            <div className="col-sm-6 col-md-4">
+
+              <div className="team-item">
+
+                <img src="https://demo.epic-webdesign.com/tf-pacifico/v1/images/team3a.jpg" class="team-img" alt="pic" />
+
+                <h3>ELISA JOHANSON</h3>
+
+                <div className="team-info"><p className="text-center">Marketing Manager</p></div>
+
+                <p>Elisa first fell in love with digital marketing at the university. He loves to learn, and looks forward to being part of this new exciting industry for many years.</p>
+
+                <ul className="team-icon">
+
+                <li><a href="https://www.facebook.com/" className="facebook"><FontAwesomeIcon icon={faFacebook} /></a></li>
+                    <li><a href="https://twitter.com/" className="twitter"><FontAwesomeIcon icon={faTwitter} /></a></li>
+                    <li><a href="https://www.linkedin.com/" className="linkedIn"><FontAwesomeIcon icon={faLinkedin} /></a></li>
+                    <li><a href="https://www.instagram.com/" className="instagram"><FontAwesomeIcon icon={faInstagram} /></a></li>
+
+                </ul>
+
+              </div>
+
             </div>
-            <div className="imgBx" style={{ '--i': 5 }} data-id="content5">
-              <img src={img} alt="" />
-            </div>
-            <div className="imgBx" style={{ '--i': 6 }} data-id="content6">
-              <img src={img} alt="" />
-            </div>
-            <div className="imgBx" style={{ '--i': 7 }} data-id="content7">
-              <img src={img} alt="" />
-            </div>
-            <div className="imgBx" style={{ '--i': 8 }} data-id="content8">
-              <img src={img} alt="" />
-            </div>
+
           </div>
-          {/* Content */}
-          <div className="team-content">
-            <div className="contentBx active" id="content1">
-              <div className="team-card">
-                <div className="imgBx">
-                  <img src={img} alt="" />
-                </div>
-                <div className="textBx">
-                  <h2>Someone Famous<br /><span>Product Designer</span></h2>
-                  <ul className="sci">
-                    <li><a href="https://www.facebook.com/"><FontAwesomeIcon icon={faFacebook} /></a></li>
-                    <li><a href="https://twitter.com/"><FontAwesomeIcon icon={faTwitter} /></a></li>
-                    <li><a href="https://www.linkedin.com/"><FontAwesomeIcon icon={faLinkedin} /></a></li>
-                    <li><a href="https://www.instagram.com/"><FontAwesomeIcon icon={faInstagram} /></a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div className="contentBx" id="content2">
-              <div className="team-card">
-                <div className="imgBx">
-                  <img src={img} alt="" />
-                </div>
-                <div className="textBx">
-                  <h2>Someone Famous<br /><span>Product Designer</span></h2>
-                  <ul className="sci">
-                    <li><a href="https://www.facebook.com/"><FontAwesomeIcon icon={faFacebook} /></a></li>
-                    <li><a href="https://twitter.com/"><FontAwesomeIcon icon={faTwitter} /></a></li>
-                    <li><a href="https://www.linkedin.com/"><FontAwesomeIcon icon={faLinkedin} /></a></li>
-                    <li><a href="https://www.instagram.com/"><FontAwesomeIcon icon={faInstagram} /></a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div className="contentBx" id="content3">
-              <div className="team-card">
-                <div className="imgBx">
-                  <img src={img} alt="" />
-                </div>
-                <div className="textBx">
-                  <h2>Someone Famous<br /><span>Product Designer</span></h2>
-                  <ul className="sci">
-                    <li><a href="https://www.facebook.com/"><FontAwesomeIcon icon={faFacebook} /></a></li>
-                    <li><a href="https://twitter.com/"><FontAwesomeIcon icon={faTwitter} /></a></li>
-                    <li><a href="https://www.linkedin.com/"><FontAwesomeIcon icon={faLinkedin} /></a></li>
-                    <li><a href="https://www.instagram.com/"><FontAwesomeIcon icon={faInstagram} /></a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div className="contentBx" id="content4">
-              <div className="team-card">
-                <div className="imgBx">
-                  <img src={img} alt="" />
-                </div>
-                <div className="textBx">
-                  <h2>Someone Famous<br /><span>Product Designer</span></h2>
-                  <ul className="sci">
-                    <li><a href="https://www.facebook.com/"><FontAwesomeIcon icon={faFacebook} /></a></li>
-                    <li><a href="https://twitter.com/"><FontAwesomeIcon icon={faTwitter} /></a></li>
-                    <li><a href="https://www.linkedin.com/"><FontAwesomeIcon icon={faLinkedin} /></a></li>
-                    <li><a href="https://www.instagram.com/"><FontAwesomeIcon icon={faInstagram} /></a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div className="contentBx" id="content5">
-              <div className="team-card">
-                <div className="imgBx">
-                  <img src={img} alt="" />
-                </div>
-                <div className="textBx">
-                  <h2>Someone Famous<br /><span>Product Designer</span></h2>
-                  <ul className="sci">
-                    <li><a href="https://www.facebook.com/"><FontAwesomeIcon icon={faFacebook} /></a></li>
-                    <li><a href="https://twitter.com/"><FontAwesomeIcon icon={faTwitter} /></a></li>
-                    <li><a href="https://www.linkedin.com/"><FontAwesomeIcon icon={faLinkedin} /></a></li>
-                    <li><a href="https://www.instagram.com/"><FontAwesomeIcon icon={faInstagram} /></a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div className="contentBx" id="content6">
-              <div className="team-card">
-                <div className="imgBx">
-                  <img src={img} alt="" />
-                </div>
-                <div className="textBx">
-                  <h2>Someone Famous<br /><span>Product Designer</span></h2>
-                  <ul className="sci">
-                    <li><a href="https://www.facebook.com/"><FontAwesomeIcon icon={faFacebook} /></a></li>
-                    <li><a href="https://twitter.com/"><FontAwesomeIcon icon={faTwitter} /></a></li>
-                    <li><a href="https://www.linkedin.com/"><FontAwesomeIcon icon={faLinkedin} /></a></li>
-                    <li><a href="https://www.instagram.com/"><FontAwesomeIcon icon={faInstagram} /></a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div className="contentBx" id="content7">
-              <div className="team-card">
-                <div className="imgBx">
-                  <img src={img} alt="" />
-                </div>
-                <div className="textBx">
-                  <h2>Someone Famous<br /><span>Product Designer</span></h2>
-                  <ul className="sci">
-                    <li><a href="https://www.facebook.com/"><FontAwesomeIcon icon={faFacebook} /></a></li>
-                    <li><a href="https://twitter.com/"><FontAwesomeIcon icon={faTwitter} /></a></li>
-                    <li><a href="https://www.linkedin.com/"><FontAwesomeIcon icon={faLinkedin} /></a></li>
-                    <li><a href="https://www.instagram.com/"><FontAwesomeIcon icon={faInstagram} /></a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div className="contentBx" id="content8">
-              <div className="team-card">
-                <div className="imgBx">
-                  <img src={img} alt="" />
-                </div>
-                <div className="textBx">
-                  <h2>Someone Famous<br /><span>Product Designer</span></h2>
-                  <ul className="sci">
-                    <li><a href="https://www.facebook.com/"><FontAwesomeIcon icon={faFacebook} /></a></li>
-                    <li><a href="https://twitter.com/"><FontAwesomeIcon icon={faTwitter} /></a></li>
-                    <li><a href="https://www.linkedin.com/"><FontAwesomeIcon icon={faLinkedin} /></a></li>
-                    <li><a href="https://www.instagram.com/"><FontAwesomeIcon icon={faInstagram} /></a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
+
         </div>
-      </Container>
+
+      </section>
 
       {/* Counter Section 3*/}
       <div style={backgroundImageStyle} >

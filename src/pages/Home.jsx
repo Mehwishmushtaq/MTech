@@ -3,19 +3,20 @@ import HeroSection from "../components/Hero-Section/HeroSection";
 // import AboutUs from "../components/About-us/AboutUs";
 import Services from "../components/Services-section/Services";
 // import FastService from "../components/Fast-service-section/FastService";
-import ChooseUs from "../components/Choose-us/ChooseUs";
-import Features from "../components/Feature-section/Features";
+// import ChooseUs from "../components/Choose-us/ChooseUs";
+// import Features from "../components/Feature-section/Features";
 import Testimonials from "../components/Testimonial/Testimonials";
 
 const Home = () => {
+
   return (
     <Fragment>
       <HeroSection />
       {/* <AboutUs /> */}
       <Services />
       {/* <FastService /> */}
-      <ChooseUs />
-      <Features />
+      {/* <ChooseUs /> */}
+      {/* <Features /> */}
       <Testimonials />
     </Fragment>
   );

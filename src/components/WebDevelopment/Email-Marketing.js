@@ -135,7 +135,7 @@ const EmailMarketing = () => {
                         <h1>Bringing Out The Best With Our Expertise</h1>
                         <p className='text-white'>Say goodbye to project hassles and hello to groundbreaking ideas to unlock innovation with M Technologies.</p>
                         <a href="/contact">
-                            <Button variant='info'>
+                            <Button style={{background:'#01a3a4', color:'#fff'}}>
                                 Start a Project
                             </Button>
                         </a>

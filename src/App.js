@@ -5,6 +5,7 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home";
 import AboutUs from "./components/About-us/AboutUs";
+import AllServices from "./components/AllServices/allServices";
 
 // Website Development Services
 import Services from "./components/Services-section/Services";
@@ -45,6 +46,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/all-services" element={<AllServices />} />
+
 
           {/* Website Development Routes */}
           <Route path="/web-development" element={<WebsiteDevelopment />} />

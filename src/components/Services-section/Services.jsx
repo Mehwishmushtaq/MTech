@@ -1,98 +1,66 @@
 import React from "react";
-import { Container, Row, Col } from "reactstrap";
+import { Container, Row, Col, Button } from "reactstrap";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import CountUp from "react-countup";
 import serviceImg1 from "../../assets/images/web-design.png";
 import serviceImg2 from "../../assets/images/graphics-design.png";
 import serviceImg3 from "../../assets/images/ui-ux.png";
+import Features from '../Feature-section/Features'
 import "./services.css";
 import ServiceCard from "./ServiceCard";
+
+const backgroundImageStyle = {
+  backgroundImage: 'url("https://static.vecteezy.com/system/resources/previews/005/081/900/non_2x/banner-abstract-geometric-white-and-gray-color-background-illustration-free-vector.jpg")',
+  backgroundSize: 'cover',
+  backgroundPosition: 'center',
+  minHeight: '5vh',
+};
+const counters = [
+  { id: 1, title: "Project Finished", start: 0, end: 50, duration: 5 },
+  { id: 2, title: "Years Projects", start: 0, end: 5, duration: 10 },
+  { id: 3, title: "Happy Clients", start: 0, end: 100, duration: 9 },
+  { id: 4, title: "Recognition", start: 0, end: 50, duration: 11 },
+];
 
 const servicesData = [
   {
     id: "01",
     title: "Web Design & Development",
-    projects: 12,
-    rating: 5.9,
     imgUrl: serviceImg1,
+    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua'
   },
 
   {
     id: "02",
     title: "Graphics Design",
-    projects: 12,
-    rating: 5.9,
     imgUrl: serviceImg2,
+    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua'
   },
 
   {
     id: "03",
     title: "React App Development",
-    projects: 12,
-    rating: 5.9,
     imgUrl: serviceImg3,
-  },
-  {
-    id: "04",
-    title: "Graphic Design",
-    projects: 12,
-    rating: 5.9,
-    imgUrl: serviceImg3,
-  },
-  {
-    id: "05",
-    title: "Content Writing",
-    projects: 12,
-    rating: 5.9,
-    imgUrl: serviceImg3,
-  },
-  {
-    id: "06",
-    title: "Search Engine Optimization",
-    projects: 12,
-    rating: 5.9,
-    imgUrl: serviceImg3,
+    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua'
   },
 ];
 
 const Services = () => {
   return (
-    <section>
+    <section className="service-home">
       <Container>
         <Row>
-          {/* <Col lg="12" className="mb-5">
-            <div className="course__top d-lg-flex  justify-content-between align-items-center">
-              <div className="course__top__left w-50">
-                <h2>Our Popular Services</h2>
-                <p>
-                  We provide a comprehensive selection of innovative solutions to fulfill your software
-                  development and IT requirements. Our skilled team of developers, designers, and
-                  engineers is committed to providing high-quality solutions that are suited to your
-                  company's needs. We recognize that staying ahead in the fast-paced world of technology
-                  is critical to your business. That is why we continue to invest in our skills and
-                  experience in order to present you with the most current and innovative solutions. When
-                  you choose us, you are selecting a partner who is committed to your long-term success
-                  in the digital age.
-
-                </p>
-              </div>
-
-              <div className="text-center text-lg-end">
-                <img src="https://img.freepik.com/free-vector/people-work-office-together_107791-14052.jpg?size=626&ext=jpg&ga=GA1.1.843820476.1686048661&semt=sph"
-                  alt="See All"
-                  className="image-container" />
-              </div>
-            </div>
-          </Col> */}
-          {/* <!--Start :: Paragraph & Title--> */}
           <div class="container">
             <div class="row mt-2 text-center justify-content-center">
-              <h1>Our Popular Services</h1>
+              <h4 style={{ color: '#ff6b6b' }}>Empowering Your Business with</h4>
+              <h3 style={{ fontWeight: '700' }}>Our Outstanding Services</h3>
               <div class="col-md-12">
-                {/* <!-- Column for the First Paragraph --> */}
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa sunt pariatur quasi excepturi laboriosam aliquid beatae neque nobis sed, blanditiis mollitia ipsam eius praesentium repellendus sapiente. Amet a odit provident.Fugit eius ea repellat aperiam atque neque quod accusamus. Amet dolores hic iste recusandae, et repellat culpa est voluptate aliquam nihil vero sed mollitia, minima laudantium, distinctio nam maxime molestias.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa sunt pariatur quasi excepturi laboriosam aliquid beatae neque nobis sed, blanditiis mollitia ipsam eius praesentium repellendus sapiente. Amet a odit provident.Fugit eius ea repellat aperiam atque neque quod accusamus. Amet dolores hic iste recusandae, et repellat culpa est voluptate aliquam nihil vero sed mollitia, minima laudantium, distinctio nam maxime molestias.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere ipsum reiciendis reprehenderit laudantium? Voluptates, nulla ducimus? Fuga esse, nemo ut necessitatibus magni itaque porro voluptatem, vel veniam corporis incidunt provident?
+                  Consequuntur eius doloribus quidem natus vero sapiente! Perspiciatis totam harum veritatis eos, molestiae vel maxime velit temporibus fuga officia rem eveniet delectus ad, libero reiciendis ducimus ut tempore, facilis nam?</p>
               </div>
             </div>
           </div>
-          {/* <!--End :: Paragraph & Title--> */}
           {servicesData.map((item) => (
             <Col key={item.id} lg="4" md="6" sm="6">
               <ServiceCard item={item} />
@@ -100,7 +68,132 @@ const Services = () => {
           ))}
         </Row>
       </Container>
+      <div className="container d-flex justify-content-center align-items-center">
+        <a href="/all-services" className="see-more">See More</a>
+      </div>
+
+      {/* Best IT Solution Section  */}
+      <Container>
+        <div className="container mt-5">
+          <div className="row">
+            <div className="col-md-6">
+              <img
+                src={serviceImg3}
+                alt="Sample"
+                className="img-fluid"
+              />
+            </div>
+
+            <div className="col-md-6 mt-4 ">
+              <h4 style={{ color: '#f36b6b' }}>The Best IT Solutions & Ideas</h4>
+              <h2><strong>Unleashing Your Best with MTechnologies</strong></h2>
+
+              <ul className="list-unstyled">
+                <li className="d-flex align-items-center">
+                  <div className="bullet-circle mr-3 mb-lg-5 "></div>
+                  <div>
+                    <h5 className="mt-2"><strong>Our Planning:</strong></h5>
+                    <p>Empowering your success with our expert team and strategic planning.</p>
+                  </div>
+                </li>
+                <li className="d-flex align-items-center">
+                  <div className="bullet-circle mr-3 mb-lg-5"></div>
+                  <div>
+                    <h5 className="mt-2"><strong>Our Quality Product:</strong></h5>
+                    <p>Delivering market-relevant, unique, and quality products with expertise.</p>
+                  </div>
+                </li>
+              </ul>
+              <div className="container d-flex justify-content-center align-items-center">
+                <a href="/contact" className="start-project">Start a Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Container>
+
+      {/* Counter Section 3*/}
+      <div style={backgroundImageStyle} >
+        <Container className="py-5 mt-5">
+          <Row>
+            {counters.map((counter) => (
+              <Col key={counter.id} md={3} className="mb-4">
+                <div className="text-center">
+                  <h2>
+                    <CountUp
+                      start={counter.start}
+                      end={counter.end}
+                      duration={counter.duration}
+                    />
+                  </h2>
+                  <p className="text-center">{counter.title}</p>
+                </div>
+              </Col>
+            ))}
+          </Row>
+        </Container>
+      </div>
+
+      {/* business Solution Section  */}
+      <Container className="text-center mt-5">
+        <Row className="mb-4">
+          <h2>
+            <strong>
+              We Provide <span style={{ color: '#f36b6b' }}>IT & Business Solutions</span>
+            </strong>
+          </h2>
+          <p className="text-center">We follow the structure to acquaint you with your ideas’ hassle and bring creative solutions for your projects.</p>
+        </Row>
+      </Container>
+      <Features />
+      {/* Banner Section */}
+      <section>
+        <div style={{ background: '#e17055', padding: '20px', color: '#fff', textAlign: 'left' }}>
+          <Container>
+            <h1>Bringing Out The Best With Our Expertise</h1>
+            <p className='text-white'>Say goodbye to project hassles and hello to groundbreaking ideas to unlock innovation with M Technologies.</p>
+            <a href="/contact">
+              <Button style={{ background: '#01a3a4', color: '#fff' }}>
+                Start a Project
+              </Button>
+            </a>
+          </Container>
+        </div>
+      </section>
+
+      {/* Just Click Away Section */}
+      <div className="container mt-5">
+        <div className="row">
+          <div className="col-md-6">
+            <img
+              src={serviceImg3}
+              alt="Sample"
+              className="img-fluid"
+            />
+          </div>
+
+          <div className="col-md-6">
+            <h2 className="text-center mt-4"><strong>We're Just a Click Away</strong></h2>
+            <p className="text-center">
+              Need help? We’re here for you 24/7. Call us now or drop us an email and make your business thrive.
+            </p>
+            <Row className="text-center">
+              <Col className="mt-4">
+                <FontAwesomeIcon icon={faPhone} size='2x' color="#f36b6b" />
+                <h5 className="mt-2"><strong>Say Hello!</strong></h5>
+                <p className="text-center">+92 123 4023686</p>
+              </Col>
+              <Col className="mt-4">
+                <FontAwesomeIcon icon={faEnvelope} size='2x' color="#f36b6b" />
+                <h5 className="mt-2"><strong>Email</strong></h5>
+                <p className="text-center">contact@mtechnologies.com</p>
+              </Col>
+            </Row>
+          </div>
+        </div>
+      </div>
     </section>
+
   );
 };
 
