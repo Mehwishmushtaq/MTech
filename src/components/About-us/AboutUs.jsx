@@ -25,7 +25,7 @@ const AboutUs = () => {
   ];
 
   const backgroundImageStyle = {
-    backgroundImage: 'url("https://static.vecteezy.com/system/resources/previews/005/081/900/non_2x/banner-abstract-geometric-white-and-gray-color-background-illustration-free-vector.jpg")',
+    backgroundImage: 'url("https://img.freepik.com/premium-vector/modern-red-abstract-banner-background_181182-21615.jpg?w=360")',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     minHeight: '5vh',
@@ -159,21 +159,21 @@ const AboutUs = () => {
 
       </section>
 
-      {/* Counter Section 3*/}
-      <div style={backgroundImageStyle} >
-        <Container className="py-5">
+       {/* Counter Section 3*/}
+       <div style={backgroundImageStyle} >
+        <Container className="py-5 mt-5">
           <Row>
             {counters.map((counter) => (
               <Col key={counter.id} md={3} className="mb-4">
-                <div className="text-center">
-                  <h2>
+                <div className="text-center text-white">
+                  <h2 style={{fontSize:'30px', fontWeight:'700'}}>
                     <CountUp
                       start={counter.start}
                       end={counter.end}
                       duration={counter.duration}
                     />
                   </h2>
-                  <p className="text-center">{counter.title}</p>
+                  <p style={{fontSize:'20px', fontWeight:'700'}} className="text-center text-white">{counter.title}</p>
                 </div>
               </Col>
             ))}

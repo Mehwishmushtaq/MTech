@@ -303,7 +303,7 @@ const GraphicsDesigning = () => {
                         <h1>Bringing Out The Best With Our Expertise</h1>
                         <p className='text-white'>Say goodbye to project hassles and hello to groundbreaking ideas to unlock innovation with M Technologies.</p>
                         <a href="/contact">
-                            <Button style={{background:'#01a3a4', color:'#fff'}}>
+                            <Button style={{ background: '#fff', color: '#f36b6b', borderRadius:'5px', fontWeight:'700', border:'none' }}>
                                 Start a Project
                             </Button>
                         </a>
@@ -366,7 +366,7 @@ const GraphicsDesigning = () => {
                                     <Form.Control as="textarea" className='mb-3' rows={5} placeholder="Enter your message" />
                                 </Form.Group>
 
-                                <Button variant="secondary" type="submit" className='mt-4'>
+                                <Button style={{ background: '#f36b6b', color: '#fff', borderRadius:'5px', fontWeight:'700', border:'none', width:'100%' }} type="submit" className='mt-4'>
                                     Submit
                                 </Button>
                             </Form>

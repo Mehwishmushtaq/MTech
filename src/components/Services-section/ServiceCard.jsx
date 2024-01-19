@@ -1,18 +1,18 @@
 import React from "react";
-import serviceLinks from "./serviceLinks";
+// import serviceLinks from "./serviceLinks";
 
 
 const ServiceCard = (props) => {
-  const { imgUrl, title, id, desc } = props.item;
+  const { imgUrl, title, desc } = props.item;
 
   //link based on the service's id
-  const link = serviceLinks[`service${id}`];
+  // const link = serviceLinks[`service${id}`];
 
 
   return (
     <div className="single__course__item text-center ">
       <div className="course__img">
-        <a href={link}>
+        <a href='/web-development'>
           <img src={imgUrl} alt="zz" className="w-100" />
         </a>
 

@@ -11,7 +11,7 @@ import "./services.css";
 import ServiceCard from "./ServiceCard";
 
 const backgroundImageStyle = {
-  backgroundImage: 'url("https://static.vecteezy.com/system/resources/previews/005/081/900/non_2x/banner-abstract-geometric-white-and-gray-color-background-illustration-free-vector.jpg")',
+  backgroundImage: 'url("https://img.freepik.com/premium-vector/modern-red-abstract-banner-background_181182-21615.jpg?w=360")',
   backgroundSize: 'cover',
   backgroundPosition: 'center',
   minHeight: '5vh',
@@ -92,14 +92,14 @@ const Services = () => {
                 <li className="d-flex align-items-center">
                   <div className="bullet-circle mr-3 mb-lg-5 "></div>
                   <div>
-                    <h5 className="mt-2"><strong>Our Planning:</strong></h5>
+                    <h5 className="mt-5"><strong>Our Planning:</strong></h5>
                     <p>Empowering your success with our expert team and strategic planning.</p>
                   </div>
                 </li>
                 <li className="d-flex align-items-center">
                   <div className="bullet-circle mr-3 mb-lg-5"></div>
                   <div>
-                    <h5 className="mt-2"><strong>Our Quality Product:</strong></h5>
+                    <h5 className="mt-5"><strong>Our Quality Product:</strong></h5>
                     <p>Delivering market-relevant, unique, and quality products with expertise.</p>
                   </div>
                 </li>
@@ -118,15 +118,15 @@ const Services = () => {
           <Row>
             {counters.map((counter) => (
               <Col key={counter.id} md={3} className="mb-4">
-                <div className="text-center">
-                  <h2>
+                <div className="text-center text-white">
+                  <h2 style={{fontSize:'30px', fontWeight:'700'}}>
                     <CountUp
                       start={counter.start}
                       end={counter.end}
                       duration={counter.duration}
                     />
                   </h2>
-                  <p className="text-center">{counter.title}</p>
+                  <p style={{fontSize:'20px', fontWeight:'700'}} className="text-center text-white">{counter.title}</p>
                 </div>
               </Col>
             ))}
@@ -153,7 +153,7 @@ const Services = () => {
             <h1>Bringing Out The Best With Our Expertise</h1>
             <p className='text-white'>Say goodbye to project hassles and hello to groundbreaking ideas to unlock innovation with M Technologies.</p>
             <a href="/contact">
-              <Button style={{ background: '#01a3a4', color: '#fff' }}>
+              <Button style={{ background: '#fff', color: '#f36b6b', borderRadius:'5px', fontWeight:'700', border:'none' }}>
                 Start a Project
               </Button>
             </a>

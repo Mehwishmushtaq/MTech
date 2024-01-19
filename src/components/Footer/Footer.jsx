@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col, ListGroup, ListGroupItem } from "reactstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faTwitter, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
 
 import "./footer.css";
@@ -60,34 +61,26 @@ const Footer = () => {
               <i class="ri-edge-new-fill"></i>M Technologies
             </h2>
 
-            <div className="follows">
+            <div className="follows mt-3 mb-3">
               <p className="mb-0 white-text">Follow us on social media</p>
               <span>
                 {" "}
-                <a href="https://www.facebook.com/">
-                  <i class="ri-facebook-line"></i>
-                </a>
+                <a href="https://www.facebook.com/" className="facebook"><FontAwesomeIcon icon={faFacebook} size='2x' /></a>
               </span>
 
               <span>
                 {" "}
-                <a href="https://www.instagram.com/">
-                  <i class="ri-instagram-line"></i>
-                </a>
+                <a href="https://twitter.com/" className="twitter"><FontAwesomeIcon icon={faTwitter} size="2x"/></a>
               </span>
 
               <span>
                 {" "}
-                <a href="https://www.linkedin.com">
-                  <i class="ri-linkedin-line"></i>
-                </a>
+                <a href="https://www.linkedin.com/" className="linkedIn"><FontAwesomeIcon icon={faLinkedin} size="2x"/></a>
               </span>
 
               <span>
                 {" "}
-                <a href="https://twitter.com/i/flow/login">
-                  <i class="ri-twitter-line"></i>
-                </a>
+                <a href="https://www.instagram.com/" className="instagram"><FontAwesomeIcon icon={faInstagram} size="2x"/></a>
               </span>
             </div>
           </Col>

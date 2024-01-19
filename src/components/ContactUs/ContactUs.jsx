@@ -128,7 +128,7 @@ const ContactForm = () => {
 									<Form.Control as="textarea" className='mb-3' rows={5} placeholder="Enter your message" />
 								</Form.Group>
 
-								<Button variant="secondary" type="submit" className='mt-4'>
+								<Button style={{ background: '#f36b6b', color: '#fff', borderRadius:'5px', fontWeight:'700', width:'100%', border:'none'}} type="submit" className='mt-4'>
 									Submit
 								</Button>
 							</Form>

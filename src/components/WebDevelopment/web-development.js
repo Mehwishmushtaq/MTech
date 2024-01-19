@@ -9,7 +9,7 @@ import Web5 from '../../assets/images/web5.svg'
 const WebService = () => {
 
   const headerStyle = {
-    backgroundImage: `url('https://static.vecteezy.com/system/resources/previews/005/081/900/non_2x/banner-abstract-geometric-white-and-gray-color-background-illustration-free-vector.jpg')`, 
+    backgroundImage: `url('https://static.vecteezy.com/system/resources/previews/005/081/900/non_2x/banner-abstract-geometric-white-and-gray-color-background-illustration-free-vector.jpg')`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
@@ -201,66 +201,66 @@ const WebService = () => {
 
       {/* Section 4 */}
       <section className="py-5">
-      <Container>
-         {/* Title Section */}
-         <Row className="mb-4">
-          <Col md={12} className="text-center">
-            <h4 style={{ color: '#ff6b6b'}}>The Best IT Solutions And Ideas</h4>
-            <h3>Need a designer with a creative portfolio?</h3>
-          </Col>
-        </Row>
-        <Row>
-          {/* Left Side - Picture */}
-          <Col md={6} className="mb-4">
-            <img
-              src={Web5}
-              alt="Sample"
-              className="img-fluid"
-            />
-          </Col>
+        <Container>
+          {/* Title Section */}
+          <Row className="mb-4">
+            <Col md={12} className="text-center">
+              <h4 style={{ color: '#ff6b6b' }}>The Best IT Solutions And Ideas</h4>
+              <h3>Need a designer with a creative portfolio?</h3>
+            </Col>
+          </Row>
+          <Row>
+            {/* Left Side - Picture */}
+            <Col md={6} className="mb-4">
+              <img
+                src={Web5}
+                alt="Sample"
+                className="img-fluid"
+              />
+            </Col>
 
-          {/* Right Side - Form */}
-          <Col md={6}>
-            <Form>
-              <Form.Group controlId="formName">
-                <Form.Label>Name</Form.Label>
-                <Form.Control type="text" className='mb-3' placeholder="Enter your name" />
-              </Form.Group>
+            {/* Right Side - Form */}
+            <Col md={6}>
+              <Form>
+                <Form.Group controlId="formName">
+                  <Form.Label>Name</Form.Label>
+                  <Form.Control type="text" className='mb-3' placeholder="Enter your name" />
+                </Form.Group>
 
-              <Form.Group controlId="formEmail">
-                <Form.Label>Email</Form.Label>
-                <Form.Control type="email" className='mb-3' placeholder="Enter your email" />
-              </Form.Group>
+                <Form.Group controlId="formEmail">
+                  <Form.Label>Email</Form.Label>
+                  <Form.Control type="email" className='mb-3' placeholder="Enter your email" />
+                </Form.Group>
 
-              <Form.Group controlId="formPhone">
-                <Form.Label>Phone</Form.Label>
-                <Form.Control type="tel" className='mb-3' placeholder="Enter your phone number" />
-              </Form.Group>
+                <Form.Group controlId="formPhone">
+                  <Form.Label>Phone</Form.Label>
+                  <Form.Control type="tel" className='mb-3' placeholder="Enter your phone number" />
+                </Form.Group>
 
-              <Form.Group controlId="formServices">
-                <Form.Label>Services</Form.Label>
-                <Form.Control as="select" className='mb-3' defaultValue="Choose...">
-                  <option disabled>Choose...</option>
-                  <option>Service 1</option>
-                  <option>Service 2</option>
-                  <option>Service 3</option>
-                  {/* Add more options as needed */}
-                </Form.Control>
-              </Form.Group>
+                <Form.Group controlId="formServices">
+                  <Form.Label>Services</Form.Label>
+                  <Form.Control as="select" className='mb-3' defaultValue="Choose...">
+                    <option disabled>Choose...</option>
+                    <option>Service 1</option>
+                    <option>Service 2</option>
+                    <option>Service 3</option>
+                    {/* Add more options as needed */}
+                  </Form.Control>
+                </Form.Group>
 
-              <Form.Group controlId="formMessage">
-                <Form.Label>Message</Form.Label>
-                <Form.Control as="textarea" className='mb-3' rows={5} placeholder="Enter your message" />
-              </Form.Group>
+                <Form.Group controlId="formMessage">
+                  <Form.Label>Message</Form.Label>
+                  <Form.Control as="textarea" className='mb-3' rows={5} placeholder="Enter your message" />
+                </Form.Group>
 
-              <Button variant="secondary" type="submit" className='mt-4'>
-                Submit
-              </Button>
-            </Form>
-          </Col>
-        </Row>
-      </Container>
-    </section>
+                <Button style={{ background: '#f36b6b', color: '#fff', borderRadius: '5px', fontWeight: '700', border: 'none', width: '100%' }} type="submit" className='mt-4'>
+                  Submit
+                </Button>
+              </Form>
+            </Col>
+          </Row>
+        </Container>
+      </section>
     </div>
   );
 };

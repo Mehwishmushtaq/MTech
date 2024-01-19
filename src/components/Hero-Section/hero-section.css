@@ -31,9 +31,9 @@
 .search .btn {
   background-color:#fff; 
   color:#e74c3c; 
+  border-radius: 5px;
   padding: 10px 20px; 
   border: none;
-  border-radius: 50px;
   cursor: pointer;
   font-weight: bold;
   text-transform: uppercase;
@@ -42,6 +42,7 @@
 .search .btn:hover{
   background-color: #01a3a4;
   color: white;
+  border-radius: 5px;
 }
 
 .hero-img-col img {

@@ -12,7 +12,7 @@ const HeroSection = () => {
             <div className="hero">
               <div className="hero__content">
                 <h5 className=" mt-2  hero__title">
-                  <span style={{fontSize: '1.2rem'}}>Discover, Prepare, Innovate &</span>
+                  <span style={{fontSize: '16px', fontWeight:'700'}}>Discover, Prepare, Innovate &</span>
                 </h5>
                 <h2 style={{fontSize: '3rem', fontWeight:'700'}}>Empower your ideas</h2>
                 <p className="">Elevate your business success with outstanding and exemplary services to transform your brilliant ideas into action.</p>
