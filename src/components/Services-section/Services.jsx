@@ -90,16 +90,16 @@ const Services = () => {
 
               <ul className="list-unstyled">
                 <li className="d-flex align-items-center">
-                  <div className="bullet-circle mr-3 mb-lg-5 "></div>
+                  <div className="bullet-circle"></div>
                   <div>
-                    <h5 className="mt-5"><strong>Our Planning:</strong></h5>
+                    <h5 className="mt-2"><strong>Our Planning:</strong></h5>
                     <p>Empowering your success with our expert team and strategic planning.</p>
                   </div>
                 </li>
                 <li className="d-flex align-items-center">
-                  <div className="bullet-circle mr-3 mb-lg-5"></div>
+                  <div className="bullet-circle"></div>
                   <div>
-                    <h5 className="mt-5"><strong>Our Quality Product:</strong></h5>
+                    <h5 className="mt-2"><strong>Our Quality Product:</strong></h5>
                     <p>Delivering market-relevant, unique, and quality products with expertise.</p>
                   </div>
                 </li>

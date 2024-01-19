@@ -90,7 +90,7 @@ const AboutUs = () => {
                 <img src="https://demo.epic-webdesign.com/tf-pacifico/v1/images/team1a.jpg" class="team-img" alt="pic" />
                 <h3>JOHNATHAN HAWKINS</h3>
                 <div className="team-info"><p className="text-center">CEO</p></div>
-                <p>Johnathan is our  co-founder and has developed search strategies for a variety of clients from international brands to medium sized businesses for over five years.</p>
+                <p>Johnathan is our  co-founder and has developed search strategies for a variety of clients from international brands to medium sized businesses over five years.</p>
 
                 <ul className="team-icon">
                 <li><a href="https://www.facebook.com/" className="facebook"><FontAwesomeIcon icon={faFacebook} /></a></li>

@@ -127,18 +127,24 @@
   border-radius: 50%;
   display: inline-block;
   margin-right: 10px;
+  margin-top: -82px;
 }
 @media (max-width: 767px) {
   .bullet-circle {
-    width:15px; 
-    height: 15px;
-    border-radius:100px;
+    width:20px; 
+    height: 10px;
+    border-radius:50px;
     margin-right: 8px; 
-    margin-bottom: 85px;
+    margin-bottom: 40px;
   }
 }
 
 .list-unstyled p{
   font-size: 15px;
   font-weight: 300;
+}
+
+
+.service-home {
+  border: #f36b6b;
 }
