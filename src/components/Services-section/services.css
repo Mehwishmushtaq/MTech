@@ -131,11 +131,7 @@
 }
 @media (max-width: 767px) {
   .bullet-circle {
-    width:20px; 
-    height: 10px;
-    border-radius:50px;
-    margin-right: 8px; 
-    margin-bottom: 40px;
+    display: none;
   }
 }
 
