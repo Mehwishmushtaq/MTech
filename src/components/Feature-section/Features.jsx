@@ -1,5 +1,7 @@
 import React from 'react';
-import { Container, Row, Col } from 'reactstrap';
+import { Row, Col, Container } from 'reactstrap';
+import { FaCogs, FaBriefcase} from 'react-icons/fa';
+
 
 import FCard from '../Feature-section/FCard';
 
@@ -20,7 +22,106 @@ const features = [
 
 const Features = () => {
     return (
-        <div>
+        <div className="container feature">
+
+            <Row>
+                <Col className='mt-1 text-end '>
+                    <h5>Requirement Analysis</h5>
+                    <p className='text-end'>All possible system requirements to be developed are captured in this phase.</p>
+                </Col>
+
+                <Col md={2} className="d-flex justify-content-center align-items-center">
+                    <div className="rounded-circle bg-danger p-3">
+                        <FaCogs size={25} style={{ color: '#fff' }} />
+                    </div>
+                </Col>
+ 
+                <Col md={2} className="d-flex justify-content-center align-items-center">
+                    <div className="rounded-circle bg-danger p-3" style={{marginLeft:'-180px'}}>
+                        <FaBriefcase size={25} style={{ color: '#fff' }} />
+                    </div>
+                </Col>
+
+                <Col md={4} className='mt-1'style={{marginLeft:'-90px'}}>
+                    <h5>Planning</h5>
+                    <p>Getting the requirements the planning procedure takes place.</p>
+                </Col>
+            </Row>
+
+            {/* Second Row */}
+            <Row>
+                <Col className='text-end mt-2'>
+                    <h5>System Design</h5>
+                    <p className='text-end'>The requirement specifications phase is studied, and the system design is prepared.</p>
+                </Col>
+
+                <Col md={2} className="d-flex justify-content-center align-items-center mb-2">
+                    <div className="rounded-circle bg-danger p-3">
+                        <FaCogs size={25} style={{ color: '#fff' }} />
+                    </div>
+                </Col>
+ 
+                <Col md={2} className="d-flex justify-content-center align-items-center mb-2">
+                    <div className="rounded-circle bg-danger p-3" style={{marginLeft:'-180px'}}>
+                        <FaBriefcase size={25} style={{ color: '#fff' }} />
+                    </div>
+                </Col>
+
+                <Col md={4} className='mt-2' style={{marginLeft:'-90px'}}>
+                    <h5>Implementation</h5>
+                    <p>The system is first developed in small programs called units, which are integrated into.</p>
+                </Col>
+            </Row>
+            {/* Third Row */}
+            <Row>
+                <Col className='text-end mt-2'>
+                    <h5>Beta Testing</h5>
+                    <p className='text-end'>The units developed in the implementation phase are integrated into a system after testing each unit.</p>
+                </Col>
+
+                <Col md={2} className="d-flex justify-content-center align-items-center">
+                    <div className="rounded-circle bg-danger p-3">
+                        <FaCogs size={25} style={{ color: '#fff' }} />
+                    </div>
+                </Col>
+ 
+                <Col md={2} className="d-flex justify-content-center align-items-center">
+                    <div className="rounded-circle bg-danger p-3" style={{marginLeft:'-180px'}}>
+                        <FaBriefcase size={25} style={{ color: '#fff' }} />
+                    </div>
+                </Col>
+
+                <Col md={4} className='mt-2' style={{marginLeft:'-90px'}}>
+                    <h5>Alpha Testing</h5>
+                    <p>Post integration the entire system is tested for any faults and failures.</p>
+                </Col>
+            </Row>
+            {/* Fourth Row           */}
+            <Row>
+                <Col className='text-end mt-2'>
+                    <h5>Deployment</h5>
+                    <p className='text-end'>Once the functional and non-functional testing is done; the product is deployed.</p>
+                </Col>
+
+                <Col md={2} className="d-flex justify-content-center align-items-center">
+                    <div className="rounded-circle bg-danger p-3">
+                        <FaCogs size={25} style={{ color: '#fff' }} />
+                    </div>
+                </Col>
+ 
+                <Col md={2} className="d-flex justify-content-center align-items-center">
+                    <div className="rounded-circle bg-danger p-3" style={{marginLeft:'-180px'}}>
+                        <FaBriefcase size={25} style={{ color: '#fff' }} />
+                    </div>
+                </Col>
+
+                <Col md={4} className='mt-2' style={{marginLeft:'-90px'}}>
+                    <h5>Maintenance</h5>
+                    <p>Maintenance is done to deliver the changes in the customer environment.</p>
+                </Col>
+            </Row>
+
+            <div>
             <Container>
             <section className="why-choose-us-section">
                 <Row>
@@ -34,6 +135,10 @@ const Features = () => {
             </section>
         </Container>
         </div>
+        </div>
+
+
+        
 
     );
 };

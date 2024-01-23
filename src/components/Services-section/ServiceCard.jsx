@@ -10,7 +10,7 @@ const ServiceCard = (props) => {
 
 
   return (
-    <div className="single__course__item text-center ">
+    <div className="single__course__item text-center">
       <div className="course__img">
         <a href='/web-development'>
           <img src={imgUrl} alt="zz" className="w-100" />

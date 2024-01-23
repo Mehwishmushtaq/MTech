@@ -1,0 +1,16 @@
+.service-cards {
+    min-width: 350px;
+    margin-right: 30px;
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 20px; 
+    padding: 5px; 
+    transition: transform 0.3s ease-in-out; 
+  }
+  
+  .service-cards:hover {
+    transform: scale(1.05); 
+  }
+  
+  

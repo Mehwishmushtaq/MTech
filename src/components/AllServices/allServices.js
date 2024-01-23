@@ -6,6 +6,8 @@ import serviceImg3 from "../../assets/images/ui-ux.png";
 import Web3 from '../../assets/images/web3.png'
 import Web4 from '../../assets/images/web4.png'
 import ServiceCard from "../Services-section/ServiceCard";
+import "./allServices.css";
+
 
 const servicesData = [
     {
@@ -77,7 +79,7 @@ const AllServices = () => {
                             </div>
                         </div>
                         {servicesData.map((item) => (
-                            <Col key={item.id} lg="4" md="6" sm="6">
+                            <Col className='service-cards' key={item.id} lg="3" md="6" sm="6">
                                 <ServiceCard item={item} />
                             </Col>
                         ))}

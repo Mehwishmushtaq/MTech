@@ -209,3 +209,26 @@ i {
   }
 }
 
+@media only screen and (max-width: 320px) {
+  .feature{
+    display: none;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .feature{
+    display: none;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .feature{
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width: 1440px) {
+  .why-choose-us-section{
+    display: none;
+  }
+}
+
