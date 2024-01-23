@@ -87,7 +87,7 @@ const AllServices = () => {
                 </Container>
 
                 {/* Best IT Solution Section  */}
-                <Container>
+                {/* <Container>
                     <div className="container mt-5">
                         <div className="row">
                             <div className="col-md-6">
@@ -124,7 +124,7 @@ const AllServices = () => {
                             </div>
                         </div>
                     </div>
-                </Container>
+                </Container> */}
 
                 {/* Choose Us to Stand */}
                 {/* Section 2 */}
