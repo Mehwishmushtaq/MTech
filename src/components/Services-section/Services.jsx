@@ -51,7 +51,7 @@ const Services = () => {
     <section className="service-home">
       <Container>
         <Row>
-          <div class="container">
+          <div className="container overflow-hidden">
             <div class="row mt-2 text-center justify-content-center">
               <h4 style={{ color: '#ff6b6b' }}>Empowering Your Business with</h4>
               <h3 style={{ fontWeight: '700' }}>Our Outstanding Services</h3>
@@ -62,7 +62,7 @@ const Services = () => {
             </div>
           </div>
           {servicesData.map((item) => (
-              <Col className='service-cards' key={item.id} lg="3" md="6" sm="6">
+              <Col className='service-cards' key={item.id} lg="3" md="6" sm="12">
               <ServiceCard item={item} />
             </Col>
           ))}

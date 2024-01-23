@@ -79,7 +79,7 @@ const AllServices = () => {
                             </div>
                         </div>
                         {servicesData.map((item) => (
-                            <Col className='service-cards' key={item.id} lg="3" md="6" sm="6">
+                            <Col className='service-cards' key={item.id} lg="3" md="6" sm="12">
                                 <ServiceCard item={item} />
                             </Col>
                         ))}
