@@ -123,7 +123,7 @@ const Features = () => {
 
             <div>
             <Container>
-            <section className="why-choose-us-section">
+            <section className="feature-section">
                 <Row>
                     {features.map((feature, index) => (
                         <Col key={index} md="6" lg="4" className="mb-4">
