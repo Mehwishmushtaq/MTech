@@ -50,10 +50,7 @@ const AboutUs = () => {
                 <h2 className="mt-4">About Us</h2>
                 <p>
                   <h5 style={{ color: '#ff6b6b' }}>High-Quality IT Services Provider Company</h5>
-                  M Technology's major mission is to provide high-quality IT services. Our aim is to be
-                  the industry's leading provider of high-quality IT solutions, setting the bar for
-                  excellence and innovation. We seek to be your trusted partner for all of your IT needs
-                  with cutting-edge technology, talented experts, and a customer-centric approach.
+                  M Technology's major mission is to provide high-quality IT services. Our aim is to be the industry's leading provider of high-quality IT solutions, setting the bar for excellence and innovation. We seek to be your trusted partner for all of your IT needs with cutting-edge technology, talented experts, and a customer-centric approach. Additionally, we are committed to delivering personalized solutions tailored to meet the specific requirements of each client, ensuring their success in the rapidly evolving digital landscape.
                 </p>
               </div>
             </Col>
@@ -77,7 +74,7 @@ const AboutUs = () => {
 
             <div className="col-md-12 text-center">
 
-              <h2 className="section-title"><strong>The Team Behind <span style={{color:'#f36b6b'}}>MTechnologies</span></strong></h2>
+              <h2 className="section-title"><strong>The Team Behind <span style={{ color: '#f36b6b' }}>MTechnologies</span></strong></h2>
 
               <p className="section-subtitle text-center ">{message}</p>
 
@@ -93,10 +90,10 @@ const AboutUs = () => {
                 <p>Johnathan is our  co-founder and has developed search strategies for a variety of clients from international brands to medium sized businesses over five years.</p>
 
                 <ul className="team-icon">
-                <li><a href="https://www.facebook.com/" className="facebook"><FontAwesomeIcon icon={faFacebook} /></a></li>
-                    <li><a href="https://twitter.com/" className="twitter"><FontAwesomeIcon icon={faTwitter} /></a></li>
-                    <li><a href="https://www.linkedin.com/" className="linkedIn"><FontAwesomeIcon icon={faLinkedin} /></a></li>
-                    <li><a href="https://www.instagram.com/" className="instagram"><FontAwesomeIcon icon={faInstagram} /></a></li>
+                  <li><a href="https://www.facebook.com/" className="facebook"><FontAwesomeIcon icon={faFacebook} /></a></li>
+                  <li><a href="https://twitter.com/" className="twitter"><FontAwesomeIcon icon={faTwitter} /></a></li>
+                  <li><a href="https://www.linkedin.com/" className="linkedIn"><FontAwesomeIcon icon={faLinkedin} /></a></li>
+                  <li><a href="https://www.instagram.com/" className="instagram"><FontAwesomeIcon icon={faInstagram} /></a></li>
 
                 </ul>
 
@@ -118,10 +115,10 @@ const AboutUs = () => {
 
                 <ul className="team-icon">
 
-                <li><a href="https://www.facebook.com/" className="facebook"><FontAwesomeIcon icon={faFacebook} /></a></li>
-                    <li><a href="https://twitter.com/" className="twitter"><FontAwesomeIcon icon={faTwitter} /></a></li>
-                    <li><a href="https://www.linkedin.com/" className="linkedIn"><FontAwesomeIcon icon={faLinkedin} /></a></li>
-                    <li><a href="https://www.instagram.com/" className="instagram"><FontAwesomeIcon icon={faInstagram} /></a></li>
+                  <li><a href="https://www.facebook.com/" className="facebook"><FontAwesomeIcon icon={faFacebook} /></a></li>
+                  <li><a href="https://twitter.com/" className="twitter"><FontAwesomeIcon icon={faTwitter} /></a></li>
+                  <li><a href="https://www.linkedin.com/" className="linkedIn"><FontAwesomeIcon icon={faLinkedin} /></a></li>
+                  <li><a href="https://www.instagram.com/" className="instagram"><FontAwesomeIcon icon={faInstagram} /></a></li>
 
                 </ul>
 
@@ -142,10 +139,10 @@ const AboutUs = () => {
 
                 <ul className="team-icon">
 
-                <li><a href="https://www.facebook.com/" className="facebook"><FontAwesomeIcon icon={faFacebook} /></a></li>
-                    <li><a href="https://twitter.com/" className="twitter"><FontAwesomeIcon icon={faTwitter} /></a></li>
-                    <li><a href="https://www.linkedin.com/" className="linkedIn"><FontAwesomeIcon icon={faLinkedin} /></a></li>
-                    <li><a href="https://www.instagram.com/" className="instagram"><FontAwesomeIcon icon={faInstagram} /></a></li>
+                  <li><a href="https://www.facebook.com/" className="facebook"><FontAwesomeIcon icon={faFacebook} /></a></li>
+                  <li><a href="https://twitter.com/" className="twitter"><FontAwesomeIcon icon={faTwitter} /></a></li>
+                  <li><a href="https://www.linkedin.com/" className="linkedIn"><FontAwesomeIcon icon={faLinkedin} /></a></li>
+                  <li><a href="https://www.instagram.com/" className="instagram"><FontAwesomeIcon icon={faInstagram} /></a></li>
 
                 </ul>
 
@@ -159,21 +156,21 @@ const AboutUs = () => {
 
       </section>
 
-       {/* Counter Section 3*/}
-       <div style={backgroundImageStyle} >
+      {/* Counter Section 3*/}
+      <div style={backgroundImageStyle} >
         <Container className="py-5 mt-5">
           <Row>
             {counters.map((counter) => (
               <Col key={counter.id} md={3} className="mb-4">
                 <div className="text-center text-white">
-                  <h2 style={{fontSize:'30px', fontWeight:'700'}}>
+                  <h2 style={{ fontSize: '30px', fontWeight: '700' }}>
                     <CountUp
                       start={counter.start}
                       end={counter.end}
                       duration={counter.duration}
                     />
                   </h2>
-                  <p style={{fontSize:'20px', fontWeight:'700'}} className="text-center text-white">{counter.title}</p>
+                  <p style={{ fontSize: '20px', fontWeight: '700' }} className="text-center text-white">{counter.title}</p>
                 </div>
               </Col>
             ))}
@@ -191,7 +188,7 @@ const AboutUs = () => {
               className="img-fluid rounded"
             />
           </div>
-          <div className="col-md-6">
+          <div className="col-md-6 content-p">
             <h2>The Best IT Solutions And Ideas</h2>
             <p>
               In the ever-evolving landscape of technology, finding the best IT solution is crucial for businesses striving to stay competitive and innovative. A robust IT solution not only streamlines operations but also empowers organizations to adapt to the dynamic challenges of the digital era. From efficient cloud computing and cybersecurity measures to cutting-edge software development and data analytics, the best IT solution is tailored to meet the unique needs of a business. It acts as a strategic enabler, fostering agility, scalability, and a resilient infrastructure. Choosing the right IT solution is akin to unlocking the door to enhanced productivity, seamless collaboration, and future-proofing against technological disruptions. As businesses embrace digital transformation, the quest for the best IT solution becomes an integral part of their journey toward sustained success in the rapidly advancing world of technology.

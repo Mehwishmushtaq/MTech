@@ -80,7 +80,7 @@ const Services = () => {
               <img
                 src={serviceImg3}
                 alt="Sample"
-                className="img-fluid"
+                className="img-fluid image-animation"
               />
             </div>
 
@@ -161,14 +161,13 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Just Click Away Section */}
       <div className="container mt-5">
         <div className="row">
           <div className="col-md-6">
             <img
               src={serviceImg3}
               alt="Sample"
-              className="img-fluid"
+              className="img-fluid image-animation" 
             />
           </div>
 
@@ -193,7 +192,6 @@ const Services = () => {
         </div>
       </div>
     </section>
-
   );
 };
 

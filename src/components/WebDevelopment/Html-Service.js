@@ -32,7 +32,7 @@ const HtmlServices = () => {
                                 <span>Perfect Technology</span>
                                 <span style={{ color: '#ff6b6b' }}> Solution For All HTML</span>
                             </h2>
-                            <p>
+                            <p className='animate-content'>
                                 Since its principal days, HTML has experienced a mind-blowing development. It is HTML principal, the markup language of the web. It runs locally in each program and is kept up by the World Wide Web Consortium.
                             </p>
                             {/* Features Section */}
@@ -53,14 +53,14 @@ const HtmlServices = () => {
                                         <h6><FaCubes color='#22a6b3' size={30} className="mr-2" /> Basic Building Block</h6>
                                     </Col>
                                 </Row>
-                                <p className="text-justify mt-4">At M Technologies, our HTML developers provide better service and superior HTML coding. We have experience with data object modeling and CMS platforms such as CSS and JavaScript. We work diligently throughout development to accomplish our client’s project within the deadline.</p>
+                                <p className="animate-content text-justify mt-4">At M Technologies, our HTML developers provide better service and superior HTML coding. We have experience with data object modeling and CMS platforms such as CSS and JavaScript. We work diligently throughout development to accomplish our client’s project within the deadline.</p>
                             </Container>
                         </Col>
                         <Col md={6}>
                             <img
                                 src={Html1}
                                 alt="Sample"
-                                className="img-fluid"
+                                className="img-fluid image-animate"
                             />
                         </Col>
                     </Row>

@@ -32,7 +32,7 @@ const LaravelService = () => {
                                 <span style={{ color: '#ff6b6b' }}>Expressive Services</span>
                                 <span> With Laravel Development</span>
                             </h2>
-                            <p>
+                            <p className='animate-content'>
                                 The Laravel web development service is a web application system with an expressive, exquisite language structure. We are the best Laravel web development services in the market.
                                 <br />
                                 A web system gives your application a construction and beginning stage, permitting you to zero in on making something astounding while we sweat the subtleties.                            </p>
@@ -53,7 +53,7 @@ const LaravelService = () => {
                                         <h6><FaBolt color='#22a6b3' size={20} className="mr-2" /> Faster Enrollments</h6>
                                     </Col>
                                 </Row>
-                                <p className="text-justify mt-4">Laravel web development services endeavor to provide an incredible designer experience while giving notable highlights like careful reliance infusion, an expressive data set reflection layer, lines and planned positions, unit and coordination testing, and the sky is the limit.
+                                <p className="animate-content text-justify mt-4">Laravel web development services endeavor to provide an incredible designer experience while giving notable highlights like careful reliance infusion, an expressive data set reflection layer, lines and planned positions, unit and coordination testing, and the sky is the limit.
                                  <br/>
                                 Whether you are new to PHP web development with Laravel or have long periods of involvement, here at M Technologies, Laravel web development services is a structure that can develop with you. We’ll help you make your first strides as a web designer or give you a lift as you take your ability to the following level. We can hardly wait to perceive what you assemble.</p>
                             </Container>
@@ -62,7 +62,7 @@ const LaravelService = () => {
                             <img
                                 src={Laravel}
                                 alt="Sample"
-                                className="img-fluid"
+                                className="img-fluid image-animate"
                             />
                         </Col>
                     </Row>

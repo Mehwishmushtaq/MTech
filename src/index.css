@@ -29,8 +29,9 @@ h6 {
   font-size: 2rem;
   line-height: 50px;
   font-family: "Poppins", sans-serif;
+  font-style: italic;
   color: #0a2b1e;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 p {
@@ -38,6 +39,7 @@ p {
   font-size: 1rem !important;
   line-height: 35px;
   font-family: "Andada Pro", serif;
+  font-style: italic;
   font-weight: 400;
   text-align: left;
 }
@@ -233,5 +235,25 @@ i {
 }
 
 
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.image-animation {
+  animation: slideInFromLeft 5s ease forwards;
+}
+.image-animate {
+  animation: slideInFromRight 5s ease forwards;
+}
+.animate-content {
+  animation: slideInFromLeft 3s ease forwards;
+}
 
 

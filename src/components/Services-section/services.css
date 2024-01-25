@@ -148,7 +148,7 @@
 
 
 .service-cards {
-  min-width: 100%;
+  min-width: 350px;
   /* margin-right: 30px; */
   border: 1px solid #ddd; 
   border-radius: 8px; 
