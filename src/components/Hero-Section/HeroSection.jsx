@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
-import HeroGif from "../../assets/images/HeroGif.gif";
+import HeroImg from '../../assets/images/hero-img2.png'
 import "./hero-section.css";
 
 const HeroSection = () => {
@@ -12,10 +12,10 @@ const HeroSection = () => {
             <div className="hero">
               <div className="hero__content">
                 <h5 className=" mt-2  hero__title">
-                  <span style={{fontSize: '18px', fontWeight:'700', color:'#01a3a4'}}>Discover, Prepare, Innovate &</span>
+                  <span style={{fontSize: '18px', fontWeight:'700', color:'#fff'}}>Discover, Prepare, Innovate &</span>
                 </h5>
                 <h2 style={{fontSize: '3rem', fontWeight:'1000'}}>Empower your ideas</h2>
-                <p className="">Elevate your business success with outstanding and exemplary services to transform your brilliant ideas into action.</p>
+                <p className="text-white">Elevate your business success with outstanding and exemplary services to transform your brilliant ideas into action.</p>
                 <div className="search">
                   <a href="/contact">
                     <button className="btn">GET A QUOTE</button>
@@ -25,7 +25,7 @@ const HeroSection = () => {
             </div>
           </Col>
           <Col lg="6" md="6" className="hero-img-col">
-            <img src={HeroGif} alt="" className="w-100 hero__img"/>
+            <img src={HeroImg} alt="" className="w-100 hero__img"/>
           </Col> 
         </Row>
       </Container>

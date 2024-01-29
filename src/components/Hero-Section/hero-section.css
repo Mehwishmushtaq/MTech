@@ -4,10 +4,10 @@
   background-repeat: no-repeat;
   
   /* background-size: cover; */
-  /* background-color: #ff9ff3; */
+  background-color: #01a3a4;
   background-position:right;
   /* object-fit: cover; */
-  color: #2f3640; 
+  color: #fff; 
   padding: 80px 0; 
 }
 
@@ -31,14 +31,14 @@
 .hero__content p {
   font-size: 20px; 
   margin: 15px 0;
-  color: #2f3640;
+  color: #fff;
 }
 
 
 .search .btn {
   width: 50%;
-  background-color:#01a3a4; 
-  color:#fff; 
+  background-color:#fff; 
+  color:#01a3a4; 
   border-radius: 5px;
   padding: 10px 20px; 
   border: none;
@@ -54,18 +54,18 @@
 
 
 .search .btn:hover{
-  background-color: #01a3a4;
+  background-color: #a29bfe;
   color: white;
   border-radius: 5px;
 }
 
 .hero-img-col img {
-  max-width: 100%;
+  max-width: 80%;
   height: auto; 
-  /* margin-left: 50px; */
+  margin-left: 50px;
   margin-right: 50px;
-  /* transition: transform 0.5s ease-in-out;
-  animation: spin 20s linear infinite;  */
+  transition: transform 0.5s ease-in-out;
+  animation: spin 20s linear infinite; 
 }
 
 @keyframes spin {
