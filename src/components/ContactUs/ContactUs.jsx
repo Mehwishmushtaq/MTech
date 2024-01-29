@@ -1,11 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
+import axios from 'axios';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import Web5 from '../../assets/images/web5.svg'
-
+import Web5 from '../../assets/images/web5.svg';
 
 const ContactForm = () => {
+	const [formData, setFormData] = useState({
+		name: '',
+		email: '',
+		phone: '',
+		services: '',
+		message: '',
+	});
+  
+	const handleChange = (e) => {
+		setFormData({ ...formData, [e.target.name]: e.target.value });
+	};
+  
+	const handleSubmit = async (e) => {
+		e.preventDefault();
+		try {
+			const response = await axios.post('/contact', formData);
+			console.log(response.data);
+		} catch (error) {
+			console.error('Error submitting form:', error);
+		}
+	};
 	return (
 		<div>
 			{/* Banner Section */}
@@ -97,25 +118,25 @@ const ContactForm = () => {
 
 						{/* Right Side - Form */}
 						<Col md={6}>
-							<Form>
+							<Form onSubmit={handleSubmit}>  
 								<Form.Group controlId="formName">
 									<Form.Label>Name</Form.Label>
-									<Form.Control type="text" className='mb-3' placeholder="Enter your name" />
+									<Form.Control type="text" className='mb-3' value={formData.name} onChange={handleChange}  placeholder="Enter your name" />
 								</Form.Group>
 
 								<Form.Group controlId="formEmail">
 									<Form.Label>Email</Form.Label>
-									<Form.Control type="email" className='mb-3' placeholder="Enter your email" />
+									<Form.Control type="email" className='mb-3'value={formData.email} onChange={handleChange}  placeholder="Enter your email" />
 								</Form.Group>
 
 								<Form.Group controlId="formPhone">
 									<Form.Label>Phone</Form.Label>
-									<Form.Control type="tel" className='mb-3' placeholder="Enter your phone number" />
+									<Form.Control type="tel" className='mb-3' value={formData.phone} onChange={handleChange} placeholder="Enter your phone number" />
 								</Form.Group>
 
 								<Form.Group controlId="formServices">
 									<Form.Label>Services</Form.Label>
-									<Form.Control as="select" className='mb-3' defaultValue="Choose...">
+									<Form.Control as="select" className='mb-3' value={formData.services} onChange={handleChange}  defaultValue="Choose...">
 										<option disabled>Choose...</option>
 										<option>Service 1</option>
 										<option>Service 2</option>
@@ -125,7 +146,7 @@ const ContactForm = () => {
 
 								<Form.Group controlId="formMessage">
 									<Form.Label>Message</Form.Label>
-									<Form.Control as="textarea" className='mb-3' rows={5} placeholder="Enter your message" />
+									<Form.Control as="textarea" className='mb-3' value={formData.message} onChange={handleChange} rows={5} placeholder="Enter your message" />
 								</Form.Group>
 
 								<Button style={{ background: '#f36b6b', color: '#fff', borderRadius:'5px', fontWeight:'700', width:'100%', border:'none'}} type="submit" className='mt-4'>

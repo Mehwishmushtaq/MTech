@@ -10,7 +10,7 @@ const Header = () => (
     <Navbar className='custom-nav' expand="lg" variant="dark">
       <Container className='navbar-menu'>
         <Navbar.Brand href="/web-development"><i class="ri-edge-new-fill"></i> M Technologies</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle aria-controls="basic-navbar-nav" style={{backgroundColor:'#2f3640', color:'#fff'}}/>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="/">Home</Nav.Link>

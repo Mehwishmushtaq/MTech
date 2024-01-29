@@ -62,7 +62,7 @@ const Footer = () => {
             </h2>
 
             <div className="follows mt-3 mb-3">
-              <p className="mb-0 white-text">Follow us on social media</p>
+              <p className="mb-0 text-white">Follow us on social media</p>
               <span>
                 {" "}
                 <a href="https://www.facebook.com/" className="facebook"><FontAwesomeIcon icon={faFacebook} size='2x' /></a>
@@ -111,13 +111,13 @@ const Footer = () => {
 
           <Col lg="3" md="6">
             <h6 className="fw-bold white-text">Get in Touch</h6>
-            <p className="mb-0 white-text">Address: Cambridge, UK</p>
-            <p className="mb-0 white-text"> Phone: +88 0123456789 </p>
-            <p className="mb-0 white-text">Email: example@gmail.com</p>
+            <p className="mb-0 text-white">Address: Cambridge, UK</p>
+            <p className="mb-0 text-white"> Phone: +88 0123456789 </p>
+            <p className="mb-0 text-white">Email: example@gmail.com</p>
           </Col>
         </Row>
       </Container>
-      <div class="container text-center mt-4 ">
+      <div class="container text-center">
         <h6>
         <span class="text-white">
           &copy; 2024 All rights reserved.

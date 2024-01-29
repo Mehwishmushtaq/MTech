@@ -29,18 +29,18 @@ h6 {
   font-size: 2rem;
   line-height: 50px;
   font-family: "Poppins", sans-serif;
-  font-style: italic;
+  /* font-style: italic; */
   color: #0a2b1e;
   font-weight: 700;
 }
 
 p {
-  color: #2d3436;
+  color: #2d3436 !important;
   font-size: 1rem !important;
   line-height: 35px;
   font-family: "Andada Pro", serif;
-  font-style: italic;
-  font-weight: 400;
+  /* font-style: italic; */
+  font-weight: 500 !important;
   text-align: left;
 }
 
@@ -247,13 +247,15 @@ i {
 }
 
 .image-animation {
-  animation: slideInFromLeft 5s ease forwards;
+  animation: slideInFromLeft 3s ease forwards;
 }
 .image-animate {
-  animation: slideInFromRight 5s ease forwards;
+  animation: slideInFromRight 3s ease forwards;
 }
 .animate-content {
   animation: slideInFromLeft 3s ease forwards;
 }
 
-
+.rounded-circle {
+  background-color: '#01a3a4';
+}

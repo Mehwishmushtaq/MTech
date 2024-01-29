@@ -1,6 +1,13 @@
 .hero-section {
-  background-color: #e74c3c; 
-  color: #fff; 
+  /* background-color: #e74c3c;  */
+  /* background-image: url(../../assets/images/HeroImg.png); */
+  background-repeat: no-repeat;
+  
+  /* background-size: cover; */
+  /* background-color: #ff9ff3; */
+  background-position:right;
+  /* object-fit: cover; */
+  color: #2f3640; 
   padding: 80px 0; 
 }
 
@@ -24,13 +31,14 @@
 .hero__content p {
   font-size: 20px; 
   margin: 15px 0;
-  color: #fff;
+  color: #2f3640;
 }
 
 
 .search .btn {
-  background-color:#fff; 
-  color:#e74c3c; 
+  width: 50%;
+  background-color:#01a3a4; 
+  color:#fff; 
   border-radius: 5px;
   padding: 10px 20px; 
   border: none;
@@ -38,6 +46,12 @@
   font-weight: bold;
   text-transform: uppercase;
 }
+@media (max-width: 768px) {
+  .search .btn {
+    width: 100%; 
+  }
+}
+
 
 .search .btn:hover{
   background-color: #01a3a4;
@@ -46,11 +60,12 @@
 }
 
 .hero-img-col img {
-  max-width: 70%;
+  max-width: 100%;
   height: auto; 
-  margin-left: 50px;
-  transition: transform 0.5s ease-in-out;
-  animation: spin 20s linear infinite; 
+  /* margin-left: 50px; */
+  margin-right: 50px;
+  /* transition: transform 0.5s ease-in-out;
+  animation: spin 20s linear infinite;  */
 }
 
 @keyframes spin {

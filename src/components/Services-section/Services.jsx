@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Container, Row, Col, Button } from "reactstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
@@ -9,11 +9,14 @@ import serviceImg3 from "../../assets/images/ui-ux.png";
 import Features from '../Feature-section/Features'
 import "./services.css";
 import ServiceCard from "./ServiceCard";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const backgroundImageStyle = {
-  backgroundImage: 'url("https://img.freepik.com/premium-vector/modern-red-abstract-banner-background_181182-21615.jpg?w=360")',
+  backgroundImage: 'url("https://img.freepik.com/premium-vector/green-paper-cut-banner-background_457289-130.jpg")',
   backgroundSize: 'cover',
   backgroundPosition: 'center',
+  backgroundRepeat: 'no-repeat',
   minHeight: '5vh',
 };
 const counters = [
@@ -47,18 +50,25 @@ const servicesData = [
 ];
 
 const Services = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 500,
+      easing: 'linear',
+      offset: 200,
+    });
+  }, []);
   return (
     <section className="service-home">
       <Container>
         <Row>
-          <div className="container overflow-hidden">
+          <div data-aos="fade-left" className="container overflow-hidden">
             <div class="row mt-2 text-center justify-content-center">
-              <h4 style={{ color: '#ff6b6b' }}>Empowering Your Business with</h4>
-              <h3 style={{ fontWeight: '700' }}>Our Outstanding Services</h3>
-              <div class="col-md-12">
+              <h4 style={{ color: '#01a3a4' }}>Servies We Offer</h4>
+              <h3 style={{ fontWeight: '900'}}>Our Featured Services</h3>
+              {/* <div class="col-md-12">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere ipsum reiciendis reprehenderit laudantium? Voluptates, nulla ducimus? Fuga esse, nemo ut necessitatibus magni itaque porro voluptatem, vel veniam corporis incidunt provident?
                   Consequuntur eius doloribus quidem natus vero sapiente! Perspiciatis totam harum veritatis eos, molestiae vel maxime velit temporibus fuga officia rem eveniet delectus ad, libero reiciendis ducimus ut tempore, facilis nam?</p>
-              </div>
+              </div> */}
             </div>
           </div>
           {servicesData.map((item) => (
@@ -74,9 +84,9 @@ const Services = () => {
 
       {/* Best IT Solution Section  */}
       <Container>
-        <div className="container mt-5">
+        <div data-aos="fade-up" className="container mt-5">
           <div className="row">
-            <div className="col-md-6">
+            <div data-aos="fade-up"className="col-md-6">
               <img
                 src={serviceImg3}
                 alt="Sample"
@@ -85,7 +95,7 @@ const Services = () => {
             </div>
 
             <div className="col-md-6 mt-4 ">
-              <h4 style={{ color: '#f36b6b' }}>The Best IT Solutions & Ideas</h4>
+              <h4 style={{ color: '#01a3a4' }}>The Best IT Solutions & Ideas</h4>
               <h2><strong>Unleashing Your Best with MTechnologies</strong></h2>
 
               <ul className="list-unstyled">
@@ -113,20 +123,20 @@ const Services = () => {
       </Container>
 
       {/* Counter Section 3*/}
-      <div style={backgroundImageStyle} >
+      <div data-aos="fade-up" style={backgroundImageStyle} >
         <Container className="py-5 mt-5">
           <Row>
             {counters.map((counter) => (
               <Col key={counter.id} md={3} className="mb-4">
                 <div className="text-center text-white">
-                  <h2 style={{fontSize:'30px', fontWeight:'700'}}>
+                  <h2 style={{fontSize:'40px', fontWeight:'900'}}>
                     <CountUp
                       start={counter.start}
                       end={counter.end}
                       duration={counter.duration}
                     />
                   </h2>
-                  <p style={{fontSize:'20px', fontWeight:'700'}} className="text-center text-white">{counter.title}</p>
+                  <p style={{fontSize:'30px', fontWeight:'900'}} className="text-center text-white">{counter.title}</p>
                 </div>
               </Col>
             ))}
@@ -139,7 +149,7 @@ const Services = () => {
         <Row className="mb-4">
           <h2>
             <strong>
-              We Provide <span style={{ color: '#f36b6b' }}>IT & Business Solutions</span>
+              We Provide <span style={{ color: '#01a3a4' }}>IT & Business Solutions</span>
             </strong>
           </h2>
           <p className="text-center">We follow the structure to acquaint you with your ideas’ hassle and bring creative solutions for your projects.</p>
@@ -148,12 +158,12 @@ const Services = () => {
       <Features />
       {/* Banner Section */}
       <section>
-        <div style={{ background: '#e17055', padding: '20px', color: '#fff', textAlign: 'left' }}>
+        <div  data-aos="fade-up" style={{ background: '#01a3a4', padding: '20px', color: '#fff', textAlign: 'left' }}>
           <Container>
             <h1>Bringing Out The Best With Our Expertise</h1>
             <p className='text-white'>Say goodbye to project hassles and hello to groundbreaking ideas to unlock innovation with M Technologies.</p>
             <a href="/contact">
-              <Button style={{ background: '#fff', color: '#f36b6b', borderRadius:'5px', fontWeight:'700', border:'none' }}>
+              <Button style={{ background: '#fff', color: '#01a3a4', borderRadius:'5px', fontWeight:'700', border:'none' }}>
                 Start a Project
               </Button>
             </a>
@@ -161,7 +171,7 @@ const Services = () => {
         </div>
       </section>
 
-      <div className="container mt-5">
+      <div data-aos="fade-up" className="container mt-5">
         <div className="row">
           <div className="col-md-6">
             <img
@@ -178,12 +188,12 @@ const Services = () => {
             </p>
             <Row className="text-center">
               <Col className="mt-4">
-                <FontAwesomeIcon icon={faPhone} size='2x' color="#f36b6b" />
+                <FontAwesomeIcon icon={faPhone} size='2x' color="#01a3a4" />
                 <h5 className="mt-2"><strong>Say Hello!</strong></h5>
                 <p className="text-center">+92 123 4023686</p>
               </Col>
               <Col className="mt-4">
-                <FontAwesomeIcon icon={faEnvelope} size='2x' color="#f36b6b" />
+                <FontAwesomeIcon icon={faEnvelope} size='2x' color="#01a3a4" />
                 <h5 className="mt-2"><strong>Email</strong></h5>
                 <p className="text-center">contact@mtechnologies.com</p>
               </Col>

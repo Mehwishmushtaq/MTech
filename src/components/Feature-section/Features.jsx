@@ -1,9 +1,11 @@
-import React from 'react';
+import React  from 'react';
 import { Row, Col, Container } from 'reactstrap';
 import { FaCogs, FaBriefcase} from 'react-icons/fa';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import FCard from '../Feature-section/FCard';
+import { useEffect } from 'react';
 
 const features = [
     {
@@ -21,8 +23,15 @@ const features = [
 ];
 
 const Features = () => {
+    useEffect(() => {
+        AOS.init({
+          duration: 1000,
+          easing: 'ease-in-out',
+          offset: 200,
+        });
+      }, []);
     return (
-        <div className="container feature">
+        <div data-aos='fade-left' className="container feature">
 
             <Row>
                 <Col className='mt-1 text-end '>
@@ -31,13 +40,13 @@ const Features = () => {
                 </Col>
 
                 <Col md={2} className="d-flex justify-content-center align-items-center">
-                    <div className="rounded-circle bg-danger p-3">
+                    <div className="rounded-circle  p-3" style={{ backgroundColor: '#01a3a4' }}>
                         <FaCogs size={25} style={{ color: '#fff' }} />
                     </div>
                 </Col>
  
                 <Col md={2} className="d-flex justify-content-center align-items-center">
-                    <div className="rounded-circle bg-danger p-3" style={{marginLeft:'-180px'}}>
+                    <div className="rounded-circle  p-3" style={{marginLeft:'-180px', backgroundColor: '#01a3a4'}}>
                         <FaBriefcase size={25} style={{ color: '#fff' }} />
                     </div>
                 </Col>
@@ -56,13 +65,13 @@ const Features = () => {
                 </Col>
 
                 <Col md={2} className="d-flex justify-content-center align-items-center mb-2">
-                    <div className="rounded-circle bg-danger p-3">
+                    <div className="rounded-circle  p-3" style={{ backgroundColor: '#01a3a4' }}>
                         <FaCogs size={25} style={{ color: '#fff' }} />
                     </div>
                 </Col>
  
                 <Col md={2} className="d-flex justify-content-center align-items-center mb-2">
-                    <div className="rounded-circle bg-danger p-3" style={{marginLeft:'-180px'}}>
+                    <div className="rounded-circle  p-3" style={{marginLeft:'-180px', backgroundColor: '#01a3a4'}}>
                         <FaBriefcase size={25} style={{ color: '#fff' }} />
                     </div>
                 </Col>
@@ -80,13 +89,13 @@ const Features = () => {
                 </Col>
 
                 <Col md={2} className="d-flex justify-content-center align-items-center">
-                    <div className="rounded-circle bg-danger p-3">
+                    <div className="rounded-circle  p-3" style={{ backgroundColor: '#01a3a4' }}>
                         <FaCogs size={25} style={{ color: '#fff' }} />
                     </div>
                 </Col>
  
                 <Col md={2} className="d-flex justify-content-center align-items-center">
-                    <div className="rounded-circle bg-danger p-3" style={{marginLeft:'-180px'}}>
+                    <div className="rounded-circle  p-3" style={{marginLeft:'-180px', backgroundColor: '#01a3a4'}}>
                         <FaBriefcase size={25} style={{ color: '#fff' }} />
                     </div>
                 </Col>
@@ -104,13 +113,13 @@ const Features = () => {
                 </Col>
 
                 <Col md={2} className="d-flex justify-content-center align-items-center">
-                    <div className="rounded-circle bg-danger p-3">
+                    <div className="rounded-circle  p-3" style={{ backgroundColor: '#01a3a4' }}>
                         <FaCogs size={25} style={{ color: '#fff' }} />
                     </div>
                 </Col>
  
                 <Col md={2} className="d-flex justify-content-center align-items-center">
-                    <div className="rounded-circle bg-danger p-3" style={{marginLeft:'-180px'}}>
+                    <div className="rounded-circle  p-3" style={{marginLeft:'-180px', backgroundColor: '#01a3a4'}}>
                         <FaBriefcase size={25} style={{ color: '#fff' }} />
                     </div>
                 </Col>
