@@ -13,7 +13,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const backgroundImageStyle = {
-  backgroundImage: 'url("https://img.freepik.com/premium-vector/green-paper-cut-banner-background_457289-130.jpg")',
+  backgroundImage: 'url("https://img.freepik.com/free-photo/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_1258-82660.jpg")',
   backgroundSize: 'cover',
   backgroundPosition: 'center',
   backgroundRepeat: 'no-repeat',
