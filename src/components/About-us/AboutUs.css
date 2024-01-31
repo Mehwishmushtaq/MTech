@@ -17,7 +17,7 @@
 }
 
 .team-item:hover{
-	background: #f36b6b;
+	background: #01a3a4;
 	color: white;
 }
 
@@ -53,6 +53,10 @@
 	color: #454545;
 	font-style:italic;
 }
+
+
+
+
 
 .team-info::after {
     background: #008aff;
@@ -128,7 +132,7 @@ ul.team-icon li a.linkedIn{
 	transition: all 0.25s ease-in-out;
 }
 
-@keyframes fadeIn {
+/* @keyframes fadeIn {
 	from {
 	  opacity: 0;
 	}
@@ -169,4 +173,4 @@ ul.team-icon li a.linkedIn{
 
   .content-p{
 	animation: slideInFromRight 3s ease forwards;
-  }
+  } */

@@ -235,7 +235,7 @@ i {
 }
 
 
-@keyframes slideInFromLeft {
+/* @keyframes slideInFromLeft {
   0% {
     transform: translateX(-100%);
     opacity: 0;
@@ -254,7 +254,7 @@ i {
 }
 .animate-content {
   animation: slideInFromLeft 3s ease forwards;
-}
+} */
 
 .rounded-circle {
   background-color: '#01a3a4';

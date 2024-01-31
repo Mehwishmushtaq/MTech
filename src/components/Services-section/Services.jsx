@@ -52,7 +52,7 @@ const servicesData = [
 const Services = () => {
   useEffect(() => {
     AOS.init({
-      duration: 500,
+      duration: 1500,
       easing: 'linear',
       offset: 200,
     });
@@ -61,7 +61,7 @@ const Services = () => {
     <section className="service-home">
       <Container>
         <Row>
-          <div data-aos="fade-left" className="container overflow-hidden">
+          <div data-aos="zoom-out-up" className="container overflow-hidden">
             <div class="row mt-2 text-center justify-content-center">
               <h4 style={{ color: '#01a3a4' }}>Servies We Offer</h4>
               <h3 style={{ fontWeight: '900'}}>Our Featured Services</h3>
@@ -72,7 +72,7 @@ const Services = () => {
             </div>
           </div>
           {servicesData.map((item) => (
-              <Col className='service-cards' key={item.id} lg="3" md="6" sm="12">
+              <Col data-aos='zoom-out-down'className='service-cards' key={item.id} lg="3" md="6" sm="12">
               <ServiceCard item={item} />
             </Col>
           ))}
@@ -84,9 +84,9 @@ const Services = () => {
 
       {/* Best IT Solution Section  */}
       <Container>
-        <div data-aos="fade-up" className="container mt-5">
-          <div className="row">
-            <div data-aos="fade-up"className="col-md-6">
+        <div className="container mt-5">
+          <div data-aos='fade-left'className="row">
+            <div data-aos='fade-right' className="col-md-6">
               <img
                 src={serviceImg3}
                 alt="Sample"
@@ -94,7 +94,7 @@ const Services = () => {
               />
             </div>
 
-            <div className="col-md-6 mt-4 ">
+            <div data-aos='zoom-out-down' className="col-md-6 mt-4 ">
               <h4 style={{ color: '#01a3a4' }}>The Best IT Solutions & Ideas</h4>
               <h2><strong>Unleashing Your Best with MTechnologies</strong></h2>
 
@@ -123,7 +123,7 @@ const Services = () => {
       </Container>
 
       {/* Counter Section 3*/}
-      <div data-aos="fade-up" style={backgroundImageStyle} >
+      <div data-aos="zoom-out-up" style={backgroundImageStyle} >
         <Container className="py-5 mt-5">
           <Row>
             {counters.map((counter) => (
