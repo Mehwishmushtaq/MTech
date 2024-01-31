@@ -1,10 +1,10 @@
 .hero-section {
   /* background-color: #e74c3c;  */
-  background-image: url(../../assets/images/hero-gif.gif);
+  /* background-image: url(../../assets/images/hero-gif.gif); */
   background-repeat: no-repeat;
   
   /* background-size: cover; */
-  /* background-color: #01a3a4; */
+  background-color: #01a3a4;
   background-position:center;
   /* object-fit: cover; */
   color: #fff; 
