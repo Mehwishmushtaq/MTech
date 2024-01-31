@@ -139,16 +139,16 @@ const AllServices = () => {
 
                 {/* Choose Us to Stand */}
                 {/* Section 2 */}
-                <section data-aos='zoom-out-left' className="bg-light py-5 mt-5 ">
+                <section className="bg-light py-5 mt-5 ">
                     <Container>
                         <Row>
-                            <Col md={6}>
+                            <Col data-aos='zoom-out-left' md={6}>
                                 <h2>
                                     <span>Choose Us To Stand Out </span>
                                     <span style={{ color: '#ff6b6b' }}>In The Market</span>
                                 </h2>
                             </Col>
-                            <Col md={6}>
+                            <Col data-aos='zoom-out-right' md={6}>
                                 <p>
                                     Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
                                     Pellentesque in ipsum id orci porta dapibus.Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
