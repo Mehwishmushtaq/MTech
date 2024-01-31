@@ -5,6 +5,7 @@ import serviceImg2 from "../../assets/images/graphics-design.png";
 import serviceImg3 from "../../assets/images/ui-ux.png";
 import Web3 from '../../assets/images/web3.png'
 import Web4 from '../../assets/images/web4.png'
+import Banner from "../../assets/images/tech-banner.gif";
 import ServiceCard from "../Services-section/ServiceCard";
 import "./allServices.css";
 
@@ -57,7 +58,7 @@ const AllServices = () => {
 
         <div>
             {/* Banner Section */}
-            <section className="banner-section py-5 text-center text-white" style={{ backgroundImage: 'url("https://static.vecteezy.com/system/resources/previews/005/081/900/non_2x/banner-abstract-geometric-white-and-gray-color-background-illustration-free-vector.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+            <section className="banner-section py-5 text-center text-white" style={{ backgroundImage: `url(${Banner})`, backgroundSize: 'cover', backgroundPosition: 'center', height:'50vh' }}>
                 <Container>
                     <h1>Services</h1>
                 </Container>
@@ -70,7 +71,7 @@ const AllServices = () => {
                             <div class="row mt-2 text-center justify-content-center">
 
                                 <h2><strong>Engaging
-                                    <span style={{ color: '#ff6b6b' }}> Creative Minds</span>
+                                    <span style={{ color: '#01a3a4' }}> Creative Minds</span>
                                 </strong>
                                 </h2>
                                 <br />

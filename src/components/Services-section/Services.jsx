@@ -171,7 +171,7 @@ const Services = () => {
         </div>
       </section>
 
-      <div data-aos="fade-up" className="container mt-5">
+      <div data-aos="zoom-out-left" className="container mt-5">
         <div className="row">
           <div className="col-md-6">
             <img
@@ -187,12 +187,12 @@ const Services = () => {
               Need help? We’re here for you 24/7. Call us now or drop us an email and make your business thrive.
             </p>
             <Row className="text-center">
-              <Col className="mt-4">
+              <Col data-aos='flip-right' className="mt-4">
                 <FontAwesomeIcon icon={faPhone} size='2x' color="#01a3a4" />
                 <h5 className="mt-2"><strong>Say Hello!</strong></h5>
                 <p className="text-center">+92 123 4023686</p>
               </Col>
-              <Col className="mt-4">
+              <Col data-aos='flip-left' className="mt-4">
                 <FontAwesomeIcon icon={faEnvelope} size='2x' color="#01a3a4" />
                 <h5 className="mt-2"><strong>Email</strong></h5>
                 <p className="text-center">contact@mtechnologies.com</p>
