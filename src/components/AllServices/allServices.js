@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Container, Row, Col, Button } from "reactstrap";
 import serviceImg1 from "../../assets/images/web-design.png";
 import serviceImg2 from "../../assets/images/graphics-design.png";
@@ -7,6 +7,8 @@ import Web3 from '../../assets/images/web3.png'
 import Web4 from '../../assets/images/web4.png'
 import Banner from "../../assets/images/tech-banner.gif";
 import ServiceCard from "../Services-section/ServiceCard";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import "./allServices.css";
 
 
@@ -54,6 +56,14 @@ const servicesData = [
 ];
 
 const AllServices = () => {
+
+    useEffect(() => {
+        AOS.init({
+          duration: 1500,
+          easing: 'linear',
+          offset: 200,
+        });
+      }, []);
     return (
 
         <div>
@@ -129,7 +139,7 @@ const AllServices = () => {
 
                 {/* Choose Us to Stand */}
                 {/* Section 2 */}
-                <section className="bg-light py-5 mt-5 ">
+                <section data-aos='zoom-out-left' className="bg-light py-5 mt-5 ">
                     <Container>
                         <Row>
                             <Col md={6}>
