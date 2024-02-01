@@ -1,6 +1,8 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { Container, Row, Col } from 'reactstrap';
-
+import Banner from "../../assets/images/tech-banner.gif";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import FeatureCard from './FeatureCard';
 
 const features = [
@@ -33,15 +35,24 @@ const features = [
 
 const WhyChooseUs = () => {
 
+    useEffect(() => {
+        AOS.init({
+          duration: 1500,
+          easing: 'linear',
+          offset: 200,
+        });
+      }, []);
+
     const headerStyle = {
-        backgroundImage: `url('https://static.vecteezy.com/system/resources/previews/005/081/900/non_2x/banner-abstract-geometric-white-and-gray-color-background-illustration-free-vector.jpg')`,
+        backgroundImage: `url(${Banner})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         color: 'white',
         textAlign: 'center',
-        paddingTop: '5rem',
-        paddingBottom: '5rem',
+        paddingTop: '8rem',
+        paddingBottom: '8rem',
+        height:'50vh'
     };
     return (
         <div>
@@ -50,10 +61,10 @@ const WhyChooseUs = () => {
             </header>
             <Container>
             <section className="why-choose-us-section">
-                <h2 className="text-center mb-5">Why Choose Us</h2>
+                <h2  data-aos='zoom-out-down' className="text-center mb-5">Why Choose Us</h2>
                 <Row>
                     {features.map((feature, index) => (
-                        <Col key={index} md="6" lg="4" className="mb-4">
+                        <Col data-aos='fade-down-left' key={index} md="6" lg="4" className="mb-4">
                             <FeatureCard {...feature} />
                         </Col>
                     ))}

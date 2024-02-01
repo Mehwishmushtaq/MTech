@@ -1,11 +1,35 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect} from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import axios from 'axios';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMapMarkerAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faMapMarkerAlt, faPhoneAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import Web5 from '../../assets/images/web5.svg';
+import Banner from "../../assets/images/tech-banner.gif";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const ContactForm = () => {
+
+	useEffect(() => {
+        AOS.init({
+          duration: 1500,
+          easing: 'linear',
+          offset: 200,
+        });
+      }, []);
+
+	  const headerStyle = {
+        backgroundImage: `url(${Banner})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        color: 'white',
+        textAlign: 'center',
+        paddingTop: '8rem',
+        paddingBottom: '8rem',
+        height:'50vh'
+    };
+
 	const [formData, setFormData] = useState({
 		name: '',
 		email: '',
@@ -30,19 +54,17 @@ const ContactForm = () => {
 	return (
 		<div>
 			{/* Banner Section */}
-			<section className="banner-section py-5 text-center text-white" style={{ backgroundImage: 'url("https://static.vecteezy.com/system/resources/previews/005/081/900/non_2x/banner-abstract-geometric-white-and-gray-color-background-illustration-free-vector.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-				<Container>
-					<h1>Contact Us</h1>
-				</Container>
-			</section>
+			<header style={headerStyle}>
+                <h1>Contact Us</h1>
+            </header>
 
 			{/* Title and Subtitle Section */}
-			<section className="py-5 bg-light">
+			<section data-aos='fade-down-right'className="py-5 bg-light">
 				<Container>
 					<Row>
 						<Col md={12} className="text-center">
 							<h2>
-								<span style={{ color: '#ff6b6b' }}>Develop Your Ideas</span>
+								<span style={{ color: '#01a3a4' }}>Develop Your Ideas</span>
 								<p className='text-center'>Grow with Confidence. MTechnologies Powers Your Project’s Journey to Success</p>
                             </h2>
 						</Col>
@@ -51,22 +73,30 @@ const ContactForm = () => {
 			</section>
 
 			{/* Our Location and Email Address Section */}
-			<section className="py-5 bg-light">
+			<section data-aos='flip-down' className="py-5 bg-light">
 				<Container>
 					<Row>
 						{/* Location */}
-						<Col md={6} className="mb-4 text-center">
+						<Col md={4} className="mb-4 text-center">
 							<div className="circle-icon">
-								<FontAwesomeIcon icon={faMapMarkerAlt} size="3x" />
+								<FontAwesomeIcon icon={faMapMarkerAlt} size="3x" color='#01a3a4'/>
 							</div>
 							<h3>Our Location</h3>
 							<p className='text-center'>123 Main Street, City, State, ZIP Code</p>
 						</Col>
+						{/* Phone Number */}
+						<Col md={4} className="mb-4 text-center">
+							<div className="circle-icon">
+								<FontAwesomeIcon icon={faPhoneAlt} size="3x" color='#01a3a4' />
+							</div>
+							<h3>Phone Number</h3>
+							<p className='text-center'>+92 12345678</p>
+						</Col>
 
 						{/* Email Address */}
-						<Col md={6} className="mb-4 text-center">
+						<Col md={4} className="mb-4 text-center">
 							<div className="circle-icon">
-								<FontAwesomeIcon icon={faEnvelope} size="3x" />
+								<FontAwesomeIcon icon={faEnvelope} size="3x" color='#01a3a4'/>
 							</div>
 							<h3>Email Address</h3>
 							<p className='text-center'>Email: info@example.com</p>
@@ -76,7 +106,7 @@ const ContactForm = () => {
 			</section>
 
 			{/* Map Section */}
-			<section className="py-5">
+			<section data-aos='zoom-in' className="py-5">
 				<Container>
 					<Row>
 						<Col md={12}>
@@ -100,15 +130,15 @@ const ContactForm = () => {
 			<section className="py-5">
 				<Container>
 					{/* Title Section */}
-					<Row className="mb-4">
+					<Row data-aos='fade-right' className="mb-4">
 						<Col md={12} className="text-center">
-							<h4 style={{ color: '#ff6b6b' }}>The Best IT Solutions And Ideas</h4>
+							<h4 style={{ color: '#01a3a4' }}>The Best IT Solutions And Ideas</h4>
 							<h3>Need a designer with a creative portfolio?</h3>
 						</Col>
 					</Row>
 					<Row>
 						{/* Left Side - Picture */}
-						<Col md={6} className="mb-4">
+						<Col md={6} data-aos='zoom-out-left' className="mb-4">
 							<img
 								src={Web5}
 								alt="Sample"
@@ -117,7 +147,7 @@ const ContactForm = () => {
 						</Col>
 
 						{/* Right Side - Form */}
-						<Col md={6}>
+						<Col md={6} data-aos='zoom-out-right'>
 							<Form onSubmit={handleSubmit}>  
 								<Form.Group controlId="formName">
 									<Form.Label>Name</Form.Label>
@@ -149,7 +179,7 @@ const ContactForm = () => {
 									<Form.Control as="textarea" className='mb-3' value={formData.message} onChange={handleChange} rows={5} placeholder="Enter your message" />
 								</Form.Group>
 
-								<Button style={{ background: '#f36b6b', color: '#fff', borderRadius:'5px', fontWeight:'700', width:'100%', border:'none'}} type="submit" className='mt-4'>
+								<Button style={{ background: '#01a3a4', color: '#fff', borderRadius:'5px', fontWeight:'700', width:'100%', border:'none'}} type="submit" className='mt-4'>
 									Submit
 								</Button>
 							</Form>

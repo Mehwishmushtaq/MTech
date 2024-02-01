@@ -1,22 +1,35 @@
-import React from 'react';
+import React, { useEffect } from "react";
 import { Container, Row, Col, Accordion, Button } from 'react-bootstrap';
 import { IoMdCheckmarkCircle } from "react-icons/io";
-import WebContent from '../../assets/images/website-content.jpg'
+import WebContent from '../../assets/images/website-content.avif'
 import Faq from '../../assets/images/faq.jpg'
+import Banner from "../../assets/images/tech-banner.gif";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 
 const WebsiteContent = () => {
+
+    useEffect(() => {
+        AOS.init({
+            duration: 1500,
+            easing: 'linear',
+            offset: 200,
+        });
+    }, []);
+
     const headerStyle = {
-        backgroundImage: `url('https://static.vecteezy.com/system/resources/previews/005/081/900/non_2x/banner-abstract-geometric-white-and-gray-color-background-illustration-free-vector.jpg')`,
+        backgroundImage: `url(${Banner})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         color: 'white',
         textAlign: 'center',
-        paddingTop: '5rem',
-        paddingBottom: '5rem',
-    };
+        paddingTop: '8rem',
+        paddingBottom: '8rem',
+        height:'50vh'
+    }
     return (
         <div>
             <header style={headerStyle}>
@@ -28,18 +41,18 @@ const WebsiteContent = () => {
                 <Container>
                     <Row>
                         <Col md={6}>
-                            <h2>
+                            <h2 data-aos='fade-right'>
                                 <span>Smart Website Content Writing</span>
-                                <span style={{ color: '#ff6b6b' }}> Services For Your Online Businesses</span>
+                                <span style={{ color: '#01a3a4' }}> Services For Your Online Businesses</span>
 
                             </h2>
-                            <p>
+                            <p data-aos='fade-left'>
                                 Website Content Writing Services alludes to the text-based, aural, or visual content distributed on a website. Content methods are any innovative component, for instance, text, applications, pictures, filed email messages, information, e-administrations, sound and video records, etc.
                             </p>
                             {/* Features Section */}
                             <Container id="features" className="mt-1">
                                 {/* First row of features */}
-                                <Row className="mb-4">
+                                <Row data-aos='zoom-out-down' className="mb-4">
                                     <Col md={6}>
                                         <h6><IoMdCheckmarkCircle color='#22a6b3' size={20} className="mr-2" /> Activities</h6>
                                     </Col>
@@ -55,7 +68,7 @@ const WebsiteContent = () => {
                                 </Row>
                             </Container>
                         </Col>
-                        <Col md={6}>
+                        <Col md={6} data-aos='fade-right'>
                             <img
                                 src={WebContent}
                                 alt="Sample"
@@ -67,18 +80,18 @@ const WebsiteContent = () => {
             </section>
 
             {/* Content Section 2 */}
-            <section>
+            {/* <section>
                 <div className="container">
                 <h4 className="text-center mb-4">
-                <span style={{ color: '#ff6b6b' }}>M Technologies Unleashing Web Success</span>  with Expert Content Services
+                <span style={{ color: '#01a3a4' }}>M Technologies Unleashing Web Success</span>  with Expert Content Services
                 </h4>
                     <div className="row">
                         <div className="col-md-6">
-                            <p>
+                            <p data-aos='fade-left'>
                             Website Content Writing Services are the key to driving traffic to websites. At M Technologies, we provide high-quality and snappy content, organized into different categories for seamless navigation, ensuring an effective website. Additionally, our focus on optimizing web content for search engines ensures it responds effectively to the keywords used in searches, maximizing your online visibility and attracting the right audience.
                             </p>
                         </div>
-                        <div className="col-md-6">
+                        <div data-aos='fade-right' className="col-md-6">
                             <p>
                                 There are two fundamental sorts of web content:
                                 <br/>
@@ -89,7 +102,7 @@ const WebsiteContent = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* FAQ Section */}
             <Container>
@@ -97,9 +110,9 @@ const WebsiteContent = () => {
                     <h2>
                         <span>Frequently Asked Questions</span>
                         <br />
-                        <span style={{ color: '#ff6b6b' }}> For website Content</span>
+                        <span style={{ color: '#01a3a4' }}> For website Content</span>
                     </h2>
-                    <Col md={6}>
+                    <Col md={6} data-aos='zoom-out-left'>
                         <Accordion defaultActiveKey="0">
                             <Accordion.Item eventKey="0">
                                 <Accordion.Header>What Are Picture Based Content We Provide?</Accordion.Header>
@@ -128,7 +141,7 @@ const WebsiteContent = () => {
 
                         </Accordion>
                     </Col>
-                    <Col md={6} className='mb-1'>
+                    <Col md={6} className='mb-1' data-aos='zoom-out-right'>
                         <img src={Faq} alt="Your Alt Text" className="img-fluid" />
                     </Col>
                 </Row>
@@ -136,12 +149,12 @@ const WebsiteContent = () => {
 
             {/* Banner Section */}
             <section>
-                <div style={{ background: '#e17055', padding: '20px', color: '#fff', textAlign: 'left' }}>
+                <div style={{ background: '#01a3a4', padding: '20px', color: '#fff', textAlign: 'left' }}>
                     <Container>
                         <h1>Bringing Out The Best With Our Expertise</h1>
                         <p className='text-white'>Say goodbye to project hassles and hello to groundbreaking ideas to unlock innovation with M Technologies.</p>
                         <a href="/contact">
-                            <Button style={{ background: '#fff', color: '#f36b6b', borderRadius:'5px', fontWeight:'700', border:'none' }}>
+                            <Button style={{ background: '#fff', color: '#01a3a4', borderRadius:'5px', fontWeight:'700', border:'none' }}>
                                 Start a Project
                             </Button>
                         </a>

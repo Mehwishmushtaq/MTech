@@ -4,11 +4,13 @@
 
 .service-menu .dropdown-menu {
   font-size: small;
+  font-weight: 700;
 }
 .service-menu .dropdown-menu .dropdown-item.active,
 .service-menu .dropdown-menu .dropdown-item:active {
-  background-color: darkgrey; 
-  color: white;
+  background-color: #01a3a4; 
+  /* color: white; */
+  font-weight: 700;
 }
 .navbar .nav-link {
   color: #2f3640;
@@ -16,6 +18,13 @@
   margin-left: 20px;
 }
 
+.navbar .nav-link:active {
+  color: #2f3640;
+}
+
+.service-menu:active{
+  color: #01a3a4;
+}
 
 .navbar .nav-link:hover {
   color: #01a3a4; 

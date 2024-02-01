@@ -21,10 +21,10 @@ const Header = () => (
                 <NavDropdown.Item href="/wordpress-service">WordPress</NavDropdown.Item>
                 <NavDropdown.Item href="/laravel-service">Laravel</NavDropdown.Item>
                 <NavDropdown.Item href="/react-service">React</NavDropdown.Item>
-                <DropDownSubMenu href="#action/3.7" title="Development">
+                {/* <DropDownSubMenu href="#action/3.7" title="Development">
                   <NavDropdown.Item href="#action/9.1">Javascript</NavDropdown.Item>
                   <NavDropdown.Item href="#action/9.2">Jquery</NavDropdown.Item>
-                </DropDownSubMenu>
+                </DropDownSubMenu> */}
               </DropDownSubMenu>
               {/* Content Service Submenu */}
               <DropDownSubMenu href="/content-writing" title="Content Writing">

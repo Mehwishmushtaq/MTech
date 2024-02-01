@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import '../About-us/AboutUs.css'
 import { Container, Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -24,6 +24,18 @@ const AboutUs = () => {
     });
   }, []);
 
+  const headerStyle = {
+    backgroundImage: `url(${Banner})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    color: 'white',
+    textAlign: 'center',
+    paddingTop: '8rem',
+    paddingBottom: '8rem',
+    height:'50vh'
+};
+
   let message = `There are many variations of passages of Lorem Ipsum available but the \n majority have suffered alteration in some injected humour.`;
 
 
@@ -40,15 +52,13 @@ const AboutUs = () => {
     backgroundPosition: 'center',
     minHeight: '5vh',
   };
-  
+
   return (
     <div>
       {/* Banner Section */}
-      <section className="banner-section py-6 text-center text-white" style={{ backgroundImage: `url(${Banner})`, backgroundSize: 'cover', backgroundPosition: 'center',  height:'50vh'}}>
-        <Container>
-          <h1>About Us</h1>
-        </Container>
-      </section>
+      <header style={headerStyle}>
+        <h1>About Us</h1>
+      </header>
 
       {/* Section 2 */}
       <section className="about-us">
@@ -67,7 +77,7 @@ const AboutUs = () => {
 
             <Col lg="6" md="6">
               {/* Image */}
-              <div data-aos='zoom-out-right'className="about__img">
+              <div data-aos='zoom-out-right' className="about__img">
                 <img src={TeamConcept} alt="" className="w-100" />
               </div>
             </Col>
@@ -210,7 +220,7 @@ const AboutUs = () => {
       {/* Section 5 */}
       <section className="container-fluid">
         {/* Single Row */}
-        <div  className="row about-row">
+        <div className="row about-row">
           <div data-aos='flip-left' className="col-md-6 bg-secondary text-light p-4 font-monospace">
             <h2>Our Mission</h2>
             <p className="text-white">

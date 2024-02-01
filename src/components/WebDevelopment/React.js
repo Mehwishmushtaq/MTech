@@ -1,21 +1,34 @@
-import React from 'react';
+import React, { useEffect } from "react";
 import { Container, Row, Col, Accordion, Button } from 'react-bootstrap';
 import { FaReact, FaClock, FaCode, FaRocket } from 'react-icons/fa';
 import ReactImg from '../../assets/images/react.png'
 import Faq from '../../assets/images/faq.jpg'
+import Banner from "../../assets/images/tech-banner.gif";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 
 
 const ReactService = () => {
+
+    useEffect(() => {
+        AOS.init({
+            duration: 1500,
+            easing: 'linear',
+            offset: 200,
+        });
+    }, []);
     const headerStyle = {
-        backgroundImage: `url('https://static.vecteezy.com/system/resources/previews/005/081/900/non_2x/banner-abstract-geometric-white-and-gray-color-background-illustration-free-vector.jpg')`,
+        backgroundImage: `url(${Banner})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         color: 'white',
         textAlign: 'center',
-        paddingTop: '5rem',
-        paddingBottom: '5rem',
+        paddingTop: '8rem',
+        paddingBottom: '8rem',
+        height:'50vh'
     };
     return (
         <div>
@@ -28,18 +41,18 @@ const ReactService = () => {
                 <Container>
                     <Row>
                         <Col md={6}>
-                            <h2>
-                                <span style={{ color: '#ff6b6b' }}>Dynamic Services</span>
+                            <h2 data-aos='fade-right'>
+                                <span style={{ color: '#01a3a4' }}>Dynamic Services</span>
                                 <span> With React Development</span>
                             </h2>
-                            <p>
+                            <p data-aos='fade-left'>
                                 The React web development service is a cutting-edge web application framework with a dynamic and flexible architecture. We take pride in being the leading React web development services in the industry.
                                 <br />
                                 A web system provides a solid foundation for your application, allowing you to focus on creating something extraordinary while we handle the intricacies.                           </p>
                             {/* Features Section */}
                             <Container id="features" className="mt-1">
                                 {/* First row of features */}
-                                <Row className="mb-4">
+                                <Row data-aos='zoom-out-down' className="mb-4">
                                     <Col md={6}>
                                         <h6><FaReact color='#22a6b3' size={20} className="mr-2" /> Expert Team Member</h6>
                                     </Col>
@@ -54,12 +67,12 @@ const ReactService = () => {
                                     </Col>
                                 </Row>
 
-                                <p className="text-justify mt-4">At M Technologies, our React web development services aren't just static tools; they grow with you. The framework is built to scale with your progress and experience. It encourages continuous learning and improvement, ensuring that your skills and projects evolve over time.
+                                <p data-aos='fade-down' className="text-justify mt-4">At M Technologies, our React web development services aren't just static tools; they grow with you. The framework is built to scale with your progress and experience. It encourages continuous learning and improvement, ensuring that your skills and projects evolve over time.
                                     <br />
                                     Whether you are a newcomer to JavaScript web development with React or have years of experience, at M Technologies, React web development services provide a framework that grows with you. We'll guide you through your initial steps as a web developer or elevate your skills to the next level. We can't wait to see the amazing projects you build.</p>
                             </Container>
                         </Col>
-                        <Col md={6}>
+                        <Col md={6} data-aos='fade-right'>
                             <img
                                 src={ReactImg}
                                 alt="Sample"
@@ -78,7 +91,7 @@ const ReactService = () => {
                         <br />
                         <span style={{ color: '#ff6b6b' }}> For React</span>
                     </h2>
-                    <Col md={6}>
+                    <Col md={6} data-aos='zoom-out-left'>
                         <Accordion defaultActiveKey="0">
                             <Accordion.Item eventKey="0">
                                 <Accordion.Header>Why should You Use React?</Accordion.Header>
@@ -107,7 +120,7 @@ const ReactService = () => {
 
                         </Accordion>
                     </Col>
-                    <Col md={6} className='mb-1'>
+                    <Col md={6} className='mb-1' data-aos='zoom-out-right'>
                         <img src={Faq} alt="Your Alt Text" className="img-fluid" />
                     </Col>
                 </Row>
@@ -115,12 +128,12 @@ const ReactService = () => {
 
             {/* Banner Section */}
             <section>
-                <div style={{ background: '#e17055', padding: '20px', color: '#fff', textAlign: 'left' }}>
+                <div data-aos='zoom-out' style={{ background: '#01a3a4', padding: '20px', color: '#fff', textAlign: 'left' }}>
                     <Container>
                         <h1>Bringing Out The Best With Our Expertise</h1>
                         <p className='text-white'>Say goodbye to project hassles and hello to groundbreaking ideas to unlock innovation with M Technologies.</p>
                         <a href="/contact">
-                            <Button style={{ background: '#fff', color: '#f36b6b', borderRadius:'5px', fontWeight:'700', border:'none' }}>
+                            <Button style={{ background: '#fff', color: '#01a3a4', borderRadius:'5px', fontWeight:'700', border:'none' }}>
                                 Start a Project
                             </Button>
                         </a>

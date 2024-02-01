@@ -78,7 +78,7 @@ const AllServices = () => {
                 <Container>
                     <Row>
                         <div class="container">
-                            <div class="row mt-2 text-center justify-content-center">
+                            <div  data-aos='flip-left' class="row mt-2 text-center justify-content-center">
 
                                 <h2><strong>Engaging
                                     <span style={{ color: '#01a3a4' }}> Creative Minds</span>
@@ -90,7 +90,7 @@ const AllServices = () => {
                             </div>
                         </div>
                         {servicesData.map((item) => (
-                            <Col className='service-cards' key={item.id} lg="3" md="6" sm="12">
+                            <Col data-aos='fade-up' className='service-cards' key={item.id} lg="3" md="6" sm="12">
                                 <ServiceCard item={item} />
                             </Col>
                         ))}
@@ -145,7 +145,7 @@ const AllServices = () => {
                             <Col data-aos='zoom-out-left' md={6}>
                                 <h2>
                                     <span>Choose Us To Stand Out </span>
-                                    <span style={{ color: '#ff6b6b' }}>In The Market</span>
+                                    <span style={{ color: '#01a3a4' }}>In The Market</span>
                                 </h2>
                             </Col>
                             <Col data-aos='zoom-out-right' md={6}>
@@ -177,12 +177,12 @@ const AllServices = () => {
 
                 {/* Banner Section */}
                 <section>
-                    <div style={{ background: '#e17055', padding: '20px', color: '#fff', textAlign: 'left' }}>
+                    <div style={{ background: '#01a3a4', padding: '20px', color: '#fff', textAlign: 'left' }}>
                         <Container>
                             <h1>Bringing Out The Best With Our Expertise</h1>
                             <p className='text-white'>Say goodbye to project hassles and hello to groundbreaking ideas to unlock innovation with M Technologies.</p>
                             <a href="/contact">
-                                <Button style={{ background: '#fff', color: '#f36b6b', borderRadius:'5px', fontWeight:'700', border:'none' }}>
+                                <Button style={{ background: '#fff', color: '#01a3a4', borderRadius:'5px', fontWeight:'700', border:'none' }}>
                                     Start a Project
                                 </Button>
                             </a>

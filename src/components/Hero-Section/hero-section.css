@@ -107,3 +107,49 @@
   text-decoration: none;
   color: #333; 
 }
+
+@keyframes typing1 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing3 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.typing-animation-1 {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing1 3s steps(30, end) infinite;
+}
+
+.typing-animation-2 {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing2 5s steps(30, end) infinite;
+}
+
+.typing-animation-3 {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing3 3s steps(30, end) infinite;
+}
+

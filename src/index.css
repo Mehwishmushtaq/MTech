@@ -102,6 +102,9 @@ i {
 .flip-card-front .inner h3{
   margin-top: 10rem;
 }
+.flip-card-back .inner p{
+  color: #fff !important;
+}
 .flip-card-back .inner h3{
   margin-top: 2rem;
 }
@@ -259,3 +262,5 @@ i {
 .rounded-circle {
   background-color: '#01a3a4';
 }
+
+

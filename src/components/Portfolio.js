@@ -1,20 +1,32 @@
-import React from 'react';
+import React ,{useEffect} from 'react';
 import { Row, Col } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Banner from "../assets/images/tech-banner.gif";
 import { faLink } from '@fortawesome/free-solid-svg-icons';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 // import Icon1 from '../assets/images/icon1.png';
 // import Image1 from '../assets/images/service2.png'
 
 const Portfolio = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1500,
+      easing: 'linear',
+      offset: 200,
+    });
+  }, []);
+
   const headerStyle = {
-    backgroundImage: `url('https://static.vecteezy.com/system/resources/previews/005/081/900/non_2x/banner-abstract-geometric-white-and-gray-color-background-illustration-free-vector.jpg')`,
+    backgroundImage: `url(${Banner})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
     color: 'white',
     textAlign: 'center',
-    paddingTop: '5rem',
-    paddingBottom: '5rem',
+    paddingTop: '8rem',
+    paddingBottom: '8rem',
   };
 
   return (
@@ -22,7 +34,7 @@ const Portfolio = () => {
       <header style={headerStyle}>
         <h1>Portfolio</h1>
       </header>
-      <div className='card-container'>
+      <div data-aos='fade-up' className='card-container'>
         {/* Row 1 */}
       <Row>
         {/* Card 1 */}

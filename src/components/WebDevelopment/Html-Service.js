@@ -1,21 +1,33 @@
-import React from 'react';
+import React, { useEffect } from "react";
 import { Container, Row, Col, Accordion, Button } from 'react-bootstrap';
 import { FaHtml5, FaCode, FaDesktop, FaCubes } from 'react-icons/fa';
 import Html1 from '../../assets/images/html1.jpg'
 import Faq from '../../assets/images/faq.jpg'
+import Banner from "../../assets/images/tech-banner.gif";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 
 const HtmlServices = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 1500,
+            easing: 'linear',
+            offset: 200,
+        });
+    }, []);
+
     const headerStyle = {
-        backgroundImage: `url('https://static.vecteezy.com/system/resources/previews/005/081/900/non_2x/banner-abstract-geometric-white-and-gray-color-background-illustration-free-vector.jpg')`,
+        backgroundImage: `url(${Banner})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         color: 'white',
         textAlign: 'center',
-        paddingTop: '5rem',
-        paddingBottom: '5rem',
+        paddingTop: '8rem',
+        paddingBottom: '8rem',
+        height:'50vh'
     };
     return (
         <div>
@@ -28,18 +40,18 @@ const HtmlServices = () => {
                 <Container>
                     <Row>
                         <Col md={6}>
-                            <h2>
+                            <h2 data-aos='fade-right'>
                                 <span>Perfect Technology</span>
-                                <span style={{ color: '#ff6b6b' }}> Solution For All HTML</span>
+                                <span style={{ color: '#01a3a4' }}> Solution For All HTML</span>
                             </h2>
-                            <p className='animate-content'>
+                            <p  data-aos='fade-left' className='animate-content'>
                                 Since its principal days, HTML has experienced a mind-blowing development. It is HTML principal, the markup language of the web. It runs locally in each program and is kept up by the World Wide Web Consortium.
                             </p>
                             {/* Features Section */}
                             <Container id="features" className="mt-5">
-                                <h4 className='mb-4'>Features that can be useful with HTML;</h4>
+                                <h4 data-aos='flip-left' className='mb-4'>Features that can be useful with HTML;</h4>
                                 {/* First row of features */}
-                                <Row className="mb-4">
+                                <Row data-aos='zoom-out-down' className="mb-4">
                                     <Col md={6}>
                                         <h6><FaHtml5 color='#22a6b3' size={30} className="mr-2" /> Markup Language</h6>
                                     </Col>
@@ -53,10 +65,10 @@ const HtmlServices = () => {
                                         <h6><FaCubes color='#22a6b3' size={30} className="mr-2" /> Basic Building Block</h6>
                                     </Col>
                                 </Row>
-                                <p className="animate-content text-justify mt-4">At M Technologies, our HTML developers provide better service and superior HTML coding. We have experience with data object modeling and CMS platforms such as CSS and JavaScript. We work diligently throughout development to accomplish our client’s project within the deadline.</p>
+                                <p data-aos='fade-down' className="animate-content text-justify mt-4">At M Technologies, our HTML developers provide better service and superior HTML coding. We have experience with data object modeling and CMS platforms such as CSS and JavaScript. We work diligently throughout development to accomplish our client’s project within the deadline.</p>
                             </Container>
                         </Col>
-                        <Col md={6}>
+                        <Col md={6} data-aos='fade-right'>
                             <img
                                 src={Html1}
                                 alt="Sample"
@@ -73,9 +85,9 @@ const HtmlServices = () => {
                     <h2>
                         <span>Frequently Asked Questions</span>
                         <br />
-                        <span style={{ color: '#ff6b6b' }}> For HTML</span>
+                        <span style={{ color: '#01a3a4' }}> For HTML</span>
                     </h2>
-                    <Col md={6}>
+                    <Col md={6} data-aos='zoom-out-left'>
                         <Accordion defaultActiveKey="0">
                             <Accordion.Item eventKey="0">
                                 <Accordion.Header>How M Technologies Work With HTML?</Accordion.Header>
@@ -104,7 +116,7 @@ const HtmlServices = () => {
 
                         </Accordion>
                     </Col>
-                    <Col md={6} className='mb-1'>
+                    <Col md={6} className='mb-1' data-aos='zoom-out-right'>
                         <img src={Faq} alt="Your Alt Text" className="img-fluid" />
                     </Col>
                 </Row>
@@ -112,12 +124,12 @@ const HtmlServices = () => {
 
             {/* Banner Section */}
             <section>
-                <div style={{ background: '#e17055', padding: '20px', color: '#fff', textAlign: 'left' }}>
+                <div data-aos='zoom-out' style={{ background: '#01a3a4', padding: '20px', color: '#fff', textAlign: 'left' }}>
                     <Container>
                         <h1>Bringing Out The Best With Our Expertise</h1>
                         <p className='text-white'>Say goodbye to project hassles and hello to groundbreaking ideas to unlock innovation with M Technologies.</p>
                         <a href="/contact">
-                            <Button style={{ background: '#fff', color: '#f36b6b', borderRadius:'5px', fontWeight:'700', border:'none'}}>
+                            <Button style={{ background: '#fff', color: '#01a3a4', borderRadius: '5px', fontWeight: '700', border: 'none' }}>
                                 Start a Project
                             </Button>
                         </a>
