@@ -149,7 +149,7 @@ const WebsiteContent = () => {
 
             {/* Banner Section */}
             <section>
-                <div style={{ background: '#01a3a4', padding: '20px', color: '#fff', textAlign: 'left' }}>
+                <div data-aos='zoom-out' style={{ background: '#01a3a4', padding: '20px', color: '#fff', textAlign: 'left' }}>
                     <Container>
                         <h1>Bringing Out The Best With Our Expertise</h1>
                         <p className='text-white'>Say goodbye to project hassles and hello to groundbreaking ideas to unlock innovation with M Technologies.</p>

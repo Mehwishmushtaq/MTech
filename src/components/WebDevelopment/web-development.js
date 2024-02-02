@@ -1,23 +1,35 @@
-import React from 'react';
+import React, { useEffect } from "react";
 import { Container, Row, Col, Card, Carousel, Form, Button } from 'react-bootstrap';
-import Web1 from '../../assets/images/web1.svg'
-import Web2 from '../../assets/images/web2.svg'
-import Web3 from '../../assets/images/web3.png'
-import Web4 from '../../assets/images/web4.png'
-import Web5 from '../../assets/images/web5.svg'
+import Web1 from '../../assets/images/g-img2.jpg'
+import Web2 from '../../assets/images/g-img1.avif'
+import WebDev from '../../assets/images/web-dev.jpg'
+import Web5 from '../../assets/images/contactImg.jpg'
+import Banner from "../../assets/images/tech-banner.gif";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const WebService = () => {
 
-  const headerStyle = {
-    backgroundImage: `url('https://static.vecteezy.com/system/resources/previews/005/081/900/non_2x/banner-abstract-geometric-white-and-gray-color-background-illustration-free-vector.jpg')`,
+  useEffect(() => {
+    AOS.init({
+        duration: 1500,
+        easing: 'linear',
+        offset: 200,
+    });
+}, []);
+
+const headerStyle = {
+    backgroundImage: `url(${Banner})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
     color: 'white',
     textAlign: 'center',
-    paddingTop: '5rem',
-    paddingBottom: '5rem',
-  };
+    paddingTop: '8rem',
+    paddingBottom: '8rem',
+    height: '50vh'
+}
 
   const services = [
     {
@@ -62,10 +74,10 @@ const WebService = () => {
         <Container>
           <Row>
             <Col md={6}>
-              <h2>
-                <span style={{ color: '#ff6b6b' }}>Great Web Design</span> is more than Pretty Pictures
+              <h2 data-aos='fade-left'>
+                <span style={{ color: '#01a3a4' }}>Great Web Design</span> is more than Pretty Pictures
               </h2>
-              <p>
+              <p data-aos='flip-down'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
@@ -75,9 +87,9 @@ const WebService = () => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
               </p>
             </Col>
-            <Col md={6}>
+            <Col md={6} data-aos='flip-right'>
               <img
-                src="https://via.placeholder.com/500x400"
+                src={WebDev}
                 alt="Sample"
                 className="img-fluid"
               />
@@ -113,154 +125,153 @@ const WebService = () => {
 
       {/* Section 2 */}
       <section className="bg-light py-5">
-        <Container>
-          <Row>
-            <Col md={6}>
-              <h2>
-                <span>Choose Us To Stand Out </span>
-                <span style={{ color: '#ff6b6b' }}>In The Market</span>
-              </h2>
-            </Col>
-            <Col md={6}>
-              <p>
-                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
-                Pellentesque in ipsum id orci porta dapibus.Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
-                Pellentesque in ipsum id orci porta dapibus.
-              </p>
-            </Col>
-            <Col md={6}>
-              <img
-                src={Web3}
-                alt="Banner 1"
-                className="img-fluid mb-3"
-              />
-            </Col>
-            <Col md={6}>
-              <img
-                src={Web4}
-                alt="Banner 2"
-                className="img-fluid mb-3"
-              />
-            </Col>
-          </Row>
-        </Container>
-      </section>
-
+                <Container>
+                    <Row>
+                        <Col md={6} data-aos='flip-left'>
+                            <h2>
+                                <span>Choose Us To Stand Out </span>
+                                <span style={{ color: '#01a3a4' }}>In The Market</span>
+                            </h2>
+                        </Col>
+                        <Col md={6} data-aos="flip-right">
+                            <p>
+                                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                                Pellentesque in ipsum id orci porta dapibus.Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                                Pellentesque in ipsum id orci porta dapibus.
+                            </p>
+                        </Col>
+                        {/* <Col md={6}>
+                            <img
+                                src={Web3}
+                                alt="Banner 1"
+                                className="img-fluid mb-3"
+                            />
+                        </Col>
+                        <Col md={6}>
+                            <img
+                                src={Web4}
+                                alt="Banner 2"
+                                className="img-fluid mb-3"
+                            />
+                        </Col> */}
+                    </Row>
+                </Container>
+            </section>
 
       {/* Section 3 */}
       <section className="bg-light py-5">
-        <Container>
-          <Row>
-            {/* First Container */}
-            <Col md={6}>
-              <Row>
-                <Col md={6}>
-                  <img
-                    src={Web2}
-                    alt="Banner 1"
-                    className="img-fluid mb-3"
-                  />
-                </Col>
-                <Col md={6}>
-                  <div>
-                    <h6>
-                      <span>We Help To Bring Out The Best Thing For Our Clients</span>
-                    </h6>
-                    <p>
-                      Our goal is to help each client to maximize their business potential through the use of custom-developed software.
-                    </p>
-                  </div>
-                </Col>
-              </Row>
-            </Col>
-            {/* Second Container */}
-            <Col md={6}>
-              <Row>
-                <Col md={6}>
-                  <img
-                    src={Web1}
-                    alt="Banner 2"
-                    className="img-fluid mb-3"
-                  />
-                </Col>
-                <Col md={6}>
-                  <div>
-                    <h6>
-                      <span>Better Security And Faster Server</span>
-                    </h6>
-                    <p>
-                      We provide the best security services to our clients to grow more in their specific projects.
-                    </p>
-                  </div>
-                </Col>
-              </Row>
-            </Col>
-          </Row>
-        </Container>
-      </section>
+                <Container>
+                    <Row>
+                        {/* First Container */}
+                        <Col md={6} data-aos="fade-up">
+                            <Row>
+                                <Col md={6}>
+                                    <img
+                                        src={Web2}
+                                        alt="Banner 1"
+                                        className="img-fluid mb-3"
+                                    />
+                                </Col>
+                                <Col md={6}>
+                                    <div>
+                                        <h6>
+                                            <span>We Help To Bring Out The Best Thing For Our Clients</span>
+                                        </h6>
+                                        <p>
+                                            Our goal is to help each client to maximize their business potential through the use of custom-developed software.
+                                        </p>
+                                    </div>
+                                </Col>
+                            </Row>
+                        </Col>
+                        {/* Second Container */}
+                        <Col md={6} data-aos="fade-down">
+                            <Row>
+                                <Col md={6}>
+                                    <img
+                                        src={Web1}
+                                        alt="Banner 2"
+                                        className="img-fluid mb-3"
+                                    />
+                                </Col>
+                                <Col md={6}>
+                                    <div>
+                                        <h6>
+                                            <span>Better Security And Faster Server</span>
+                                        </h6>
+                                        <p>
+                                            We provide the best security services to our clients to grow more in their specific projects.
+                                        </p>
+                                    </div>
+                                </Col>
+                            </Row>
+                        </Col>
+                    </Row>
+                </Container>
+            </section>
 
-      {/* Section 4 */}
-      <section className="py-5">
-        <Container>
-          {/* Title Section */}
-          <Row className="mb-4">
-            <Col md={12} className="text-center">
-              <h4 style={{ color: '#ff6b6b' }}>The Best IT Solutions And Ideas</h4>
-              <h3>Need a designer with a creative portfolio?</h3>
-            </Col>
-          </Row>
-          <Row>
-            {/* Left Side - Picture */}
-            <Col md={6} className="mb-4">
-              <img
-                src={Web5}
-                alt="Sample"
-                className="img-fluid"
-              />
-            </Col>
+     {/* Contact Form*/}
+     <section className="py-5">
+                <Container>
+                    {/* Title Section */}
+                    <Row className="mb-4">
+                        <Col data-aos='flip-left' md={12} className="text-center">
+                            <h4 style={{ color: '#01a3a4' }}>The Best IT Solutions And Ideas</h4>
+                            <h3>Need a designer with a creative portfolio?</h3>
+                        </Col>
+                    </Row>
+                    <Row>
+                        {/* Left Side - Picture */}
+                        <Col data-aos='fade-left' md={6} className="mb-4">
+                            <img
+                                src={Web5}
+                                alt="Sample"
+                                className="img-fluid"
+                            />
+                        </Col>
 
-            {/* Right Side - Form */}
-            <Col md={6}>
-              <Form>
-                <Form.Group controlId="formName">
-                  <Form.Label>Name</Form.Label>
-                  <Form.Control type="text" className='mb-3' placeholder="Enter your name" />
-                </Form.Group>
+                        {/* Right Side - Form */}
+                        <Col md={6} data-aos='fade-right'>
+                            <Form>
+                                <Form.Group controlId="formName">
+                                    <Form.Label>Name</Form.Label>
+                                    <Form.Control type="text" className='mb-3' placeholder="Enter your name" />
+                                </Form.Group>
 
-                <Form.Group controlId="formEmail">
-                  <Form.Label>Email</Form.Label>
-                  <Form.Control type="email" className='mb-3' placeholder="Enter your email" />
-                </Form.Group>
+                                <Form.Group controlId="formEmail">
+                                    <Form.Label>Email</Form.Label>
+                                    <Form.Control type="email" className='mb-3' placeholder="Enter your email" />
+                                </Form.Group>
 
-                <Form.Group controlId="formPhone">
-                  <Form.Label>Phone</Form.Label>
-                  <Form.Control type="tel" className='mb-3' placeholder="Enter your phone number" />
-                </Form.Group>
+                                <Form.Group controlId="formPhone">
+                                    <Form.Label>Phone</Form.Label>
+                                    <Form.Control type="tel" className='mb-3' placeholder="Enter your phone number" />
+                                </Form.Group>
 
-                <Form.Group controlId="formServices">
-                  <Form.Label>Services</Form.Label>
-                  <Form.Control as="select" className='mb-3' defaultValue="Choose...">
-                    <option disabled>Choose...</option>
-                    <option>Service 1</option>
-                    <option>Service 2</option>
-                    <option>Service 3</option>
-                    {/* Add more options as needed */}
-                  </Form.Control>
-                </Form.Group>
+                                <Form.Group controlId="formServices">
+                                    <Form.Label>Services</Form.Label>
+                                    <Form.Control as="select" className='mb-3' defaultValue="Choose...">
+                                        <option disabled>Choose...</option>
+                                        <option>Service 1</option>
+                                        <option>Service 2</option>
+                                        <option>Service 3</option>
+                                        {/* Add more options as needed */}
+                                    </Form.Control>
+                                </Form.Group>
 
-                <Form.Group controlId="formMessage">
-                  <Form.Label>Message</Form.Label>
-                  <Form.Control as="textarea" className='mb-3' rows={5} placeholder="Enter your message" />
-                </Form.Group>
+                                <Form.Group controlId="formMessage">
+                                    <Form.Label>Message</Form.Label>
+                                    <Form.Control as="textarea" className='mb-3' rows={5} placeholder="Enter your message" />
+                                </Form.Group>
 
-                <Button style={{ background: '#f36b6b', color: '#fff', borderRadius: '5px', fontWeight: '700', border: 'none', width: '100%' }} type="submit" className='mt-4'>
-                  Submit
-                </Button>
-              </Form>
-            </Col>
-          </Row>
-        </Container>
-      </section>
+                                <Button style={{ background: '#01a3a4', color: '#fff', borderRadius:'5px', fontWeight:'700', border:'none', width:'100%' }} type="submit" className='mt-4'>
+                                    Submit
+                                </Button>
+                            </Form>
+                        </Col>
+                    </Row>
+                </Container>
+            </section>
     </div>
   );
 };

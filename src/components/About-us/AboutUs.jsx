@@ -4,7 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import CountUp from "react-countup";
-import TeamConcept from '../../assets/images/team-concept.jpg'
+import TeamConcept from '../../assets/images/about-img.jpg'
 import Web6 from '../../assets/images/web6.jpg'
 import Banner from "../../assets/images/tech-banner.gif";
 import AOS from 'aos';

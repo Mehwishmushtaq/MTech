@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Container, Row, Col, Accordion, Button } from 'react-bootstrap';
 import { FaUserTie, FaClock, FaBriefcase, FaBolt } from 'react-icons/fa';
-import Laravel from '../../assets/images/laravel.png'
+import Laravel from '../../assets/images/laravel-img.jpg'
 import Faq from '../../assets/images/faq.jpg'
 import Banner from "../../assets/images/tech-banner.gif";
 import AOS from 'aos';

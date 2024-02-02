@@ -1,22 +1,34 @@
-import React from 'react';
+import React, { useEffect } from "react";
 import { Container, Row, Col, Accordion, Button } from 'react-bootstrap';
 import { IoMdCheckmarkCircle } from "react-icons/io";
 import EcommerceContent from '../../assets/images/ecommerce-content.jpg'
 import Faq from '../../assets/images/faq.jpg'
+import Banner from "../../assets/images/tech-banner.gif";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 
 const ECommerceContent = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 1500,
+            easing: 'linear',
+            offset: 200,
+        });
+    }, []);
+
     const headerStyle = {
-        backgroundImage: `url('https://static.vecteezy.com/system/resources/previews/005/081/900/non_2x/banner-abstract-geometric-white-and-gray-color-background-illustration-free-vector.jpg')`,
+        backgroundImage: `url(${Banner})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         color: 'white',
         textAlign: 'center',
-        paddingTop: '5rem',
-        paddingBottom: '5rem',
-    };
+        paddingTop: '8rem',
+        paddingBottom: '8rem',
+        height: '50vh'
+    }
     return (
         <div>
             <header style={headerStyle}>
@@ -28,11 +40,11 @@ const ECommerceContent = () => {
                 <Container>
                     <Row>
                         <Col md={6}>
-                            <h2>
-                                <span style={{ color: '#ff6b6b' }}>Combining Quality And</span>
+                            <h2 data-aos='fade-right'>
+                                <span style={{ color: '#01a3a4' }}>Combining Quality And</span>
                                 <span> Reliability In One</span>
                             </h2>
-                            <p>
+                            <p data-aos='fade-left'>
                                 E-commerce writing services involve creating written content for e-commerce websites, such as product descriptions, category pages, and blog posts. The content is typically designed to inform, persuade, and engage visitors to the website to convert them into customers.
                                 <br />
                                 Overall, the pain point to focus on are as follows;
@@ -40,7 +52,7 @@ const ECommerceContent = () => {
                             {/* Features Section */}
                             <Container id="features" className="mt-1">
                                 {/* First row of features */}
-                                <Row className="mb-4">
+                                <Row data-aos='zoom-out-down' className="mb-4">
                                     <Col md={6}>
                                         <h6><IoMdCheckmarkCircle color='#22a6b3' size={20} className="mr-2" /> Establish Businesses</h6>
                                     </Col>
@@ -53,6 +65,9 @@ const ECommerceContent = () => {
                                     <Col md={6}>
                                         <h6><IoMdCheckmarkCircle color='#22a6b3' size={20} className="mr-2" /> Drive Sales</h6>
                                     </Col>
+                                    <p data-aos='fade-right'>
+                                        Effective e-commerce writing content should be clear, concise, and engaging. It should also be SEO-friendly, including keywords and phrases relevant to the products or services offered and likely to be used by people searching for those products or services online.
+                                    </p>
                                 </Row>
                             </Container>
                         </Col>
@@ -68,7 +83,7 @@ const ECommerceContent = () => {
             </section>
 
             {/* Content Section 2 */}
-            <section>
+            {/* <section>
                 <div className="container">
                     <h4 className="text-center mb-4">
                         <span style={{ color: '#ff6b6b' }}>M Technologies Elevating E-Commerce Success with</span>
@@ -88,7 +103,7 @@ const ECommerceContent = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* FAQ Section */}
             <Container>
@@ -96,9 +111,9 @@ const ECommerceContent = () => {
                     <h2>
                         <span>Frequently Asked Questions</span>
                         <br />
-                        <span style={{ color: '#ff6b6b' }}> For Ecommerce Content</span>
+                        <span style={{ color: '#01a3a4' }}> For Ecommerce Content</span>
                     </h2>
-                    <Col md={6}>
+                    <Col md={6} data-aos='zoom-out-left'>
                         <Accordion defaultActiveKey="0">
                             <Accordion.Item eventKey="0">
                                 <Accordion.Header>How We Focus On Word Count?</Accordion.Header>
@@ -127,7 +142,7 @@ const ECommerceContent = () => {
 
                         </Accordion>
                     </Col>
-                    <Col md={6} className='mb-1'>
+                    <Col md={6} className='mb-1' data-aos='zoom-out-right'>
                         <img src={Faq} alt="Your Alt Text" className="img-fluid" />
                     </Col>
                 </Row>
@@ -135,12 +150,12 @@ const ECommerceContent = () => {
 
             {/* Banner Section */}
             <section>
-                <div style={{ background: '#e17055', padding: '20px', color: '#fff', textAlign: 'left' }}>
+                <div data-aos='zoom-out' style={{ background: '#01a3a4', padding: '20px', color: '#fff', textAlign: 'left' }}>
                     <Container>
                         <h1>Bringing Out The Best With Our Expertise</h1>
                         <p className='text-white'>Say goodbye to project hassles and hello to groundbreaking ideas to unlock innovation with M Technologies.</p>
                         <a href="/contact">
-                            <Button style={{ background: '#fff', color: '#f36b6b', borderRadius:'5px', fontWeight:'700', border:'none' }}>
+                            <Button style={{ background: '#fff', color: '#01a3a4', borderRadius: '5px', fontWeight: '700', border: 'none' }}>
                                 Start a Project
                             </Button>
                         </a>

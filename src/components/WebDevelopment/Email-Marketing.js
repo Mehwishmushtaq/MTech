@@ -1,22 +1,34 @@
-import React from 'react';
+import React, { useEffect } from "react";
 import { Container, Row, Col, Accordion, Button } from 'react-bootstrap';
 import { IoMdCheckmarkCircle } from "react-icons/io";
-import EmailImg from '../../assets/images/email-marketing.jpg'
+import EmailImg from '../../assets/images/email-markImg.jpg'
 import Faq from '../../assets/images/faq.jpg'
+import Banner from "../../assets/images/tech-banner.gif";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 
 const EmailMarketing = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 1500,
+            easing: 'linear',
+            offset: 200,
+        });
+    }, []);
+
     const headerStyle = {
-        backgroundImage: `url('https://static.vecteezy.com/system/resources/previews/005/081/900/non_2x/banner-abstract-geometric-white-and-gray-color-background-illustration-free-vector.jpg')`,
+        backgroundImage: `url(${Banner})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         color: 'white',
         textAlign: 'center',
-        paddingTop: '5rem',
-        paddingBottom: '5rem',
-    };
+        paddingTop: '8rem',
+        paddingBottom: '8rem',
+        height: '50vh'
+    }
     return (
         <div>
             <header style={headerStyle}>
@@ -28,19 +40,19 @@ const EmailMarketing = () => {
                 <Container>
                     <Row>
                         <Col md={6}>
-                            <h2>
+                            <h2 data-aos='fade-right'>
                                 <span>Email Marketing Management</span>
-                                <span style={{ color: '#ff6b6b' }}> Services Enabling To Grow Your Brand  </span>
+                                <span style={{ color: '#01a3a4' }}> Services Enabling To Grow Your Brand  </span>
 
                             </h2>
-                            <p>
-                            Boom your sales, not your workload. In Email Marketing Management Services, advertisers ought to accomplish more with less. To keep this persona in mind, CentoSquare provides email marketing management services, wherein we design customized emails that entice customers to click on your emails and enable your brand to grow faster.
-                            <br/>
-                            Here are the following reasons that make email marketing an effective tool of marketing;</p>
+                            <p data-aos='fade-down'>
+                                Boom your sales, not your workload. In Email Marketing Management Services, advertisers ought to accomplish more with less. To keep this persona in mind, CentoSquare provides email marketing management services, wherein we design customized emails that entice customers to click on your emails and enable your brand to grow faster.
+                                <br />
+                                Here are the following reasons that make email marketing an effective tool of marketing;</p>
                             {/* Features Section */}
                             <Container id="features" className="mt-1">
                                 {/* First row of features */}
-                                <Row className="mb-4">
+                                <Row data-aos='zoom-out-down' className="mb-4">
                                     <Col md={6}>
                                         <h6><IoMdCheckmarkCircle color='#22a6b3' size={20} className="mr-2" /> Drive Sales</h6>
                                     </Col>
@@ -53,10 +65,13 @@ const EmailMarketing = () => {
                                     <Col md={6}>
                                         <h6><IoMdCheckmarkCircle color='#22a6b3' size={20} className="mr-2" /> Promotional Emails</h6>
                                     </Col>
+                                    <p data-aos='fade-down'>
+                                        Additional Fact to believe; marketing class has yet to have the life span of Email Marketing and Management Services. In contrast, some marketing patterns go back and forth. And email stays the most impressive channel accessible to the advanced advertiser.
+                                    </p>
                                 </Row>
                             </Container>
                         </Col>
-                        <Col md={6}>
+                        <Col md={6} data-aos='fade-right'>
                             <img
                                 src={EmailImg}
                                 alt="Sample"
@@ -68,22 +83,22 @@ const EmailMarketing = () => {
             </section>
 
             {/* Content Section 2 */}
-            <section>
+            {/* <section>
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6">
                             <p>
-                            Additional Fact to believe; marketing class has yet to have the life span of Email Marketing and Management Services. In contrast, some marketing patterns go back and forth. And email stays the most impressive channel accessible to the advanced advertiser.
+                                Additional Fact to believe; marketing class has yet to have the life span of Email Marketing and Management Services. In contrast, some marketing patterns go back and forth. And email stays the most impressive channel accessible to the advanced advertiser.
                             </p>
                         </div>
                         <div className="col-md-6">
                             <p>
-                            Unlike transient marketing trends, Email Marketing and Management Services demonstrate enduring effectiveness, making email the most powerful and lasting channel for digital marketers.
+                                Unlike transient marketing trends, Email Marketing and Management Services demonstrate enduring effectiveness, making email the most powerful and lasting channel for digital marketers.
                             </p>
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* FAQ Section */}
             <Container>
@@ -91,26 +106,26 @@ const EmailMarketing = () => {
                     <h2>
                         <span>Frequently Asked Questions For</span>
                         <br />
-                        <span style={{ color: '#ff6b6b' }}> Email Marketing</span>
+                        <span style={{ color: '#01a3a4' }}> Email Marketing</span>
                     </h2>
-                    <Col md={6}>
+                    <Col md={6} data-aos='zoom-out-down'>
                         <Accordion defaultActiveKey="0">
                             <Accordion.Item eventKey="0">
                                 <Accordion.Header>How We Work On Our Email Marketing Drives Transformations?</Accordion.Header>
                                 <Accordion.Body>
-                                Most advertisers are laser-centered about driving changes. Whether or not they do such as leads, deals, participations, or a metric one of a kind to your business methodology. However, a definitive objective for advertisers is to transform possible clients into paying clients. What’s more, with regards to changes, there is certainly not a more impressive channel than email. 
+                                    Most advertisers are laser-centered about driving changes. Whether or not they do such as leads, deals, participations, or a metric one of a kind to your business methodology. However, a definitive objective for advertisers is to transform possible clients into paying clients. What’s more, with regards to changes, there is certainly not a more impressive channel than email.
                                 </Accordion.Body>
                             </Accordion.Item>
                             <Accordion.Item eventKey="1">
                                 <Accordion.Header>How Email Marketing Management Service Works?</Accordion.Header>
                                 <Accordion.Body>
-                                Email is the cash of the web, and anyone online has a functioning email address. And keeping in mind that Facebook and Twitter may appear to be pervasive. Furthermore, the continuous battle over information penetrates and security implies a lot of individuals are leaving some social media channels. So with regards to associating with our possibilities and clients. There’s no channel with a more extensive reach than email.
+                                    Email is the cash of the web, and anyone online has a functioning email address. And keeping in mind that Facebook and Twitter may appear to be pervasive. Furthermore, the continuous battle over information penetrates and security implies a lot of individuals are leaving some social media channels. So with regards to associating with our possibilities and clients. There’s no channel with a more extensive reach than email.
                                 </Accordion.Body>
                             </Accordion.Item>
                             <Accordion.Item eventKey="2">
                                 <Accordion.Header>Do You Need Permission To Send Marketing Emails?</Accordion.Header>
                                 <Accordion.Body>
-                                Ensure we have permission to email the people on our list. Most country’s email marketing laws stipulate that people need to give you permission to email them in order for us to send them campaigns. Moreover, If we don’t have implied permission to email a person, then we’ll need express permission.
+                                    Ensure we have permission to email the people on our list. Most country’s email marketing laws stipulate that people need to give you permission to email them in order for us to send them campaigns. Moreover, If we don’t have implied permission to email a person, then we’ll need express permission.
                                 </Accordion.Body>
                             </Accordion.Item>
                             <Accordion.Item eventKey="3">
@@ -122,7 +137,7 @@ const EmailMarketing = () => {
 
                         </Accordion>
                     </Col>
-                    <Col md={6} className='mb-1'>
+                    <Col md={6} className='mb-1' data-aos='zoom-out-right'>
                         <img src={Faq} alt="Your Alt Text" className="img-fluid" />
                     </Col>
                 </Row>
@@ -130,12 +145,12 @@ const EmailMarketing = () => {
 
             {/* Banner Section */}
             <section>
-                <div style={{ background: '#e17055', padding: '20px', color: '#fff', textAlign: 'left' }}>
+                <div data-aos='zoom-out-down' style={{ background: '#01a3a4', padding: '20px', color: '#fff', textAlign: 'left' }}>
                     <Container>
                         <h1>Bringing Out The Best With Our Expertise</h1>
                         <p className='text-white'>Say goodbye to project hassles and hello to groundbreaking ideas to unlock innovation with M Technologies.</p>
                         <a href="/contact">
-                            <Button style={{ background: '#fff', color: '#f36b6b', borderRadius:'5px', fontWeight:'700', border:'none' }}>
+                            <Button style={{ background: '#fff', color: '#01a3a4', borderRadius: '5px', fontWeight: '700', border: 'none' }}>
                                 Start a Project
                             </Button>
                         </a>

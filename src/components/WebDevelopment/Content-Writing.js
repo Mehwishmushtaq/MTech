@@ -6,7 +6,7 @@ import Web1 from '../../assets/images/web1.svg'
 import Web2 from '../../assets/images/web2.svg'
 // import Web3 from '../../assets/images/web3.png'
 // import Web4 from '../../assets/images/web4.png'
-import Web5 from '../../assets/images/web5.svg'
+import Web5 from '../../assets/images/contactImg.jpg'
 import Content1 from '../../assets/images/content.jpg'
 import Content2 from '../../assets/images/content2.avif'
 

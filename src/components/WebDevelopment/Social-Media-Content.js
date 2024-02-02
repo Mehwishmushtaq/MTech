@@ -1,22 +1,34 @@
-import React from 'react';
+import React, { useEffect } from "react";
 import { Container, Row, Col, Accordion, Button } from 'react-bootstrap';
 import { IoMdCheckmarkCircle } from "react-icons/io";
-import SocialContentImg from '../../assets/images/social-media-img.jpg'
+import SocialContentImg from '../../assets/images/social-media-image.jpg'
 import Faq from '../../assets/images/faq.jpg'
+import Banner from "../../assets/images/tech-banner.gif";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 
 const SocialMediaContent = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 1500,
+            easing: 'linear',
+            offset: 200,
+        });
+    }, []);
+
     const headerStyle = {
-        backgroundImage: `url('https://static.vecteezy.com/system/resources/previews/005/081/900/non_2x/banner-abstract-geometric-white-and-gray-color-background-illustration-free-vector.jpg')`,
+        backgroundImage: `url(${Banner})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         color: 'white',
         textAlign: 'center',
-        paddingTop: '5rem',
-        paddingBottom: '5rem',
-    };
+        paddingTop: '8rem',
+        paddingBottom: '8rem',
+        height:'50vh'
+    }
     return (
         <div>
             <header style={headerStyle}>
@@ -28,18 +40,18 @@ const SocialMediaContent = () => {
                 <Container>
                     <Row>
                         <Col md={6}>
-                            <h2>
+                            <h2 data-aos='fade-right'>
                                 <span>Lets Wow Your Online Presence with Social Media Content</span>
-                                <span style={{ color: '#ff6b6b' }}> Services</span>
+                                <span style={{ color: '#01a3a4' }}> Services</span>
 
                             </h2>
-                            <p>
+                            <p data-aos='fade-left'>
                             Social media content writing services involve creating written content for platforms like Facebook, Twitter, Instagram, LinkedIn, and others. It includes creating posts, captions, hashtags, and other written content designed to engage and attract a specific audience.Some significant services we’ve offered in social media content writing include;
                             </p>
                             {/* Features Section */}
                             <Container id="features" className="mt-1">
                                 {/* First row of features */}
-                                <Row className="mb-4">
+                                <Row data-aos='zoom-out-down' className="mb-4">
                                     <Col md={6}>
                                         <h6><IoMdCheckmarkCircle color='#22a6b3' size={20} className="mr-2" /> Posts</h6>
                                     </Col>
@@ -52,10 +64,11 @@ const SocialMediaContent = () => {
                                     <Col md={6}>
                                         <h6><IoMdCheckmarkCircle color='#22a6b3' size={20} className="mr-2" /> Stories</h6>
                                     </Col>
+                                    <p data-aos='fade-left'> At M Technologies, we help businesses and individuals create engaging, shareable content that helps to build their brand and reach their target audience. With a focus on creativity and strategic storytelling, we empower your content to not only captivate but also resonate across various social media platforms, fostering meaningful connections and driving digital success. </p>
                                 </Row>
                             </Container>
                         </Col>
-                        <Col md={6}>
+                        <Col md={6} data-aos='fade-right'>
                             <img
                                 src={SocialContentImg}
                                 alt="Sample"
@@ -67,7 +80,7 @@ const SocialMediaContent = () => {
             </section>
 
             {/* Content Section 2 */}
-            <section>
+            {/* <section>
                 <div className="container">
                 <h4 className="text-center mb-4">
                 <span style={{ color: '#ff6b6b' }}>M Technologies Unleashing </span> Web Success With  Expert 
@@ -87,7 +100,7 @@ const SocialMediaContent = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* FAQ Section */}
             <Container>
@@ -95,9 +108,9 @@ const SocialMediaContent = () => {
                     <h2>
                         <span>Frequently Asked Questions For</span>
                         <br />
-                        <span style={{ color: '#ff6b6b' }}> Social Media Content</span>
+                        <span style={{ color: '#01a3a4' }}> Social Media Content</span>
                     </h2>
-                    <Col md={6}>
+                    <Col md={6} data-aos='zoom-out-left'>
                         <Accordion defaultActiveKey="0">
                             <Accordion.Item eventKey="0">
                                 <Accordion.Header>How We Track Down The Right Words?</Accordion.Header>
@@ -126,7 +139,7 @@ const SocialMediaContent = () => {
 
                         </Accordion>
                     </Col>
-                    <Col md={6} className='mb-1'>
+                    <Col md={6} className='mb-1' data-aos='zoom-out-right'>
                         <img src={Faq} alt="Your Alt Text" className="img-fluid" />
                     </Col>
                 </Row>
@@ -134,12 +147,12 @@ const SocialMediaContent = () => {
 
             {/* Banner Section */}
             <section>
-                <div style={{ background: '#e17055', padding: '20px', color: '#fff', textAlign: 'left' }}>
+                <div data-aos='zoom-out' style={{ background: '#01a3a4', padding: '20px', color: '#fff', textAlign: 'left' }}>
                     <Container>
                         <h1>Bringing Out The Best With Our Expertise</h1>
                         <p className='text-white'>Say goodbye to project hassles and hello to groundbreaking ideas to unlock innovation with M Technologies.</p>
                         <a href="/contact">
-                            <Button style={{ background: '#fff', color: '#f36b6b', borderRadius:'5px', fontWeight:'700', border:'none' }}>
+                            <Button style={{ background: '#fff', color: '#01a3a4', borderRadius:'5px', fontWeight:'700', border:'none' }}>
                                 Start a Project
                             </Button>
                         </a>

@@ -3,7 +3,7 @@ import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import axios from 'axios';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt, faPhoneAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import Web5 from '../../assets/images/web5.svg';
+import Web5 from '../../assets/images/contactImg.jpg';
 import Banner from "../../assets/images/tech-banner.gif";
 import AOS from 'aos';
 import 'aos/dist/aos.css';

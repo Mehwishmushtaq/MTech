@@ -1,29 +1,41 @@
-import React from 'react';
+import React, { useEffect } from "react";
 import { Container, Row, Col, Card, Carousel, Form, Button } from 'react-bootstrap';
 import { FaPallet, FaPaintBrush } from 'react-icons/fa';
 
-import Web1 from '../../assets/images/web1.svg'
-import Web2 from '../../assets/images/web2.svg'
+import Web1 from '../../assets/images/g-img2.jpg'
+import Web2 from '../../assets/images/g-img1.avif'
 // import Web3 from '../../assets/images/web3.png'
 // import Web4 from '../../assets/images/web4.png'
-import Web5 from '../../assets/images/web5.svg'
-import Content1 from '../../assets/images/content.jpg'
-import Content2 from '../../assets/images/content2.avif'
+import Web5 from '../../assets/images/contactImg.jpg'
+import Content1 from '../../assets/images/graphics-dImg.avif'
+import Content2 from '../../assets/images/g-img3.jpg'
+import Banner from "../../assets/images/tech-banner.gif";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 
 const GraphicsDesigning = () => {
 
+    useEffect(() => {
+        AOS.init({
+            duration: 1500,
+            easing: 'linear',
+            offset: 200,
+        });
+    }, []);
+
     const headerStyle = {
-        backgroundImage: `url('https://static.vecteezy.com/system/resources/previews/005/081/900/non_2x/banner-abstract-geometric-white-and-gray-color-background-illustration-free-vector.jpg')`,
+        backgroundImage: `url(${Banner})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         color: 'white',
         textAlign: 'center',
-        paddingTop: '5rem',
-        paddingBottom: '5rem',
-    };
+        paddingTop: '8rem',
+        paddingBottom: '8rem',
+        height: '50vh'
+    }
 
     const services = [
         {
@@ -68,17 +80,17 @@ const GraphicsDesigning = () => {
                 <Container>
                     <Row>
                         <Col md={6}>
-                            <h2>
-                                <span style={{ color: '#ff6b6b' }}>We Do</span> Design Differently
+                            <h2 data-aos='fade-up-left'>
+                                <span style={{ color: '#01a3a4' }}>We Do</span> Design Differently
                             </h2>
-                            <p className='text-justify'>
+                            <p data-aos="flip-left" className='text-justify'>
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium velit quas laudantium repellendus tempora. Veniam possimus provident nemo molestias, corrupti dolores tenetur tempore totam, ad iure vel voluptatibus corporis voluptas.
                                 Tempore inventore reiciendis incidunt debitis molestiae quae, consequuntur deleniti ea dolores! Esse eos veritatis, dolorum officiis saepe quibusdam aperiam nesciunt sit minima delectus suscipit itaque numquam voluptatem quo nostrum cupiditate?
                                 Mollitia, nulla. Quam obcaecati perferendis eum, libero hic, repellendus quaerat nostrum suscipit odit ullam maxime earum explicabo sed est ex labore debitis commodi impedit voluptates soluta assumenda sint consequuntur in.
 
                             </p>
                         </Col>
-                        <Col md={6}>
+                        <Col md={6} data-aos="fade-up-right">
                             <img
                                 src={Content1}
                                 alt="Sample"
@@ -92,12 +104,12 @@ const GraphicsDesigning = () => {
             {/* Carousel */}
             <section className="bg-light py-5">
                 <Container>
-                    <h2 className="text-center mb-5">Our Services</h2>
+                    <h2 data-aos='flip-right' className="text-center mb-5">Our Services</h2>
                     <Row>
                         {services.map((service, index) => (
                             <Col key={index} md={4} className="mb-4">
                                 <Card>
-                                    <Carousel>
+                                    <Carousel data-aos='flip-up'>
                                         {service.images.map((image, idx) => (
                                             <Carousel.Item key={idx}>
                                                 <img className="d-block w-100" src={image} alt={`Slide ${idx + 1}`} />
@@ -119,13 +131,13 @@ const GraphicsDesigning = () => {
             <section className="bg-light py-5">
                 <Container>
                     <Row>
-                        <Col md={6}>
+                        <Col md={6} data-aos='flip-left'>
                             <h2>
                                 <span>Choose Us To Stand Out </span>
-                                <span style={{ color: '#ff6b6b' }}>In The Market</span>
+                                <span style={{ color: '#01a3a4' }}>In The Market</span>
                             </h2>
                         </Col>
-                        <Col md={6}>
+                        <Col md={6} data-aos="flip-right">
                             <p>
                                 Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
                                 Pellentesque in ipsum id orci porta dapibus.Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
@@ -156,7 +168,7 @@ const GraphicsDesigning = () => {
                 <Container>
                     <Row>
                         {/* First Container */}
-                        <Col md={6}>
+                        <Col md={6} data-aos="fade-up">
                             <Row>
                                 <Col md={6}>
                                     <img
@@ -178,7 +190,7 @@ const GraphicsDesigning = () => {
                             </Row>
                         </Col>
                         {/* Second Container */}
-                        <Col md={6}>
+                        <Col md={6} data-aos="fade-down">
                             <Row>
                                 <Col md={6}>
                                     <img
@@ -209,7 +221,7 @@ const GraphicsDesigning = () => {
                 <div className="container mt-4">
                     <div className="row">
                         <div className="col-md-6">
-                            <h5>Why Choose M Technologies For Your Graphic Designing Project?</h5>
+                            <h5 data-aos='flip-up'>Why Choose M Technologies For Your Graphic Designing Project?</h5>
                             <p>Band with the Finest Graphic Designing Company in Pakistan to Illuminate your Idea.</p>
                             <ul>
                                 <li>Eye-pleasing Designing</li>
@@ -220,13 +232,13 @@ const GraphicsDesigning = () => {
                             </ul>
                         </div>
 
-                        <div className="col-md-3">
+                        <div data-aos='flip-down' className="col-md-3 text-center">
                             <FaPallet color='#22a6b3' size={60} />
                             <h5>Logo Design</h5>
                             <p>Our team creates engaging and informative content tailored to your needs.</p>
                         </div>
 
-                        <div className="col-md-3">
+                        <div data-aos='flip-down' className="col-md-3 text-center">
                             <FaPaintBrush color='#22a6b3' size={60} />
                             <h5>Mockups</h5>
                             <p>Effective copywriting to convey your message and drive results.</p>
@@ -238,14 +250,14 @@ const GraphicsDesigning = () => {
                     <div className="row">
                         {/* Left Side: Progress Bars */}
                         <div className="col-md-6 mt-4 ">
-                            <h5 style={{color: '#ff6b6b'}}>Benefits</h5>
+                            <h5 data-aos='flip-up' style={{color: '#01a3a4'}}>Benefits</h5>
                             <h3>
                                 <span>Our Targeted Plan-Growth</span>
                             </h3>
-                              <p>Here is the growth so far, which we gained over the period, and our targeted achievements on the scale of Content Writing Services.
+                              <p data-aos='fade-left'>Here is the growth so far, which we gained over the period, and our targeted achievements on the scale of Content Writing Services.
                               </p>
-                            <h5 className='mt-4'>Technical</h5>
-                            <div className="progress mb-2">
+                            <h5 data-aos='flip-left' className='mt-4'>Technical</h5>
+                            <div data-aos='zoom-out' className="progress mb-2">
                                 <div
                                     className="progress-bar bg-success"
                                     role="progressbar"
@@ -257,8 +269,8 @@ const GraphicsDesigning = () => {
                                     30%
                                 </div>
                             </div>
-                            <h5 className='mt-4'>Content Writing</h5>
-                            <div className="progress mb-2">
+                            <h5 data-aos='flip-left' className='mt-4'>Content Writing</h5>
+                            <div data-aos='zoom-out' className="progress mb-2">
                                 <div
                                     className="progress-bar bg-warning"
                                     role="progressbar"
@@ -270,8 +282,8 @@ const GraphicsDesigning = () => {
                                     50%
                                 </div>
                             </div>
-                            <h5 className='mt-4'>Blogs</h5>
-                            <div className="progress mb-2">
+                            <h5 data-aos='flip-left'className='mt-4'>Blogs</h5>
+                            <div data-aos='zoom-out' className="progress mb-2">
                                 <div
                                     className="progress-bar bg-info"
                                     role="progressbar"
@@ -286,7 +298,7 @@ const GraphicsDesigning = () => {
                         </div>
 
                         {/* Right Side: Image */}
-                        <div className="col-md-6 mt-4">
+                        <div data-aos='flip-right' className="col-md-6 mt-4">
                             <img
                                 src={Content2}
                                 alt="Kitten"
@@ -298,12 +310,12 @@ const GraphicsDesigning = () => {
             </section>
 
             {/* Section 5 */}
-            <section>
-                    <Container style={{ background: '#e17055', padding: '20px', color: '#fff', textAlign: 'left' }}>
+            <section data-aos='flip-down'>
+                    <Container style={{ background: '#01a3a4', padding: '20px', color: '#fff', textAlign: 'left' }}>
                         <h1>Bringing Out The Best With Our Expertise</h1>
                         <p className='text-white'>Say goodbye to project hassles and hello to groundbreaking ideas to unlock innovation with M Technologies.</p>
                         <a href="/contact">
-                            <Button style={{ background: '#fff', color: '#f36b6b', borderRadius:'5px', fontWeight:'700', border:'none' }}>
+                            <Button style={{ background: '#fff', color: '#01a3a4', borderRadius:'5px', fontWeight:'700', border:'none' }}>
                                 Start a Project
                             </Button>
                         </a>
@@ -317,14 +329,14 @@ const GraphicsDesigning = () => {
                 <Container>
                     {/* Title Section */}
                     <Row className="mb-4">
-                        <Col md={12} className="text-center">
-                            <h4 style={{ color: '#ff6b6b' }}>The Best IT Solutions And Ideas</h4>
+                        <Col data-aos='flip-left' md={12} className="text-center">
+                            <h4 style={{ color: '#01a3a4' }}>The Best IT Solutions And Ideas</h4>
                             <h3>Need a designer with a creative portfolio?</h3>
                         </Col>
                     </Row>
                     <Row>
                         {/* Left Side - Picture */}
-                        <Col md={6} className="mb-4">
+                        <Col data-aos='fade-left' md={6} className="mb-4">
                             <img
                                 src={Web5}
                                 alt="Sample"
@@ -333,7 +345,7 @@ const GraphicsDesigning = () => {
                         </Col>
 
                         {/* Right Side - Form */}
-                        <Col md={6}>
+                        <Col md={6} data-aos='fade-right'>
                             <Form>
                                 <Form.Group controlId="formName">
                                     <Form.Label>Name</Form.Label>
@@ -366,7 +378,7 @@ const GraphicsDesigning = () => {
                                     <Form.Control as="textarea" className='mb-3' rows={5} placeholder="Enter your message" />
                                 </Form.Group>
 
-                                <Button style={{ background: '#f36b6b', color: '#fff', borderRadius:'5px', fontWeight:'700', border:'none', width:'100%' }} type="submit" className='mt-4'>
+                                <Button style={{ background: '#01a3a4', color: '#fff', borderRadius:'5px', fontWeight:'700', border:'none', width:'100%' }} type="submit" className='mt-4'>
                                     Submit
                                 </Button>
                             </Form>

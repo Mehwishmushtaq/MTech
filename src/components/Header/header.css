@@ -18,16 +18,32 @@
   margin-left: 20px;
 }
 
-.navbar .nav-link:active {
+/* .navbar .nav-link:active {
   color: #2f3640;
+} */
+.navbar .nav-link:focus,
+.navbar .nav-link:active,
+.navbar .nav-link.active {
+  color: #01a3a4 !important;
+}
+
+.navbar .navbar-brand:focus,
+.navbar .navbar-brand:active,
+.navbar .navbar-brand.active {
+  color: #01a3a4 !important;
 }
 
 .service-menu:active{
   color: #01a3a4;
 }
 
+
 .navbar .nav-link:hover {
   color: #01a3a4; 
+}
+
+.navbar .navbar-brand:hover {
+  color: #01a3a4 !important;
 }
 
 .navbar .navbar-brand{
