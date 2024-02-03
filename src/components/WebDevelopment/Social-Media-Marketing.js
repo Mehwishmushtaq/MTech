@@ -3,7 +3,7 @@ import { Container, Row, Col, Accordion, Button } from 'react-bootstrap';
 import { IoMdCheckmarkCircle } from "react-icons/io";
 import SocialMarketingImg from '../../assets/images/smm-img.jpg'
 import Faq from '../../assets/images/faq.jpg'
-import Banner from "../../assets/images/tech-banner.gif";
+import Banner from "../../assets/images/smm1.png";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -31,8 +31,8 @@ const SocialMediaMarketing = () => {
     }
     return (
         <div>
-            <header style={headerStyle}>
-                <h1><strong>Social Media Marketing</strong></h1>
+            <header data-aos='fade-down' style={headerStyle}>
+                <h1 data-aos='fade-left'><strong>Social Media Marketing</strong></h1>
             </header>
 
             {/* Content Section with Text and Image */}

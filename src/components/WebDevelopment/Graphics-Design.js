@@ -9,7 +9,7 @@ import Web2 from '../../assets/images/g-img1.avif'
 import Web5 from '../../assets/images/contactImg.jpg'
 import Content1 from '../../assets/images/graphics-dImg.avif'
 import Content2 from '../../assets/images/g-img3.jpg'
-import Banner from "../../assets/images/tech-banner.gif";
+import Banner from "../../assets/images/graphics.png";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -71,8 +71,8 @@ const GraphicsDesigning = () => {
     return (
         <div>
             {/* Top Banner */}
-            <header style={headerStyle}>
-                <h1>Graphic Designing</h1>
+            <header data-aos='fade-down' style={headerStyle}>
+                <h1 data-aos='fade-left'><strong>Graphic Designing</strong></h1>
             </header>
 
             {/* Content Section with Text and Image */}

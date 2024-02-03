@@ -65,10 +65,6 @@ const Services = () => {
             <div class="row mt-2 text-center justify-content-center">
               <h4 style={{ color: '#01a3a4' }}>Servies We Offer</h4>
               <h3 style={{ fontWeight: '900'}}>Our Featured Services</h3>
-              {/* <div class="col-md-12">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere ipsum reiciendis reprehenderit laudantium? Voluptates, nulla ducimus? Fuga esse, nemo ut necessitatibus magni itaque porro voluptatem, vel veniam corporis incidunt provident?
-                  Consequuntur eius doloribus quidem natus vero sapiente! Perspiciatis totam harum veritatis eos, molestiae vel maxime velit temporibus fuga officia rem eveniet delectus ad, libero reiciendis ducimus ut tempore, facilis nam?</p>
-              </div> */}
             </div>
           </div>
           {servicesData.map((item) => (

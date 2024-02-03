@@ -3,7 +3,7 @@ import { Container, Row, Col, Accordion, Button } from 'react-bootstrap';
 import { FaUserTie, FaClock, FaBriefcase, FaBolt } from 'react-icons/fa';
 import Laravel from '../../assets/images/laravel-img.jpg'
 import Faq from '../../assets/images/faq.jpg'
-import Banner from "../../assets/images/tech-banner.gif";
+import Banner from "../../assets/images/laravel-2.png";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -31,8 +31,8 @@ const LaravelService = () => {
     };
     return (
         <div>
-            <header style={headerStyle}>
-                <h1><strong>Laravel Web</strong></h1>
+            <header data-aos='fade-down' style={headerStyle}>
+                <h1 data-aos='fade-left'><strong>Laravel Web</strong></h1>
             </header>
 
             {/* Content Section with Text and Image */}

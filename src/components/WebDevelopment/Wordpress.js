@@ -6,7 +6,7 @@ import { DiGoogleCloudPlatform as DiGoogle } from 'react-icons/di';
 import { IoMdGlobe } from 'react-icons/io';
 import WordPress from '../../assets/images/wordpress.png'
 import Faq from '../../assets/images/faq.jpg'
-import Banner from "../../assets/images/tech-banner.gif";
+import Banner from "../../assets/images/wordpress-1.png";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -30,12 +30,12 @@ const WordPressService = () => {
         textAlign: 'center',
         paddingTop: '8rem',
         paddingBottom: '8rem',
-        height:'50vh'
+        // height:'50vh'
     };
     return (
         <div>
-            <header style={headerStyle}>
-                <h1><strong>WordPress</strong></h1>
+            <header data-aos='fade-down' style={headerStyle}>
+                <h1 data-aos='fade-left'><strong>WordPress</strong></h1>
             </header>
 
             {/* Content Section with Text and Image */}

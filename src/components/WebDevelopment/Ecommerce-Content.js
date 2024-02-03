@@ -3,7 +3,7 @@ import { Container, Row, Col, Accordion, Button } from 'react-bootstrap';
 import { IoMdCheckmarkCircle } from "react-icons/io";
 import EcommerceContent from '../../assets/images/ecommerce-content.jpg'
 import Faq from '../../assets/images/faq.jpg'
-import Banner from "../../assets/images/tech-banner.gif";
+import Banner from "../../assets/images/e-commerce1.png";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 

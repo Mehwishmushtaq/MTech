@@ -3,7 +3,7 @@ import { Container, Row, Col, Accordion, Button } from 'react-bootstrap';
 import { FaReact, FaClock, FaCode, FaRocket } from 'react-icons/fa';
 import ReactImg from '../../assets/images/react.png'
 import Faq from '../../assets/images/faq.jpg'
-import Banner from "../../assets/images/tech-banner.gif";
+import Banner from "../../assets/images/react-js.png";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -32,8 +32,8 @@ const ReactService = () => {
     };
     return (
         <div>
-            <header style={headerStyle}>
-                <h1><strong>React</strong></h1>
+            <header data-aos='fade-down' style={headerStyle}>
+                <h1 data-aos='fade-left'><strong>React</strong></h1>
             </header>
 
             {/* Content Section with Text and Image */}

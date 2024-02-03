@@ -3,7 +3,7 @@ import { Container, Row, Col, Accordion, Button } from 'react-bootstrap';
 import { IoMdCheckmarkCircle } from "react-icons/io";
 import EmailImg from '../../assets/images/email-markImg.jpg'
 import Faq from '../../assets/images/faq.jpg'
-import Banner from "../../assets/images/tech-banner.gif";
+import Banner from "../../assets/images/email1.png";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -31,8 +31,8 @@ const EmailMarketing = () => {
     }
     return (
         <div>
-            <header style={headerStyle}>
-                <h1><strong>Email Marketing</strong></h1>
+            <header data-aos='fade-down' style={headerStyle}>
+                <h1 data-aos='fade-left'><strong>Email Marketing</strong></h1>
             </header>
 
             {/* Content Section with Text and Image */}

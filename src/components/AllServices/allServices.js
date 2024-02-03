@@ -64,15 +64,25 @@ const AllServices = () => {
           offset: 200,
         });
       }, []);
+
+      const headerStyle = {
+        backgroundImage: `url(${Banner})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        color: 'white',
+        textAlign: 'center',
+        paddingTop: '8rem',
+        paddingBottom: '8rem',
+        height: '50vh'
+    }
     return (
 
         <div>
             {/* Banner Section */}
-            <section className="banner-section py-5 text-center text-white" style={{ backgroundImage: `url(${Banner})`, backgroundSize: 'cover', backgroundPosition: 'center', height:'50vh' }}>
-                <Container>
-                    <h1>Services</h1>
-                </Container>
-            </section>
+            <header data-aos='fade-down' style={headerStyle}>
+                <h1 data-aos='fade-left'><strong>All Services</strong></h1>
+            </header>
 
             <section className="service-home">
                 <Container>
