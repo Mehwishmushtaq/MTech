@@ -4,6 +4,7 @@ import HeroImg from '../../assets/images/hero-img2.png'
 import "./hero-section.css";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Particles from "particles.js";
 
 const HeroSection = () => {
 
